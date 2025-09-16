@@ -308,6 +308,10 @@ function findNearestWeekWithEvents(events, aroundDate) {
 // Fonction rerender définie avant les autres fonctions qui l'utilisent
 function rerender() {
   if (currentView === 'week') {
+    // Réafficher le calendrier
+    const calendar = document.querySelector('.calendar');
+    if (calendar) calendar.style.display = 'block';
+    
     const hoursRange = getHoursRangeForWeek(myEvents, currentWeekStart);
     buildGridShell(currentWeekStart, hoursRange);
     setWeekLabel(currentWeekStart);
@@ -315,7 +319,7 @@ function rerender() {
     
     // Masquer la vue jour
     const dayView = document.getElementById('dayView');
-    if (dayView) dayView.classList.remove('active');
+    if (dayView) dayView.style.display = 'none';
   } else {
     // Masquer le calendrier
     const calendar = document.querySelector('.calendar');
@@ -324,7 +328,7 @@ function rerender() {
     // Afficher la vue jour
     renderDayView(myEvents, currentDay);
     const dayView = document.getElementById('dayView');
-    if (dayView) dayView.classList.add('active');
+    if (dayView) dayView.style.display = 'block';
   }
 }
 
