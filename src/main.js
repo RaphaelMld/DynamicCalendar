@@ -15,6 +15,10 @@ const MY_COURSES = {
   'BIMA': 3
 };
 
+// Variables pour la vue mobile
+let currentDayIndex = 0;
+let isMobile = window.innerWidth <= 640;
+
 async function loadEvents() {
   const res = await fetch('./data/events.json');
   if (!res.ok) throw new Error(`${res.status}`);
@@ -80,6 +84,10 @@ function formatDay(d) {
   return d.toLocaleDateString('fr-FR', { weekday: 'short', day: '2-digit', month: 'short' });
 }
 
+function formatDayFull(d) {
+  return d.toLocaleDateString('fr-FR', { weekday: 'long', day: '2-digit', month: 'long' });
+}
+
 function hoursBetween(a, b) {
   return (new Date(b) - new Date(a)) / 36e5;
 }
@@ -99,6 +107,11 @@ function buildGridShell(weekStart, hoursRange) {
     const h = document.createElement('div');
     h.className = 'day-header';
     h.textContent = formatDay(day);
+    h.dataset.dayIndex = String(i);
+    h.style.cursor = isMobile ? 'pointer' : 'default';
+    if (isMobile) {
+      h.addEventListener('click', () => switchToDay(i, weekStart));
+    }
     headEl.appendChild(h);
   }
 
@@ -173,6 +186,76 @@ function renderEvents(events, weekStart, hoursRange) {
   }
 }
 
+function renderMobileDayView(events, weekStart, dayIndex) {
+  const dayStart = addDays(weekStart, dayIndex);
+  const dayEnd = addDays(dayStart, 1);
+  
+  const dayEvents = events.filter(ev => {
+    const start = new Date(ev.start);
+    return start >= dayStart && start < dayEnd;
+  }).sort((a, b) => new Date(a.start) - new Date(b.start));
+
+  // Créer ou mettre à jour la vue mobile
+  let mobileView = document.getElementById('mobileDayView');
+  if (!mobileView) {
+    mobileView = document.createElement('div');
+    mobileView.id = 'mobileDayView';
+    mobileView.className = 'mobile-day-view';
+    document.querySelector('main').appendChild(mobileView);
+  }
+
+  mobileView.innerHTML = `
+    <div class="day-view-header">
+      ${formatDayFull(dayStart)}
+    </div>
+    <div class="day-view-events">
+      ${dayEvents.length === 0 ? 
+        '<div style="text-align: center; color: #64748b; padding: 20px;">Aucun événement ce jour</div>' :
+        dayEvents.map(ev => {
+          const start = new Date(ev.start);
+          const end = new Date(ev.end || ev.start);
+          let courseName = '';
+          let eventType = '';
+          
+          for (const course of Object.keys(MY_COURSES)) {
+            if (ev.title.includes(course)) {
+              courseName = course;
+              if (ev.title.includes('-Cours')) {
+                eventType = 'Cours';
+              } else if (ev.title.includes('-TD')) {
+                eventType = `TD (G${MY_COURSES[course]})`;
+              } else if (ev.title.includes('-TME')) {
+                eventType = `TME (G${MY_COURSES[course]})`;
+              }
+              break;
+            }
+          }
+          
+          return `
+            <div class="day-event">
+              <div class="title">${courseName} ${eventType}</div>
+              <div class="time">${start.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })} → ${end.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}</div>
+              ${ev.location ? `<div class="location">📍 ${ev.location}</div>` : ''}
+            </div>
+          `;
+        }).join('')
+      }
+    </div>
+  `;
+}
+
+function switchToDay(dayIndex, weekStart) {
+  if (!isMobile) return;
+  currentDayIndex = dayIndex;
+  renderMobileDayView(window.myEvents || [], weekStart, dayIndex);
+  
+  // Mettre à jour l'état visuel des jours
+  document.querySelectorAll('.day-header').forEach((header, index) => {
+    header.style.background = index === dayIndex ? '#0b5fff' : '#f1f5f9';
+    header.style.color = index === dayIndex ? 'white' : '#0b1221';
+  });
+}
+
 function setWeekLabel(weekStart) {
   const weekEnd = addDays(weekStart, 6);
   const fmt = (d) => d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'short' });
@@ -216,12 +299,23 @@ function findNearestWeekWithEvents(events, aroundDate) {
   return base;
 }
 
+function handleResize() {
+  const wasMobile = isMobile;
+  isMobile = window.innerWidth <= 640;
+  
+  if (wasMobile !== isMobile) {
+    // Redimensionnement détecté, re-rendre
+    rerender();
+  }
+}
+
 (async function init() {
   statusEl.textContent = 'Chargement des événements…';
   const allEvents = await loadEvents();
   
   // Filtrer les événements pour ne garder que ceux qui nous concernent
   const myEvents = filterMyEvents(allEvents);
+  window.myEvents = myEvents; // Pour la vue mobile
   
   statusEl.textContent = `${myEvents.length} événements pertinents (sur ${allEvents.length} total)`;
 
@@ -239,11 +333,29 @@ function findNearestWeekWithEvents(events, aroundDate) {
     buildGridShell(currentWeekStart, hoursRange);
     setWeekLabel(currentWeekStart);
     renderEvents(myEvents, currentWeekStart, hoursRange);
+    
+    if (isMobile) {
+      renderMobileDayView(myEvents, currentWeekStart, currentDayIndex);
+    }
   }
 
-  prevBtn.addEventListener('click', () => { currentWeekStart = addDays(currentWeekStart, -7); rerender(); });
-  todayBtn.addEventListener('click', () => { currentWeekStart = startOfWeek(new Date()); rerender(); });
-  nextBtn.addEventListener('click', () => { currentWeekStart = addDays(currentWeekStart, 7); rerender(); });
+  prevBtn.addEventListener('click', () => { 
+    currentWeekStart = addDays(currentWeekStart, -7); 
+    rerender(); 
+  });
+  
+  todayBtn.addEventListener('click', () => { 
+    currentWeekStart = startOfWeek(new Date()); 
+    rerender(); 
+  });
+  
+  nextBtn.addEventListener('click', () => { 
+    currentWeekStart = addDays(currentWeekStart, 7); 
+    rerender(); 
+  });
+
+  // Gestion du redimensionnement
+  window.addEventListener('resize', handleResize);
 
   rerender();
 })();
