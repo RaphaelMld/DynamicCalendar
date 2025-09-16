@@ -1,5 +1,6 @@
 const statusEl = document.getElementById('status');
-const gridEl = document.getElementById('calendarGrid');
+const headEl = document.getElementById('calendarHead');
+const bodyEl = document.getElementById('calendarBody');
 const prevBtn = document.getElementById('prevWeek');
 const todayBtn = document.getElementById('today');
 const nextBtn = document.getElementById('nextWeek');
@@ -14,8 +15,8 @@ async function loadEvents() {
 
 function startOfWeek(date) {
   const d = new Date(date);
-  const day = d.getDay(); // 0 Sun .. 6 Sat
-  const diff = (day === 0 ? -6 : 1) - day; // shift to Monday
+  const day = d.getDay();
+  const diff = (day === 0 ? -6 : 1) - day;
   d.setDate(d.getDate() + diff);
   d.setHours(0,0,0,0);
   return d;
@@ -36,76 +37,69 @@ function hoursBetween(a, b) {
 }
 
 function buildGridShell(weekStart) {
-  gridEl.innerHTML = '';
-  const hours = Array.from({ length: 12 }, (_, i) => i + 8); // 08:00 - 20:00
+  headEl.innerHTML = '';
+  bodyEl.innerHTML = '';
 
-  // Header row: empty corner + 7 days
+  // Head row: corner + 7 day headers
   const corner = document.createElement('div');
-  corner.className = 'cell time day-header';
-  gridEl.appendChild(corner);
+  corner.className = 'day-header';
+  corner.style.border = '1px solid transparent';
+  headEl.appendChild(corner);
 
   for (let i = 0; i < 7; i++) {
     const day = addDays(weekStart, i);
     const h = document.createElement('div');
-    h.className = 'cell day-header';
+    h.className = 'day-header';
     h.textContent = formatDay(day);
-    gridEl.appendChild(h);
+    headEl.appendChild(h);
   }
 
-  // Hour rows
+  // Body: time column + 7 day columns
+  const timeCol = document.createElement('div');
+  timeCol.className = 'time-col';
+  const hours = Array.from({ length: 12 }, (_, i) => i + 8);
   for (const h of hours) {
-    const timeCell = document.createElement('div');
-    timeCell.className = 'cell time';
-    timeCell.textContent = `${String(h).padStart(2, '0')}:00`;
-    gridEl.appendChild(timeCell);
+    const slot = document.createElement('div');
+    slot.className = 'time-slot';
+    slot.textContent = `${String(h).padStart(2, '0')}:00`;
+    timeCol.appendChild(slot);
+  }
+  bodyEl.appendChild(timeCol);
 
-    for (let i = 0; i < 7; i++) {
-      const cell = document.createElement('div');
-      cell.className = 'cell';
-      cell.dataset.dayIndex = String(i);
-      cell.dataset.hour = String(h);
-      gridEl.appendChild(cell);
-    }
+  for (let i = 0; i < 7; i++) {
+    const col = document.createElement('div');
+    col.className = 'day-col';
+    col.dataset.dayIndex = String(i);
+    col.style.minHeight = `${hours.length * 60}px`;
+    bodyEl.appendChild(col);
   }
 }
 
 function renderEvents(events, weekStart) {
-  // Place events into day columns, positioned by time within cells
-  const dayStart = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i));
-
+  // Place events into day columns
   for (const ev of events) {
     const start = new Date(ev.start);
     const end = new Date(ev.end);
-
-    // Skip events outside selected week
     if (start < weekStart || start >= addDays(weekStart, 7)) continue;
 
     const dayIndex = (start.getDay() + 6) % 7; // Monday=0
     const hourTop = start.getHours() + start.getMinutes() / 60;
     const durationH = Math.max(0.5, hoursBetween(start, end));
 
-    // Find the first grid cell of that day to compute relative offset
-    const dayCells = [...gridEl.querySelectorAll(`.cell[data-day-index="${dayIndex}"]`)];
-    if (dayCells.length === 0) continue;
+    const col = bodyEl.querySelector(`.day-col[data-day-index="${dayIndex}"]`);
+    if (!col) continue;
 
-    const firstCell = dayCells[0];
-    const container = firstCell.parentElement; // gridEl
+    const evEl = document.createElement('div');
+    evEl.className = 'event';
+    evEl.style.top = `${(hourTop - 8) * 60}px`;
+    evEl.style.height = `${durationH * 60}px`;
 
-    // Create event block, position within the column
-    const eventEl = document.createElement('div');
-    eventEl.className = 'event';
-    eventEl.style.top = `${(hourTop - 8) * 80}px`;
-    eventEl.style.height = `${durationH * 80}px`;
-
-    eventEl.style.gridColumn = `${dayIndex + 2} / span 1`;
-    eventEl.style.gridRow = `auto`;
-
-    eventEl.innerHTML = `
+    evEl.innerHTML = `
       <div class="title">${ev.title || '(Sans titre)'} — ${ev.ue} (G${ev.group})</div>
       <div class="meta">${start.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })} → ${end.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}${ev.location ? ' • ' + ev.location : ''}</div>
     `;
 
-    gridEl.appendChild(eventEl);
+    col.appendChild(evEl);
   }
 }
 
