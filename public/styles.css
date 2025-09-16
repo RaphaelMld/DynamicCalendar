@@ -41,6 +41,11 @@ h1 {
   transform: translateY(-1px);
 }
 
+.controls button.active {
+  background: #0b5fff;
+  color: white;
+}
+
 .controls #weekLabel { 
   font-weight: 600; 
   margin-left: 8px; 
@@ -177,8 +182,8 @@ section#status {
   line-height: 1.3;
 }
 
-/* Mobile Day View */
-.mobile-day-view {
+/* Day View */
+.day-view {
   display: none;
   background: white;
   border-radius: 12px;
@@ -187,7 +192,7 @@ section#status {
   margin-top: 16px;
 }
 
-.mobile-day-view.active {
+.day-view.active {
   display: block;
 }
 
@@ -336,14 +341,5 @@ section#status {
   .calendar-head .day-header {
     padding: 6px 2px;
     font-size: 10px;
-  }
-  
-  /* Force mobile day view on small screens */
-  .mobile-day-view {
-    display: block !important;
-  }
-  
-  .calendar {
-    display: none;
   }
 }

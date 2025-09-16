@@ -15,9 +15,11 @@ const MY_COURSES = {
   'BIMA': 3
 };
 
-// Variables pour la vue mobile
+// Variables pour la navigation
+let currentWeekStart = startOfWeek(new Date());
 let currentDayIndex = 0;
-let isMobile = window.innerWidth <= 640;
+let currentView = 'week'; // 'week' ou 'day'
+let currentDay = new Date();
 
 async function loadEvents() {
   const res = await fetch('./data/events.json');
@@ -90,6 +92,46 @@ function formatDayFull(d) {
 
 function hoursBetween(a, b) {
   return (new Date(b) - new Date(a)) / 36e5;
+}
+
+function createViewToggleButtons() {
+  const controls = document.querySelector('.controls');
+  
+  // Bouton Vue Semaine
+  const weekViewBtn = document.createElement('button');
+  weekViewBtn.id = 'weekViewBtn';
+  weekViewBtn.textContent = 'Semaine';
+  weekViewBtn.className = 'active';
+  weekViewBtn.addEventListener('click', () => switchToView('week'));
+  
+  // Bouton Vue Jour
+  const dayViewBtn = document.createElement('button');
+  dayViewBtn.id = 'dayViewBtn';
+  dayViewBtn.textContent = 'Jour';
+  dayViewBtn.addEventListener('click', () => switchToView('day'));
+  
+  // Insérer les boutons après le label de semaine
+  controls.insertBefore(weekViewBtn, weekLabelEl);
+  controls.insertBefore(dayViewBtn, weekLabelEl);
+}
+
+function switchToView(view) {
+  currentView = view;
+  
+  // Mettre à jour les boutons
+  document.getElementById('weekViewBtn').classList.toggle('active', view === 'week');
+  document.getElementById('dayViewBtn').classList.toggle('active', view === 'day');
+  
+  // Mettre à jour les boutons de navigation
+  if (view === 'week') {
+    prevBtn.textContent = '◀ Semaine';
+    nextBtn.textContent = 'Semaine ▶';
+  } else {
+    prevBtn.textContent = '◀ Jour';
+    nextBtn.textContent = 'Jour ▶';
+  }
+  
+  rerender();
 }
 
 function buildGridShell(weekStart, hoursRange) {
@@ -184,27 +226,29 @@ function renderEvents(events, weekStart, hoursRange) {
   }
 }
 
-function renderMobileDayView(events, weekStart, dayIndex) {
-  const dayStart = addDays(weekStart, dayIndex);
-  const dayEnd = addDays(dayStart, 1);
+function renderDayView(events, day) {
+  const dayStart = new Date(day);
+  dayStart.setHours(0, 0, 0, 0);
+  const dayEnd = new Date(day);
+  dayEnd.setHours(23, 59, 59, 999);
   
   const dayEvents = events.filter(ev => {
     const start = new Date(ev.start);
     return start >= dayStart && start < dayEnd;
   }).sort((a, b) => new Date(a.start) - new Date(b.start));
 
-  // Créer ou mettre à jour la vue mobile
-  let mobileView = document.getElementById('mobileDayView');
-  if (!mobileView) {
-    mobileView = document.createElement('div');
-    mobileView.id = 'mobileDayView';
-    mobileView.className = 'mobile-day-view';
-    document.querySelector('main').appendChild(mobileView);
+  // Créer ou mettre à jour la vue jour
+  let dayView = document.getElementById('dayView');
+  if (!dayView) {
+    dayView = document.createElement('div');
+    dayView.id = 'dayView';
+    dayView.className = 'day-view';
+    document.querySelector('main').appendChild(dayView);
   }
 
-  mobileView.innerHTML = `
+  dayView.innerHTML = `
     <div class="day-view-header">
-      ${formatDayFull(dayStart)}
+      ${formatDayFull(day)}
     </div>
     <div class="day-view-events">
       ${dayEvents.length === 0 ? 
@@ -244,6 +288,7 @@ function renderMobileDayView(events, weekStart, dayIndex) {
 
 function switchToDay(dayIndex, weekStart) {
   currentDayIndex = dayIndex;
+  currentDay = addDays(weekStart, dayIndex);
   
   // Mettre à jour l'état visuel des jours
   document.querySelectorAll('.day-header').forEach((header, index) => {
@@ -251,8 +296,8 @@ function switchToDay(dayIndex, weekStart) {
     header.classList.toggle('active', index - 1 === dayIndex);
   });
   
-  if (isMobile) {
-    renderMobileDayView(window.myEvents || [], weekStart, dayIndex);
+  if (currentView === 'day') {
+    renderDayView(window.myEvents || [], currentDay);
   }
 }
 
@@ -299,27 +344,19 @@ function findNearestWeekWithEvents(events, aroundDate) {
   return base;
 }
 
-function handleResize() {
-  const wasMobile = isMobile;
-  isMobile = window.innerWidth <= 640;
-  
-  if (wasMobile !== isMobile) {
-    // Redimensionnement détecté, re-rendre
-    rerender();
-  }
-}
-
 (async function init() {
   statusEl.textContent = 'Chargement des événements…';
   const allEvents = await loadEvents();
   
   // Filtrer les événements pour ne garder que ceux qui nous concernent
   const myEvents = filterMyEvents(allEvents);
-  window.myEvents = myEvents; // Pour la vue mobile
+  window.myEvents = myEvents;
   
   statusEl.textContent = `${myEvents.length} événements pertinents (sur ${allEvents.length} total)`;
 
-  let currentWeekStart = startOfWeek(new Date());
+  // Créer les boutons de basculement
+  createViewToggleButtons();
+
   const hasThisWeek = myEvents.some(ev => {
     const s = new Date(ev.start);
     return s >= currentWeekStart && s < addDays(currentWeekStart, 7);
@@ -329,33 +366,53 @@ function handleResize() {
   }
 
   function rerender() {
-    const hoursRange = getHoursRangeForWeek(myEvents, currentWeekStart);
-    buildGridShell(currentWeekStart, hoursRange);
-    setWeekLabel(currentWeekStart);
-    renderEvents(myEvents, currentWeekStart, hoursRange);
-    
-    if (isMobile) {
-      renderMobileDayView(myEvents, currentWeekStart, currentDayIndex);
+    if (currentView === 'week') {
+      const hoursRange = getHoursRangeForWeek(myEvents, currentWeekStart);
+      buildGridShell(currentWeekStart, hoursRange);
+      setWeekLabel(currentWeekStart);
+      renderEvents(myEvents, currentWeekStart, hoursRange);
+      
+      // Masquer la vue jour
+      const dayView = document.getElementById('dayView');
+      if (dayView) dayView.classList.remove('active');
+    } else {
+      // Masquer le calendrier
+      const calendar = document.querySelector('.calendar');
+      if (calendar) calendar.style.display = 'none';
+      
+      // Afficher la vue jour
+      renderDayView(myEvents, currentDay);
+      const dayView = document.getElementById('dayView');
+      if (dayView) dayView.classList.add('active');
     }
   }
 
   prevBtn.addEventListener('click', () => { 
-    currentWeekStart = addDays(currentWeekStart, -7); 
+    if (currentView === 'week') {
+      currentWeekStart = addDays(currentWeekStart, -7);
+    } else {
+      currentDay = addDays(currentDay, -1);
+    }
     rerender(); 
   });
   
   todayBtn.addEventListener('click', () => { 
-    currentWeekStart = startOfWeek(new Date()); 
+    if (currentView === 'week') {
+      currentWeekStart = startOfWeek(new Date());
+    } else {
+      currentDay = new Date();
+    }
     rerender(); 
   });
   
   nextBtn.addEventListener('click', () => { 
-    currentWeekStart = addDays(currentWeekStart, 7); 
+    if (currentView === 'week') {
+      currentWeekStart = addDays(currentWeekStart, 7);
+    } else {
+      currentDay = addDays(currentDay, 1);
+    }
     rerender(); 
   });
-
-  // Gestion du redimensionnement
-  window.addEventListener('resize', handleResize);
 
   rerender();
 })();
