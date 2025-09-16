@@ -63,6 +63,10 @@ function isTDorTME(text) {
   return /\b(TD|TME|TP)\b/i.test(text);
 }
 
+function isCM(text) {
+  return /\b(CM|Cours)\b/i.test(text) || /-Cours\b/i.test(text);
+}
+
 function matchUEAndGroup(summary, description, location) {
   const content = `${summary || ''} ${description || ''} ${location || ''}`;
   
@@ -73,6 +77,7 @@ function matchUEAndGroup(summary, description, location) {
 
     const grp = detectGroup(content);
     const isTD = isTDorTME(content);
+    const isCM = isCM(content);
     
     // For TD/TME: require group match
     if (isTD) {
