@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emploi du temps M1</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>Emploi du temps — M1</h1>
+    <div class="controls">
+      <button id="prevWeek">◀ Semaine précédente</button>
+      <button id="today">Aujourd'hui</button>
+      <button id="nextWeek">Semaine suivante ▶</button>
+      <span id="weekLabel"></span>
+    </div>
+  </header>
+  <main>
+    <section id="status">Chargement…</section>
+    <section id="calendar" class="calendar">
+      <div class="calendar-head" id="calendarHead"></div>
+      <div class="calendar-body" id="calendarBody"></div>
+    </section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
