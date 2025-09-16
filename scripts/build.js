@@ -15,9 +15,9 @@ const CAL_SOURCES = [
 
 const UE_FILTERS = [
   { code: 'DALAS', group: '3', aliases: ['DALAS', 'DALAS_EN', 'UM4IN814-DALAS'] },
-  { code: 'MLBDA', group: '3', aliases: ['MLBDA'] },
+  { code: 'MLBDA', group: '3', aliases: ['MLBDA', 'UM4IN801-MLBDA'] },
   { code: 'LRC', group: '2', aliases: ['LRC'] },
-  { code: 'MAPSI', group: '1', aliases: ['MAPSI'] },
+  { code: 'MAPSI', group: '1', aliases: ['MAPSI', 'UM4IN601-MAPSI'] },
   { code: 'BIMA', group: '3', aliases: ['BIMA', 'UM4IN600-BIMA'] }
 ];
 
