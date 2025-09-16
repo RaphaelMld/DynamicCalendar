@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2025-09-16T19:57:31.520Z",
-  "count": 432,
+  "generatedAt": "2025-09-16T20:03:34.845Z",
+  "count": 451,
   "events": [
     {
       "id": "E488A85A-2B98-4B4F-8F5D-24F5E4F3BA7B\r",
@@ -3543,6 +3543,86 @@
       "type": "AUTRE"
     },
     {
+      "id": "639ED287-6CB6-4C6C-B6A3-A375DB5AA57E\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2024-01-15T12:45:00.000Z",
+      "end": "2024-01-15T14:30:00.000Z",
+      "location": "",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "639ED287-6CB6-4C6C-B6A3-A375DB5AA57E\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2024-01-15T12:45:00.000Z",
+      "end": "2024-01-15T14:45:00.000Z",
+      "location": "Salle 14.24.105\\n\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "773E9D0E-E583-4E54-B290-78CFA48282A6\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2024-01-22T12:45:00.000Z",
+      "end": "2024-01-22T14:45:00.000Z",
+      "location": "Salle 14.24.105\\n\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "773E9D0E-E583-4E54-B290-78CFA48282A6\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2024-02-26T12:45:00.000Z",
+      "end": "2024-02-26T14:45:00.000Z",
+      "location": "Séance annulée \r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "193FDBA0-B778-40E5-BFEF-C2007953D3A4\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2024-03-11T12:45:00.000Z",
+      "end": "2024-03-11T14:30:00.000Z",
+      "location": "n°621832\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "193FDBA0-B778-40E5-BFEF-C2007953D3A4\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2024-03-11T12:45:00.000Z",
+      "end": "2024-03-11T14:30:00.000Z",
+      "location": "Salle 14.24.205\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "AD91BB99-07E3-4498-967F-A9C48D46DE74\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2024-03-18T12:45:00.000Z",
+      "end": "2024-03-18T14:30:00.000Z",
+      "location": "Salle 14.24.106\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "AD91BB99-07E3-4498-967F-A9C48D46DE74\r",
+      "title": "MU4IN814-DALAS-Cours (rattrapage du 01/04/2023)\r",
+      "start": "2024-04-22T11:45:00.000Z",
+      "end": "2024-04-22T13:30:00.000Z",
+      "location": "Salle 14.24.106\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
       "id": "B1AF66C0-FFC8-4971-A49C-89AFF1ECB521\r",
       "title": "MU4IN600-BIMA-Cours en Anglais\r",
       "start": "2024-09-09T11:45:00.000Z",
@@ -3943,12 +4023,62 @@
       "type": "AUTRE"
     },
     {
-      "id": "3CCFE419-BE98-4E1F-8D94-F4F3778887D5\r",
-      "title": "UM4IN600-BIMA-Cours English\r",
-      "start": "2025-09-15T14:00:00.000Z",
-      "end": "2025-09-15T16:00:00.000Z",
-      "location": "14.24.107\r",
-      "ue": "BIMA",
+      "id": "0F0AA4F7-0E98-49BE-8051-60442DC4EA01\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2025-01-13T12:45:00.000Z",
+      "end": "2025-01-13T14:45:00.000Z",
+      "location": "Salle 23.24.102\\n\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "0C1507D9-EBB5-4C9E-8DBB-B36A8D2A7429\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2025-01-13T15:01:00.000Z",
+      "end": "2025-01-13T17:01:00.000Z",
+      "location": "Salle 24.34.103\\n\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "0C1507D9-EBB5-4C9E-8DBB-B36A8D2A7429\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2025-01-13T15:01:00.000Z",
+      "end": "2025-01-13T17:01:00.000Z",
+      "location": "Séance annulée \r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "5B960378-1F5F-42CE-9243-EEB53A035BD6\r",
+      "title": "MU4IN814-DALAS-Cours\r",
+      "start": "2025-03-10T15:00:00.000Z",
+      "end": "2025-03-10T17:00:00.000Z",
+      "location": "Salle 24.34.103\\n\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "A0E87994-9052-4B06-8F44-8B76635F2907\r",
+      "title": "UM4IN814-DALAS-Cours\r",
+      "start": "2025-09-15T11:45:00.000Z",
+      "end": "2025-09-15T13:45:00.000Z",
+      "location": "n°667377\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "A0E87994-9052-4B06-8F44-8B76635F2907\r",
+      "title": "UM4IN814-DALAS-Cours\r",
+      "start": "2025-09-15T11:45:00.000Z",
+      "end": "2025-09-15T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "DALAS",
       "group": null,
       "type": "CM"
     },
@@ -4023,6 +4153,16 @@
       "type": "AUTRE"
     },
     {
+      "id": "6478BA27-DE2A-42FA-8F08-385FB89FFE32\r",
+      "title": "UM4IN814-DALAS-Cours\r",
+      "start": "2025-09-22T11:45:00.000Z",
+      "end": "2025-09-22T13:45:00.000Z",
+      "location": "AMPHI 44\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
       "id": "156414DE-6C78-4E60-8331-A83D1FF711D7\r",
       "title": "UM4IN800-LRC-TME2\r",
       "start": "2025-09-23T06:30:00.000Z",
@@ -4051,6 +4191,26 @@
       "ue": "BIMA",
       "group": null,
       "type": "CM"
+    },
+    {
+      "id": "C9B7F022-A4FD-49D5-BC81-3CBEAD8AC595\r",
+      "title": "UM4IN814-DALAS-TD3\r",
+      "start": "2025-09-24T06:30:00.000Z",
+      "end": "2025-09-24T08:30:00.000Z",
+      "location": "Salle 23.24.102\r",
+      "ue": "DALAS",
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "B143D460-5237-4264-ACFC-14D7281D6EF8\r",
+      "title": "UM4IN814-DALAS-TME3\r",
+      "start": "2025-09-24T08:45:00.000Z",
+      "end": "2025-09-24T10:45:00.000Z",
+      "location": "Salle 24.25.306\r",
+      "ue": "DALAS",
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
@@ -4101,6 +4261,16 @@
       "ue": "BIMA",
       "group": "3",
       "type": "AUTRE"
+    },
+    {
+      "id": "C590FE73-DA0C-49B5-89DC-3D70B78FD724\r",
+      "title": "UM4IN814-DALAS-Cours\r",
+      "start": "2025-09-29T11:45:00.000Z",
+      "end": "2025-09-29T13:45:00.000Z",
+      "location": "n°667377\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706\r",
@@ -4283,6 +4453,16 @@
       "type": "AUTRE"
     },
     {
+      "id": "23C828D3-280C-4966-BCB1-D8F95C9AF7E4\r",
+      "title": "UM4IN814-DALAS-Cours\r",
+      "start": "2025-11-24T12:45:00.000Z",
+      "end": "2025-11-24T14:45:00.000Z",
+      "location": "n°667378\r",
+      "ue": "DALAS",
+      "group": null,
+      "type": "CM"
+    },
+    {
       "id": "CDF2384C-F079-48A8-A11B-D1EC90A80B4C\r",
       "title": "UM4IN800-LRC-TD2\r",
       "start": "2025-11-25T09:45:00.000Z",
@@ -4290,6 +4470,16 @@
       "location": "n°667399\r",
       "ue": "LRC",
       "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "F8D76E1F-57AB-45F1-A2F1-9AC86F80F0B4\r",
+      "title": "UM4IN814-DALAS-TD3\r",
+      "start": "2025-11-26T07:30:00.000Z",
+      "end": "2025-11-26T09:30:00.000Z",
+      "location": "667402\r",
+      "ue": "DALAS",
+      "group": "3",
       "type": "AUTRE"
     },
     {

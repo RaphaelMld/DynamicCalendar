@@ -14,11 +14,11 @@ const CAL_SOURCES = [
 ];
 
 const UE_FILTERS = [
-  { code: 'DALAS_EN', group: '3' },
-  { code: 'MLBDA', group: '3' },
-  { code: 'LRC', group: '2' },
-  { code: 'MAPSI', group: '1' },
-  { code: 'BIMA', group: '3' }
+  { code: 'DALAS', group: '3', aliases: ['DALAS', 'DALAS_EN', 'UM4IN814-DALAS'] },
+  { code: 'MLBDA', group: '3', aliases: ['MLBDA'] },
+  { code: 'LRC', group: '2', aliases: ['LRC'] },
+  { code: 'MAPSI', group: '1', aliases: ['MAPSI'] },
+  { code: 'BIMA', group: '3', aliases: ['BIMA', 'UM4IN600-BIMA'] }
 ];
 
 function authFromUrl(urlString) {
@@ -40,7 +40,7 @@ function authFromUrl(urlString) {
 function includesAny(text, substrings) {
   if (!text) return false;
   const lower = text.toLowerCase();
-  return substrings.some(s => lower.includes(s.toLowerCase()));
+  return substrings.some(s => lower.includes(String(s).toLowerCase()));
 }
 
 function extractGroupStrict(text) {
@@ -67,12 +67,18 @@ function detectType(text) {
 
 function matchEventToFilters(summary, description, location) {
   const content = `${summary || ''} ${description || ''} ${location || ''}`;
-  for (const { code, group } of UE_FILTERS) {
-    if (includesAny(content, [code])) {
+  for (const { code, group, aliases } of UE_FILTERS) {
+    if (includesAny(content, aliases || [code])) {
       const type = detectType(content);
+      // Exclude BIMA English CM
+      if (code === 'BIMA' && type === 'CM' && /english/i.test(content)) {
+        continue;
+      }
+      // Always include CM for the UE
       if (type === 'CM') {
         return { code, group: null, type };
       }
+      // For TD/TME, require strict matching group
       const grp = extractGroupStrict(content);
       if (grp && grp === group) {
         return { code, group, type };
