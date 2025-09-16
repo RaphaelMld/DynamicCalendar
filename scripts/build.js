@@ -52,6 +52,7 @@ function extractGroupStrict(text) {
     /\(\s*G\s*([0-9])\s*\)/i,
     /\bG\s*([0-9])\b/i,
     /\bTD\s*([0-9])\b/i,
+    /\bTME\s*([0-9])\b/i,
   ];
   for (const re of patterns) {
     const m = text.match(re);
