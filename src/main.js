@@ -20,6 +20,7 @@ let currentWeekStart = startOfWeek(new Date());
 let currentDayIndex = 0;
 let currentView = 'week'; // 'week' ou 'day'
 let currentDay = new Date();
+let myEvents = [];
 
 async function loadEvents() {
   const res = await fetch('./data/events.json');
@@ -92,46 +93,6 @@ function formatDayFull(d) {
 
 function hoursBetween(a, b) {
   return (new Date(b) - new Date(a)) / 36e5;
-}
-
-function createViewToggleButtons() {
-  const controls = document.querySelector('.controls');
-  
-  // Bouton Vue Semaine
-  const weekViewBtn = document.createElement('button');
-  weekViewBtn.id = 'weekViewBtn';
-  weekViewBtn.textContent = 'Semaine';
-  weekViewBtn.className = 'active';
-  weekViewBtn.addEventListener('click', () => switchToView('week'));
-  
-  // Bouton Vue Jour
-  const dayViewBtn = document.createElement('button');
-  dayViewBtn.id = 'dayViewBtn';
-  dayViewBtn.textContent = 'Jour';
-  dayViewBtn.addEventListener('click', () => switchToView('day'));
-  
-  // Insérer les boutons après le label de semaine
-  controls.insertBefore(weekViewBtn, weekLabelEl);
-  controls.insertBefore(dayViewBtn, weekLabelEl);
-}
-
-function switchToView(view) {
-  currentView = view;
-  
-  // Mettre à jour les boutons
-  document.getElementById('weekViewBtn').classList.toggle('active', view === 'week');
-  document.getElementById('dayViewBtn').classList.toggle('active', view === 'day');
-  
-  // Mettre à jour les boutons de navigation
-  if (view === 'week') {
-    prevBtn.textContent = '◀ Semaine';
-    nextBtn.textContent = 'Semaine ▶';
-  } else {
-    prevBtn.textContent = '◀ Jour';
-    nextBtn.textContent = 'Jour ▶';
-  }
-  
-  rerender();
 }
 
 function buildGridShell(weekStart, hoursRange) {
@@ -297,7 +258,7 @@ function switchToDay(dayIndex, weekStart) {
   });
   
   if (currentView === 'day') {
-    renderDayView(window.myEvents || [], currentDay);
+    renderDayView(myEvents, currentDay);
   }
 }
 
@@ -344,13 +305,75 @@ function findNearestWeekWithEvents(events, aroundDate) {
   return base;
 }
 
+// Fonction rerender définie avant les autres fonctions qui l'utilisent
+function rerender() {
+  if (currentView === 'week') {
+    const hoursRange = getHoursRangeForWeek(myEvents, currentWeekStart);
+    buildGridShell(currentWeekStart, hoursRange);
+    setWeekLabel(currentWeekStart);
+    renderEvents(myEvents, currentWeekStart, hoursRange);
+    
+    // Masquer la vue jour
+    const dayView = document.getElementById('dayView');
+    if (dayView) dayView.classList.remove('active');
+  } else {
+    // Masquer le calendrier
+    const calendar = document.querySelector('.calendar');
+    if (calendar) calendar.style.display = 'none';
+    
+    // Afficher la vue jour
+    renderDayView(myEvents, currentDay);
+    const dayView = document.getElementById('dayView');
+    if (dayView) dayView.classList.add('active');
+  }
+}
+
+function createViewToggleButtons() {
+  const controls = document.querySelector('.controls');
+  
+  // Bouton Vue Semaine
+  const weekViewBtn = document.createElement('button');
+  weekViewBtn.id = 'weekViewBtn';
+  weekViewBtn.textContent = 'Semaine';
+  weekViewBtn.className = 'active';
+  weekViewBtn.addEventListener('click', () => switchToView('week'));
+  
+  // Bouton Vue Jour
+  const dayViewBtn = document.createElement('button');
+  dayViewBtn.id = 'dayViewBtn';
+  dayViewBtn.textContent = 'Jour';
+  dayViewBtn.addEventListener('click', () => switchToView('day'));
+  
+  // Insérer les boutons après le label de semaine
+  controls.insertBefore(weekViewBtn, weekLabelEl);
+  controls.insertBefore(dayViewBtn, weekLabelEl);
+}
+
+function switchToView(view) {
+  currentView = view;
+  
+  // Mettre à jour les boutons
+  document.getElementById('weekViewBtn').classList.toggle('active', view === 'week');
+  document.getElementById('dayViewBtn').classList.toggle('active', view === 'day');
+  
+  // Mettre à jour les boutons de navigation
+  if (view === 'week') {
+    prevBtn.textContent = '◀ Semaine';
+    nextBtn.textContent = 'Semaine ▶';
+  } else {
+    prevBtn.textContent = '◀ Jour';
+    nextBtn.textContent = 'Jour ▶';
+  }
+  
+  rerender();
+}
+
 (async function init() {
   statusEl.textContent = 'Chargement des événements…';
   const allEvents = await loadEvents();
   
   // Filtrer les événements pour ne garder que ceux qui nous concernent
-  const myEvents = filterMyEvents(allEvents);
-  window.myEvents = myEvents;
+  myEvents = filterMyEvents(allEvents);
   
   statusEl.textContent = `${myEvents.length} événements pertinents (sur ${allEvents.length} total)`;
 
@@ -363,28 +386,6 @@ function findNearestWeekWithEvents(events, aroundDate) {
   });
   if (!hasThisWeek) {
     currentWeekStart = findNearestWeekWithEvents(myEvents, new Date());
-  }
-
-  function rerender() {
-    if (currentView === 'week') {
-      const hoursRange = getHoursRangeForWeek(myEvents, currentWeekStart);
-      buildGridShell(currentWeekStart, hoursRange);
-      setWeekLabel(currentWeekStart);
-      renderEvents(myEvents, currentWeekStart, hoursRange);
-      
-      // Masquer la vue jour
-      const dayView = document.getElementById('dayView');
-      if (dayView) dayView.classList.remove('active');
-    } else {
-      // Masquer le calendrier
-      const calendar = document.querySelector('.calendar');
-      if (calendar) calendar.style.display = 'none';
-      
-      // Afficher la vue jour
-      renderDayView(myEvents, currentDay);
-      const dayView = document.getElementById('dayView');
-      if (dayView) dayView.classList.add('active');
-    }
   }
 
   prevBtn.addEventListener('click', () => { 
