@@ -13,13 +13,13 @@ const CAL_SOURCES = [
   'https://student.master:guest@cal.ufr-info-p6.jussieu.fr/caldav.php/IMA/M1_IMA'
 ];
 
-// UE config with aliases
+// UE config with exact patterns
 const UE_FILTERS = [
-  { code: 'DALAS', group: '3', aliases: ['DALAS', 'DALAS_EN', 'UM4IN814-DALAS'] },
-  { code: 'MLBDA', group: '3', aliases: ['MLBDA', 'UM4IN801-MLBDA'] },
-  { code: 'LRC', group: '2', aliases: ['LRC'] },
-  { code: 'MAPSI', group: '1', aliases: ['MAPSI', 'UM4IN601-MAPSI'] },
-  { code: 'BIMA', group: '3', aliases: ['BIMA', 'UM4IN600-BIMA'] }
+  { code: 'DALAS', group: '3', patterns: ['DALAS', 'DALAS-Cours', 'DALAS_EN', 'UM4IN814-DALAS'] },
+  { code: 'MLBDA', group: '3', patterns: ['MLBDA', 'MLBDA-Cours', 'UM4IN801-MLBDA'] },
+  { code: 'LRC', group: '2', patterns: ['LRC', 'LRC-Cours'] },
+  { code: 'MAPSI', group: '1', patterns: ['MAPSI', 'MAPSI-Cours', 'UM4IN601-MAPSI'] },
+  { code: 'BIMA', group: '3', patterns: ['BIMA', 'BIMA-Cours', 'UM4IN600-BIMA'] }
 ];
 
 function authFromUrl(urlString) {
@@ -36,13 +36,13 @@ function authFromUrl(urlString) {
   }
 }
 
-function includesAny(text, needles) {
+function includesAny(text, patterns) {
   if (!text) return false;
   const hay = text.toLowerCase();
-  return (needles || []).some(n => hay.includes(String(n).toLowerCase()));
+  return patterns.some(p => hay.includes(p.toLowerCase()));
 }
 
-// Only count explicit markers as groups (avoid picking numbers from course codes)
+// Detect group from TD/TME markers
 function detectGroup(text) {
   if (!text) return null;
   const patterns = [
@@ -63,23 +63,19 @@ function isTDorTME(text) {
   return /\b(TD|TME|TP)\b/i.test(text);
 }
 
-function isCM(text) {
-  return /\b(CM|Cours)\b/i.test(text) || /-Cours\b/i.test(text);
-}
-
 function matchUEAndGroup(summary, description, location) {
   const content = `${summary || ''} ${description || ''} ${location || ''}`;
   
-  for (const { code, group, aliases } of UE_FILTERS) {
-    if (!includesAny(content, aliases || [code])) continue;
+  for (const { code, group, patterns } of UE_FILTERS) {
+    if (!includesAny(content, patterns)) continue;
+    
     // Exclude BIMA English
     if (code === 'BIMA' && /english/i.test(content)) continue;
 
     const grp = detectGroup(content);
     const isTD = isTDorTME(content);
-    const isCM = isCM(content);
     
-    // For TD/TME: require group match
+    // For TD/TME: require exact group match
     if (isTD) {
       if (grp && grp === group) {
         return { code, group };
@@ -87,7 +83,7 @@ function matchUEAndGroup(summary, description, location) {
       continue; // Skip if TD/TME but wrong group
     }
     
-    // For CM and other types: include regardless of group
+    // For CM/Cours and other types: include regardless of group
     return { code, group: grp || null };
   }
   return null;

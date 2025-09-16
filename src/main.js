@@ -6,11 +6,59 @@ const todayBtn = document.getElementById('today');
 const nextBtn = document.getElementById('nextWeek');
 const weekLabelEl = document.getElementById('weekLabel');
 
+// Configuration des cours et groupes de l'utilisateur
+const MY_COURSES = {
+  'DALAS': 3,
+  'MLBDA': 3,
+  'LRC': 2,
+  'MAPSI': 1,
+  'BIMA': 3
+};
+
 async function loadEvents() {
   const res = await fetch('./data/events.json');
   if (!res.ok) throw new Error(`${res.status}`);
   const data = await res.json();
   return data.events || [];
+}
+
+// Fonction pour filtrer les événements selon les cours et groupes
+function filterMyEvents(allEvents) {
+  return allEvents.filter(event => {
+    const title = event.title || '';
+    
+    // Chercher le nom du cours dans le titre
+    let courseName = null;
+    let groupNumber = null;
+    
+    for (const course of Object.keys(MY_COURSES)) {
+      if (title.includes(course)) {
+        courseName = course;
+        break;
+      }
+    }
+    
+    // Si aucun cours reconnu, ignorer cet événement
+    if (!courseName) return false;
+    
+    // Vérifier si c'est un cours (format: "COURSE-Cours")
+    if (title.includes(`${courseName}-Cours`)) {
+      return true; // Tous les cours sont acceptés
+    }
+    
+    // Vérifier si c'est un TD/TME (format: "UM4IN814-COURSE-TD1" ou "UM4IN814-COURSE-TME1")
+    if (title.includes('-TD') || title.includes('-TME')) {
+      // Extraire le numéro de groupe à la fin
+      const match = title.match(/(?:TD|TME)(\d+)$/);
+      if (match) {
+        groupNumber = parseInt(match[1]);
+        // Vérifier si c'est le bon groupe
+        return groupNumber === MY_COURSES[courseName];
+      }
+    }
+    
+    return false;
+  });
 }
 
 function startOfWeek(date) {
@@ -97,8 +145,27 @@ function renderEvents(events, weekStart, hoursRange) {
     evEl.style.top = `${(hourTop - startHour) * 60}px`;
     evEl.style.height = `${durationH * 60}px`;
 
+    // Extraire les informations du cours depuis le titre
+    let courseInfo = ev.title || '(Sans titre)';
+    let courseName = '';
+    let eventType = '';
+    
+    for (const course of Object.keys(MY_COURSES)) {
+      if (courseInfo.includes(course)) {
+        courseName = course;
+        if (courseInfo.includes('-Cours')) {
+          eventType = 'Cours';
+        } else if (courseInfo.includes('-TD')) {
+          eventType = `TD (G${MY_COURSES[course]})`;
+        } else if (courseInfo.includes('-TME')) {
+          eventType = `TME (G${MY_COURSES[course]})`;
+        }
+        break;
+      }
+    }
+
     evEl.innerHTML = `
-      <div class="title">${ev.title || '(Sans titre)'} — ${ev.ue} ${ev.group ? `(G${ev.group})` : ''}</div>
+      <div class="title">${courseName} ${eventType}</div>
       <div class="meta">${start.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })} → ${end.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}${ev.location ? ' • ' + ev.location : ''}</div>
     `;
 
@@ -152,22 +219,26 @@ function findNearestWeekWithEvents(events, aroundDate) {
 (async function init() {
   statusEl.textContent = 'Chargement des événements…';
   const allEvents = await loadEvents();
-  statusEl.textContent = `${allEvents.length} événements chargés`;
+  
+  // Filtrer les événements pour ne garder que ceux qui nous concernent
+  const myEvents = filterMyEvents(allEvents);
+  
+  statusEl.textContent = `${myEvents.length} événements pertinents (sur ${allEvents.length} total)`;
 
   let currentWeekStart = startOfWeek(new Date());
-  const hasThisWeek = allEvents.some(ev => {
+  const hasThisWeek = myEvents.some(ev => {
     const s = new Date(ev.start);
     return s >= currentWeekStart && s < addDays(currentWeekStart, 7);
   });
   if (!hasThisWeek) {
-    currentWeekStart = findNearestWeekWithEvents(allEvents, new Date());
+    currentWeekStart = findNearestWeekWithEvents(myEvents, new Date());
   }
 
   function rerender() {
-    const hoursRange = getHoursRangeForWeek(allEvents, currentWeekStart);
+    const hoursRange = getHoursRangeForWeek(myEvents, currentWeekStart);
     buildGridShell(currentWeekStart, hoursRange);
     setWeekLabel(currentWeekStart);
-    renderEvents(allEvents, currentWeekStart, hoursRange);
+    renderEvents(myEvents, currentWeekStart, hoursRange);
   }
 
   prevBtn.addEventListener('click', () => { currentWeekStart = addDays(currentWeekStart, -7); rerender(); });
