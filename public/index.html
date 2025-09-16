@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emploi du temps M1</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>Emploi du temps — M1</h1>
+    <div class="filters">
+      <label>UE:
+        <select id="ueFilter">
+          <option value="">Toutes</option>
+          <option>DALAS_EN</option>
+          <option>MLBDA</option>
+          <option>LRC</option>
+          <option>MAPSI</option>
+          <option>BIMA</option>
+        </select>
+      </label>
+      <label>Groupe:
+        <select id="groupFilter">
+          <option value="">Tous</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </label>
+    </div>
+  </header>
+  <main>
+    <section id="status">Chargement…</section>
+    <section id="events"></section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

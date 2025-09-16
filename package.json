@@ -1,21 +1,29 @@
 {
   "name": "dynamiccalendar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Static timetable site built from CalDAV feeds and deployed via GitHub Pages",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist && mkdir -p public",
+    "build": "node scripts/build.js",
+    "start": "npx http-server public -p 5173 -c-1",
+    "prepare": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RaphaelMld/DynamicCalendar.git"
-  },
-  "keywords": [],
+  "keywords": [
+    "calendar",
+    "caldav",
+    "ics",
+    "github-pages"
+  ],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/RaphaelMld/DynamicCalendar/issues"
+  "license": "MIT",
+  "dependencies": {
+    "ical.js": "^2.1.0",
+    "node-fetch": "^3.3.2",
+    "tsdav": "^2.0.5"
   },
-  "homepage": "https://github.com/RaphaelMld/DynamicCalendar#readme"
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
