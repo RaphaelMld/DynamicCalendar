@@ -2,18 +2,18 @@
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { createRequire } from 'module';
 import ICAL from 'ical.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Configuration: sources and filters
+// Sources
 const CAL_SOURCES = [
   'https://student.master:guest@cal.ufr-info-p6.jussieu.fr/caldav.php/DAC/M1_DAC',
   'https://student.master:guest@cal.ufr-info-p6.jussieu.fr/caldav.php/IMA/M1_IMA'
 ];
 
+// UE config with aliases
 const UE_FILTERS = [
   { code: 'DALAS', group: '3', aliases: ['DALAS', 'DALAS_EN', 'UM4IN814-DALAS'] },
   { code: 'MLBDA', group: '3', aliases: ['MLBDA', 'UM4IN801-MLBDA'] },
@@ -29,24 +29,22 @@ function authFromUrl(urlString) {
     u.username = '';
     u.password = '';
     const clean = u.toString().replace(/@/, '');
-    const header = username
-      ? { Authorization: 'Basic ' + Buffer.from(`${username}:${password}`).toString('base64') }
-      : {};
+    const header = username ? { Authorization: 'Basic ' + Buffer.from(`${username}:${password}`).toString('base64') } : {};
     return { cleanUrl: clean, headers: header };
   } catch {
     return { cleanUrl: urlString, headers: {} };
   }
 }
 
-function includesAny(text, substrings) {
+function includesAny(text, needles) {
   if (!text) return false;
-  const lower = text.toLowerCase();
-  return substrings.some(s => lower.includes(String(s).toLowerCase()));
+  const hay = text.toLowerCase();
+  return (needles || []).some(n => hay.includes(String(n).toLowerCase()));
 }
 
-function extractGroupStrict(text) {
+// Only count explicit markers as groups (avoid picking numbers from course codes)
+function detectGroup(text) {
   if (!text) return null;
-  // Accept explicit group markers only; do NOT treat TME numbers as group
   const patterns = [
     /\b(?:groupe|grp|gr|g)\s*([0-9])\b/i,
     /\(\s*G\s*([0-9])\s*\)/i,
@@ -61,47 +59,29 @@ function extractGroupStrict(text) {
   return null;
 }
 
-function detectType(text) {
-  if (!text) return 'AUTRE';
-  if (/\bCM\b/i.test(text) || /-Cours\b/i.test(text) || /\bCours\b/i.test(text) || /\bLecture\b/i.test(text)) return 'CM';
-  if (/\bTD\b/i.test(text)) return 'TD';
-  if (/\bTME\b/i.test(text) || /\bTP\b/i.test(text)) return 'TME';
-  return 'AUTRE';
-}
-
-function matchEventToFilters(summary, description, location) {
+function matchUEAndGroup(summary, description, location) {
   const content = `${summary || ''} ${description || ''} ${location || ''}`;
   for (const { code, group, aliases } of UE_FILTERS) {
-    if (includesAny(content, aliases || [code])) {
-      const type = detectType(content);
-      // Exclude BIMA English CM
-      if (code === 'BIMA' && type === 'CM' && /english/i.test(content)) {
-        continue;
-      }
-      // Always include CM for the UE
-      if (type === 'CM') {
-        return { code, group: null, type };
-      }
-      // For TD/TME, require strict matching group
-      const grp = extractGroupStrict(content);
-      if (grp && grp === group) {
-        return { code, group, type };
-      }
+    if (!includesAny(content, aliases || [code])) continue;
+    // Exclude BIMA English
+    if (code === 'BIMA' && /english/i.test(content)) continue;
+
+    const grp = detectGroup(content);
+    // If a group is explicitly present, require it to match
+    if (grp) {
+      if (grp === group) return { code, group };
+      continue;
     }
+    // No group markers => include (typically CM)
+    return { code, group: null };
   }
   return null;
 }
 
-async function fetchIcsFromCalDavCollection(collectionUrl) {
+async function fetchIcs(collectionUrl) {
   const { cleanUrl, headers } = authFromUrl(collectionUrl);
-  const normalized = cleanUrl.endsWith('/') ? cleanUrl.slice(0, -1) : cleanUrl;
-  const candidates = [
-    `${normalized}?export`,
-    `${normalized}/?export`,
-    `${normalized}.ics`,
-    normalized
-  ];
-
+  const base = cleanUrl.endsWith('/') ? cleanUrl.slice(0, -1) : cleanUrl;
+  const candidates = [`${base}?export`, `${base}/?export`, `${base}.ics`, base];
   for (const url of candidates) {
     try {
       const res = await fetch(url, { headers });
@@ -111,46 +91,71 @@ async function fetchIcsFromCalDavCollection(collectionUrl) {
       }
     } catch {}
   }
-  throw new Error(`Failed to retrieve ICS from ${collectionUrl}`);
+  throw new Error('ICS fetch failed for ' + collectionUrl);
 }
 
-function safeStr(v) {
-  return (v ?? '').toString().replace(/\\,/g, ',');
+function toJsDate(icalTime) {
+  try { return icalTime && icalTime.toJSDate ? icalTime.toJSDate() : null; } catch { return null; }
 }
 
-function parseIcsAndFilter(icsText) {
+function expandEvents(icsText, windowStart, windowEnd) {
   const events = [];
   let jcal;
-  try {
-    jcal = ICAL.parse(icsText);
-  } catch {
-    return events;
-  }
+  try { jcal = ICAL.parse(icsText); } catch { return events; }
   const comp = new ICAL.Component(jcal);
   const vevents = comp.getAllSubcomponents('vevent');
+
   for (const v of vevents) {
     const ev = new ICAL.Event(v);
-    const summary = safeStr(ev.summary);
-    const description = safeStr(v.getFirstPropertyValue('description'));
-    const location = safeStr(v.getFirstPropertyValue('location'));
-    const uid = safeStr(v.getFirstPropertyValue('uid')) || `${Math.random().toString(36).slice(2)}`;
+    // Skip overridden instances; iterate from master only
+    if (v.hasProperty('recurrence-id')) continue;
 
-    const start = ev.startDate && ev.startDate.toJSDate ? ev.startDate.toJSDate().toISOString() : null;
-    const end = ev.endDate && ev.endDate.toJSDate ? ev.endDate.toJSDate().toISOString() : null;
+    const summary = String(ev.summary || '');
+    const description = String(v.getFirstPropertyValue('description') || '');
+    const location = String(v.getFirstPropertyValue('location') || '');
 
-    const filter = matchEventToFilters(summary, description, location);
-    if (!filter) continue;
+    const duration = ev.endDate && ev.startDate ? ev.endDate.subtractDate(ev.startDate) : null;
 
-    events.push({
-      id: uid,
-      title: summary,
-      start,
-      end,
-      location,
-      ue: filter.code,
-      group: filter.group,
-      type: filter.type
-    });
+    if (ev.isRecurring()) {
+      const it = ev.iterator(windowStart);
+      for (let next = it.next(); next; next = it.next()) {
+        const occStart = toJsDate(next);
+        if (!occStart) continue;
+        if (occStart > windowEnd.toJSDate()) break;
+        if (occStart < windowStart.toJSDate()) continue;
+
+        const occEnd = duration ? next.clone().addDuration(duration) : null;
+        const endJs = occEnd ? toJsDate(occEnd) : null;
+
+        const match = matchUEAndGroup(summary, description, location);
+        if (!match) continue;
+        events.push({
+          id: `${v.getFirstPropertyValue('uid') || Math.random().toString(36).slice(2)}-${+occStart}`,
+          title: summary,
+          start: occStart.toISOString(),
+          end: endJs ? endJs.toISOString() : null,
+          location,
+          ue: match.code,
+          group: match.group
+        });
+      }
+    } else {
+      const startJs = toJsDate(ev.startDate);
+      const endJs = toJsDate(ev.endDate);
+      if (!startJs) continue;
+      if (startJs < windowStart.toJSDate() || startJs > windowEnd.toJSDate()) continue;
+      const match = matchUEAndGroup(summary, description, location);
+      if (!match) continue;
+      events.push({
+        id: String(v.getFirstPropertyValue('uid') || Math.random().toString(36).slice(2)),
+        title: summary,
+        start: startJs.toISOString(),
+        end: endJs ? endJs.toISOString() : null,
+        location,
+        ue: match.code,
+        group: match.group
+      });
+    }
   }
   return events;
 }
@@ -159,30 +164,25 @@ async function build() {
   const outDir = path.resolve(__dirname, '../public/data');
   await mkdir(outDir, { recursive: true });
 
-  const allEvents = [];
+  // Expand for a wide academic window (past 3 months to next 9 months)
+  const now = ICAL.Time.fromJSDate(new Date());
+  const windowStart = now.clone(); windowStart.year -= 0; windowStart.month -= 3; // approx 3 months back
+  const windowEnd = now.clone(); windowEnd.year += 1; windowEnd.month -= 3; // approx +9 months
+
+  const all = [];
   for (const src of CAL_SOURCES) {
     try {
-      const ics = await fetchIcsFromCalDavCollection(src);
-      const events = parseIcsAndFilter(ics);
-      allEvents.push(...events);
+      const ics = await fetchIcs(src);
+      const evs = expandEvents(ics, windowStart, windowEnd);
+      all.push(...evs);
     } catch (e) {
-      console.error('Source fetch failed:', src, e.message);
+      console.error('Fetch failed', src, e.message);
     }
   }
 
-  allEvents.sort((a, b) => (a.start || '').localeCompare(b.start || ''));
-
-  const outfile = path.join(outDir, 'events.json');
-  await writeFile(outfile, JSON.stringify({
-    generatedAt: new Date().toISOString(),
-    count: allEvents.length,
-    events: allEvents
-  }, null, 2));
-
-  console.log(`Wrote ${allEvents.length} events to ${outfile}`);
+  all.sort((a, b) => (a.start || '').localeCompare(b.start || ''));
+  await writeFile(path.join(outDir, 'events.json'), JSON.stringify({ generatedAt: new Date().toISOString(), count: all.length, events: all }, null, 2));
+  console.log('Wrote ' + all.length + ' events');
 }
 
-build().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+build().catch(e => { console.error(e); process.exit(1); });
