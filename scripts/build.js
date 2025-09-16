@@ -21,6 +21,22 @@ const UE_FILTERS = [
   { code: 'BIMA', group: '3' }
 ];
 
+function authFromUrl(urlString) {
+  try {
+    const u = new URL(urlString);
+    const { username, password } = u;
+    u.username = '';
+    u.password = '';
+    const clean = u.toString().replace(/@/, '');
+    const header = username
+      ? { Authorization: 'Basic ' + Buffer.from(`${username}:${password}`).toString('base64') }
+      : {};
+    return { cleanUrl: clean, headers: header };
+  } catch {
+    return { cleanUrl: urlString, headers: {} };
+  }
+}
+
 function includesAny(text, substrings) {
   if (!text) return false;
   const lower = text.toLowerCase();
@@ -47,34 +63,28 @@ function matchEventToFilters(summary, description) {
 }
 
 async function fetchIcsFromCalDavCollection(collectionUrl) {
-  // Many CalDAV servers allow .ics export for a collection by appending ?export or using .ics endpoints.
-  // Try common patterns; fall back to plain GET.
+  const { cleanUrl, headers } = authFromUrl(collectionUrl);
+  const normalized = cleanUrl.endsWith('/') ? cleanUrl.slice(0, -1) : cleanUrl;
   const candidates = [
-    collectionUrl,
-    collectionUrl.endsWith('/') ? collectionUrl.slice(0, -1) : collectionUrl,
-  ].flatMap(base => [
-    `${base}?export`,
-    `${base}/?export`,
-    `${base}.ics`,
-    base
-  ]);
+    `${normalized}?export`,
+    `${normalized}/?export`,
+    `${normalized}.ics`,
+    normalized
+  ];
 
   for (const url of candidates) {
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, { headers });
       if (res.ok) {
         const text = await res.text();
         if (text.includes('BEGIN:VCALENDAR')) return text;
       }
-    } catch (e) {
-      // try next
-    }
+    } catch {}
   }
   throw new Error(`Failed to retrieve ICS from ${collectionUrl}`);
 }
 
 function parseIcsAndFilter(icsText) {
-  // Basic, streaming-free ICS parse: split by VEVENT and extract key fields with regex
   const events = [];
   const veventBlocks = icsText.split(/BEGIN:VEVENT/).slice(1);
   for (const block of veventBlocks) {
@@ -97,9 +107,10 @@ function parseIcsAndFilter(icsText) {
     const dtendMatch = vevent.match(/\nDTEND(?:;[^:]+)?:([^\n]+)/i);
     const dtstamp = (raw) => {
       if (!raw) return null;
-      // Support forms: 20250112T130000Z or 20250112T130000
       const z = raw.endsWith('Z');
-      const iso = `${raw.slice(0,4)}-${raw.slice(4,6)}-${raw.slice(6,8)}T${raw.slice(9,11)}:${raw.slice(11,13)}:${raw.slice(13,15)}${z ? 'Z' : ''}`;
+      const datePart = `${raw.slice(0,4)}-${raw.slice(4,6)}-${raw.slice(6,8)}`;
+      const timePart = raw.includes('T') && raw.length >= 15 ? `${raw.slice(9,11)}:${raw.slice(11,13)}:${raw.slice(13,15)}` : '00:00:00';
+      const iso = `${datePart}T${timePart}${z ? 'Z' : ''}`;
       return new Date(iso).toISOString();
     };
     const start = dtstamp(dtstartMatch?.[1]);
@@ -136,7 +147,6 @@ async function build() {
     }
   }
 
-  // sort by start date
   allEvents.sort((a, b) => (a.start || '').localeCompare(b.start || ''));
 
   const outfile = path.join(outDir, 'events.json');

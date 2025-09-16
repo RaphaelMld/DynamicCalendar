@@ -5,7 +5,7 @@ const groupFilterEl = document.getElementById('groupFilter');
 
 async function loadEvents() {
   try {
-    const res = await fetch('/data/events.json');
+    const res = await fetch('./data/events.json');
     if (!res.ok) throw new Error(`${res.status}`);
     const data = await res.json();
     return data.events || [];
