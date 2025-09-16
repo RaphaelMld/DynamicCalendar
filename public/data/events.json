@@ -1,7 +1,47 @@
 {
-  "generatedAt": "2025-09-16T19:54:58.949Z",
-  "count": 228,
+  "generatedAt": "2025-09-16T19:57:31.520Z",
+  "count": 432,
   "events": [
+    {
+      "id": "E488A85A-2B98-4B4F-8F5D-24F5E4F3BA7B\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2017-09-19T11:45:00.000Z",
+      "end": "2017-09-19T13:45:00.000Z",
+      "location": "Salle 108 14/24\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "C2F4E8A4-E230-47D6-953B-A97A8D794231\r",
+      "title": "4601-Cours-MAPSI\r",
+      "start": "2017-09-19T14:00:00.000Z",
+      "end": "2017-09-19T16:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "D05EE868-02F9-4796-BBC1-B45750FAE55A\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2017-09-20T11:45:00.000Z",
+      "end": "2017-09-20T13:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6D60D77C-B8DB-4454-8337-81D58AF7B402\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2017-09-20T14:00:00.000Z",
+      "end": "2017-09-20T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
+    },
     {
       "id": "3835E1B9-6FE7-49BD-94EE-7A4BAEC1A55E\r",
       "title": "4I601-TD1-MAPSI\r",
@@ -9,7 +49,8 @@
       "end": "2017-09-25T08:30:00.000Z",
       "location": "Salle 105 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "F326C430-F1B1-4F08-B163-EACFC514D284\r",
@@ -18,7 +59,8 @@
       "end": "2017-09-25T10:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "6AE1CFD7-9298-4026-B800-C03FF168EC2B\r",
@@ -27,7 +69,8 @@
       "end": "2017-09-25T13:45:00.000Z",
       "location": "Salle 110 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "2F33C487-1A2E-4147-90FA-363FE35D4E48\r",
@@ -36,7 +79,18 @@
       "end": "2017-09-25T16:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "464F0671-80FA-4C53-85B0-88FB108EC528\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2017-09-27T11:45:00.000Z",
+      "end": "2017-09-27T13:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "5E2335B2-F02C-47C3-B507-1247B0CA1D40\r",
@@ -45,7 +99,8 @@
       "end": "2017-09-28T08:30:00.000Z",
       "location": "Salle 105 14/24\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "80BC7BD1-EEC9-42E0-AD35-AEAA00016A9F\r",
@@ -54,7 +109,28 @@
       "end": "2017-09-28T10:45:00.000Z",
       "location": "Salle 303 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6D60D77C-B8DB-4454-8337-81D58AF7B402\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2017-10-11T14:00:00.000Z",
+      "end": "2017-10-11T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "40613371-5FF4-4EDC-BF95-F28CE868C09F\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2017-10-18T14:00:00.000Z",
+      "end": "2017-10-18T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "852F973A-AA7C-466E-A480-86891C54584D\r",
@@ -63,7 +139,28 @@
       "end": "2017-11-20T14:45:00.000Z",
       "location": "Salle 103 24/25\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "305DD988-E031-4099-AF67-1D2CBBC7BE2E\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2017-11-22T12:45:00.000Z",
+      "end": "2017-11-22T14:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "1D833DC4-6AC0-4A04-948B-3E7F3C04A99C\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2017-11-22T15:00:00.000Z",
+      "end": "2017-11-22T17:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "B4B6936E-E3AD-47D0-8A93-D657390FCD3F\r",
@@ -72,7 +169,8 @@
       "end": "2017-11-23T09:30:00.000Z",
       "location": "Salle en attente\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "B4B6936E-E3AD-47D0-8A93-D657390FCD3F\r",
@@ -81,7 +179,8 @@
       "end": "2017-11-23T09:30:00.000Z",
       "location": "Salle 205 24/34\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "67A8FA9C-8761-42EB-B202-D8CC50104452\r",
@@ -90,7 +189,48 @@
       "end": "2017-11-30T09:30:00.000Z",
       "location": "Salle 205 24/34\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "02F1D6C6-F8B8-48D3-8385-FD0169A69A90\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-09-18T11:45:00.000Z",
+      "end": "2018-09-18T13:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "1DC59C12-832A-45B4-9A39-0A84EACC47B3\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-09-18T14:00:00.000Z",
+      "end": "2018-09-18T16:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "ECC356DD-544C-4126-A29A-D605BDB05DA0\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-09-19T11:45:00.000Z",
+      "end": "2018-09-19T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E335E3FD-4895-46C7-BA2C-7C30EB63D792\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-09-19T14:00:00.000Z",
+      "end": "2018-09-19T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "12A9EBF5-A5CC-485C-888F-7E8C3C4B1D06\r",
@@ -99,7 +239,8 @@
       "end": "2018-09-24T08:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "70873E99-DBFF-40EB-B9C6-09DAEB250030\r",
@@ -108,7 +249,8 @@
       "end": "2018-09-24T10:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "27F6A0EC-D7AB-40D2-9FE9-3205AE5997DC\r",
@@ -117,7 +259,8 @@
       "end": "2018-09-24T13:45:00.000Z",
       "location": "Salle 108 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "62F7D1A0-134A-4243-9D8E-EDE4BF1C7BCD\r",
@@ -126,7 +269,48 @@
       "end": "2018-09-24T16:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "8B3A0229-B6A1-480B-9C1A-B00F5BC429F0\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-09-25T11:45:00.000Z",
+      "end": "2018-09-25T13:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "D9AA9638-3A1D-4822-824E-301EB4ABEDBB\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-09-25T14:00:00.000Z",
+      "end": "2018-09-25T16:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "9A620F4D-8051-4B28-A0BC-6544E77DF162\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-09-26T11:45:00.000Z",
+      "end": "2018-09-26T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "A824A4EB-BE47-480A-A643-156292179B61\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-09-26T14:00:00.000Z",
+      "end": "2018-09-26T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "6D1F46EE-E5C4-4DD0-8277-1C3AC3EEA2AE\r",
@@ -135,7 +319,8 @@
       "end": "2018-09-27T08:30:00.000Z",
       "location": "Salle 110 14/24\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "A0E559F7-61FC-4DD6-825E-B10242A00DEC\r",
@@ -144,7 +329,8 @@
       "end": "2018-09-27T10:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "CB745A6E-BF9C-4995-805D-485462DF311C\r",
@@ -153,7 +339,8 @@
       "end": "2018-10-01T08:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "DDE2644B-A4A1-42E5-A051-54D0767F8F36\r",
@@ -162,7 +349,8 @@
       "end": "2018-10-01T10:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "104880AF-719E-4BF2-9B34-0627AABC4277\r",
@@ -171,7 +359,8 @@
       "end": "2018-10-01T13:45:00.000Z",
       "location": "Salle 108 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "2EB1A88C-C125-49C1-B10C-4F00E30D4963\r",
@@ -180,7 +369,48 @@
       "end": "2018-10-01T16:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "BD318699-4F44-42AA-8F70-39A4DB01061C\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-10-02T11:45:00.000Z",
+      "end": "2018-10-02T13:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "677CB133-DD7E-446C-94D7-5CEA002641ED\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-10-02T14:00:00.000Z",
+      "end": "2018-10-02T16:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "AD09167E-874C-4679-AC9A-56FBA851AC57\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-10-03T11:45:00.000Z",
+      "end": "2018-10-03T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "00408A85-2D87-4592-AD3F-61159122E6E3\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-10-03T14:00:00.000Z",
+      "end": "2018-10-03T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "1EA8F747-85E7-42DB-BEE5-B613F4CEBEC2\r",
@@ -189,7 +419,8 @@
       "end": "2018-10-04T08:30:00.000Z",
       "location": "Salle 110 14/24\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "B081C50E-422C-4A88-B8B5-1A56D64BD682\r",
@@ -198,7 +429,8 @@
       "end": "2018-10-04T10:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "DCEE7390-22EC-424A-98EB-54E1754F1AC7\r",
@@ -207,7 +439,8 @@
       "end": "2018-10-08T08:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "150898FB-65F8-4829-8600-FAD07A18863D\r",
@@ -216,7 +449,8 @@
       "end": "2018-10-08T10:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "331E2A19-7766-4E82-926F-BE18D0049DF3\r",
@@ -225,7 +459,8 @@
       "end": "2018-10-08T13:45:00.000Z",
       "location": "Salle 108 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "C09FD2C9-6C52-4FF6-B8E9-DEC5B757A75C\r",
@@ -234,7 +469,48 @@
       "end": "2018-10-08T16:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "E42CFD88-612B-4DD2-9159-AF2B7B559195\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-10-09T11:45:00.000Z",
+      "end": "2018-10-09T13:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6E37F50C-C80A-490E-856E-85C49DDBB71D\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-10-09T14:00:00.000Z",
+      "end": "2018-10-09T16:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "A7068755-64E2-4C2E-9A1C-D2B2E34A4170\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-10-10T11:45:00.000Z",
+      "end": "2018-10-10T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "65DFA222-9F66-416D-9FDE-38E28BAF2482\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-10-10T14:00:00.000Z",
+      "end": "2018-10-10T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "3C812453-9F65-46D6-B3B2-72A91DD68926\r",
@@ -243,7 +519,8 @@
       "end": "2018-10-11T08:30:00.000Z",
       "location": "Salle 110 14/24\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "91715ABF-82B1-4079-B375-0B467FD8868C\r",
@@ -252,7 +529,8 @@
       "end": "2018-10-11T10:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "78001EE2-08AF-4198-9797-39ECD9BCF7AF\r",
@@ -261,7 +539,8 @@
       "end": "2018-10-15T08:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "FC813813-F644-45C4-81E7-356F607D35B8\r",
@@ -270,7 +549,8 @@
       "end": "2018-10-15T10:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "59ED4A41-4AC0-4B28-9421-BCDA7753C5C0\r",
@@ -279,7 +559,8 @@
       "end": "2018-10-15T13:45:00.000Z",
       "location": "Salle 108 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "42B8CD55-AC28-4FC6-8930-29C9A92385A5\r",
@@ -288,7 +569,48 @@
       "end": "2018-10-15T16:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "B92D5919-326D-4767-90F5-B5AD5F16538B\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-10-16T11:45:00.000Z",
+      "end": "2018-10-16T13:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "21394A72-6390-4859-8B89-F708A282D9CF\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-10-16T14:00:00.000Z",
+      "end": "2018-10-16T16:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "7A3B1DE3-97A4-4C72-8670-1C2FBE84D702\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-10-17T11:45:00.000Z",
+      "end": "2018-10-17T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "5FD50EEC-8C79-4D7E-B892-B7ED83706F88\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-10-17T14:00:00.000Z",
+      "end": "2018-10-17T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "93E8F63A-560C-440A-9F28-8FC89E6818FE\r",
@@ -297,7 +619,8 @@
       "end": "2018-10-18T08:30:00.000Z",
       "location": "Salle 110 14/24\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "74B9944B-853F-4D24-94AC-BB6705E31FEA\r",
@@ -306,7 +629,8 @@
       "end": "2018-10-18T10:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "886DC8C3-50CC-4500-A0CE-169B393D964F\r",
@@ -315,7 +639,8 @@
       "end": "2018-10-22T08:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "D8BF4CC9-4C3C-444A-9913-10291E31900C\r",
@@ -324,7 +649,8 @@
       "end": "2018-10-22T10:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "72762DA9-687F-4C72-929D-21DF1D4589E1\r",
@@ -333,7 +659,8 @@
       "end": "2018-10-22T13:45:00.000Z",
       "location": "Salle 108 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "44A1D756-B8EA-419A-8E3C-94D65DC4B879\r",
@@ -342,7 +669,48 @@
       "end": "2018-10-22T16:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "851D869A-A1F9-4A80-A13C-C9E8B1042D17\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-10-23T11:45:00.000Z",
+      "end": "2018-10-23T13:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "099A7005-AE5D-4275-A801-00FA38208EE1\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-10-23T14:00:00.000Z",
+      "end": "2018-10-23T16:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "7961C012-2EA4-41E4-8D5D-47C8925557D4\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-10-24T11:45:00.000Z",
+      "end": "2018-10-24T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "42EE1C6F-3B82-4AA3-B662-4F73DA0B6EDA\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-10-24T14:00:00.000Z",
+      "end": "2018-10-24T16:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "43297499-A86A-4D46-97A8-4A2FA63B9A6F\r",
@@ -351,7 +719,8 @@
       "end": "2018-10-25T08:30:00.000Z",
       "location": "Salle 110 14/24\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "9B8EA6CA-C9B8-4E8B-BECA-578CEFAD7F8E\r",
@@ -360,7 +729,8 @@
       "end": "2018-10-25T10:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "9CF87602-A26F-47F6-8EEB-6DE1F9097314\r",
@@ -369,7 +739,8 @@
       "end": "2018-11-19T09:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "862BF042-4A0D-49EF-BD62-F41387C588CA\r",
@@ -378,7 +749,8 @@
       "end": "2018-11-19T11:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "7D845511-29E1-4EA9-BB4F-4B8FE1322272\r",
@@ -387,7 +759,8 @@
       "end": "2018-11-19T14:45:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "627135A9-61B1-49E4-8E69-7C76608A49C6\r",
@@ -396,7 +769,48 @@
       "end": "2018-11-19T17:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "B28E0606-FD7D-4187-897F-E08808E71F2C\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-11-20T12:45:00.000Z",
+      "end": "2018-11-20T14:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "C5A8AFCB-EFFC-4CC9-8F14-A2DB7CA6D02F\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-11-20T15:00:00.000Z",
+      "end": "2018-11-20T17:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "0B84A9E5-4812-4B23-A91C-B92CCBDF64CE\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-11-21T12:45:00.000Z",
+      "end": "2018-11-21T14:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "AED0BA32-4299-41FF-B77E-18E6A11561FC\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-11-21T15:00:00.000Z",
+      "end": "2018-11-21T17:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "71F50427-A610-4730-A817-B63A5FA6CA24\r",
@@ -405,7 +819,8 @@
       "end": "2018-11-22T09:30:00.000Z",
       "location": "Salle 202 24/34\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "EBC1A2E1-5004-4744-BCF6-E84B6932EF69\r",
@@ -414,7 +829,8 @@
       "end": "2018-11-22T11:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "E17649BC-C475-43E2-88E8-0B5DFC79AA3E\r",
@@ -423,7 +839,8 @@
       "end": "2018-11-26T09:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "921095AF-2D89-4F8B-8D14-992BB0587C63\r",
@@ -432,7 +849,8 @@
       "end": "2018-11-26T11:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "9630EEBD-8A46-4BF8-995C-19622E540FED\r",
@@ -441,7 +859,8 @@
       "end": "2018-11-26T14:45:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "82C6D21E-728D-4ADC-AB79-7FE3D9C6EB43\r",
@@ -450,7 +869,48 @@
       "end": "2018-11-26T17:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "DC70E037-9E4C-43C4-9876-09E547FCC269\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-11-27T12:45:00.000Z",
+      "end": "2018-11-27T14:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "FDD38F68-A87D-4BEC-A722-B48AF59CB400\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-11-27T15:00:00.000Z",
+      "end": "2018-11-27T17:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "11F442ED-0B77-4737-8A5D-88874EFAD41E\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-11-28T12:45:00.000Z",
+      "end": "2018-11-28T14:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "3A6BA897-09B8-4593-837D-0A1CC0645AA9\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-11-28T15:00:00.000Z",
+      "end": "2018-11-28T17:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "7AF2B226-442A-48C8-A972-BFF4D810EAB2\r",
@@ -459,7 +919,8 @@
       "end": "2018-11-29T09:30:00.000Z",
       "location": "Salle 202 24/34\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "EEACB852-5819-4E98-A38A-29784174C19D\r",
@@ -468,7 +929,8 @@
       "end": "2018-11-29T11:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "27E4ED56-0F5B-4E60-AC10-AA9246467D39\r",
@@ -477,7 +939,8 @@
       "end": "2018-12-03T09:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "1A36B576-E7B7-4772-B5B2-B70678297C2D\r",
@@ -486,7 +949,8 @@
       "end": "2018-12-03T11:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "D5E1069B-0297-4CA2-99C4-E90C1A0B2D81\r",
@@ -495,7 +959,8 @@
       "end": "2018-12-03T14:45:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "09DFF371-E1D1-4DEA-AF8A-06A20500DBCB\r",
@@ -504,7 +969,48 @@
       "end": "2018-12-03T17:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "157ED414-401F-4D74-B3FD-21A1C842EC2F\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-12-04T12:45:00.000Z",
+      "end": "2018-12-04T14:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6471D6A3-629E-4363-B6F4-360B41E5E565\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-12-04T15:00:00.000Z",
+      "end": "2018-12-04T17:00:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "5290DF56-D419-4765-B9B1-25A6AD03C65D\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-12-05T12:45:00.000Z",
+      "end": "2018-12-05T14:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6F8ACF9B-B0F5-417A-9B61-6829C1ECC2A2\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-12-05T15:00:00.000Z",
+      "end": "2018-12-05T17:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "952CA2B3-6925-4A4E-8877-BD8030814EA3\r",
@@ -513,7 +1019,8 @@
       "end": "2018-12-06T09:30:00.000Z",
       "location": "Salle 202 24/34\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "4A1F9DD5-6564-43B0-88C0-64FF8F182247\r",
@@ -522,7 +1029,8 @@
       "end": "2018-12-06T11:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "7E171CA7-0F5B-4097-A51C-8E4A38ACC253\r",
@@ -531,7 +1039,8 @@
       "end": "2018-12-10T09:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "AE654018-F832-4C92-B256-824CB0FB5F05\r",
@@ -540,7 +1049,8 @@
       "end": "2018-12-10T11:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "F5D70328-1C6E-4E18-9450-7911A7D51E59\r",
@@ -549,7 +1059,8 @@
       "end": "2018-12-10T14:45:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "918CA17B-9E9E-4DB3-83B0-DCCC08881C33\r",
@@ -558,7 +1069,48 @@
       "end": "2018-12-10T17:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "AD6C99BA-E3EC-4825-AFFE-25051FB47F73\r",
+      "title": "4I600-Cours-BIMA\r",
+      "start": "2018-12-11T12:45:00.000Z",
+      "end": "2018-12-11T14:45:00.000Z",
+      "location": "Salle 101 24/25 \r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E59CB3E6-6B95-49CA-A484-466F84ACE795\r",
+      "title": "4I601-Cours-MAPSI\r",
+      "start": "2018-12-11T15:00:00.000Z",
+      "end": "2018-12-11T17:00:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "CF89DC15-8AFC-4EF1-AC57-C9B3046EBB2C\r",
+      "title": "4I800-Cours-LRC\r",
+      "start": "2018-12-12T12:45:00.000Z",
+      "end": "2018-12-12T14:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "22CFE85C-B6A9-41F0-9F1D-D57362542890\r",
+      "title": "4I801-Cours-MLBDA\r",
+      "start": "2018-12-12T15:00:00.000Z",
+      "end": "2018-12-12T17:00:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "95ED7092-E9DC-490C-8091-3AA1E82C51A7\r",
@@ -567,7 +1119,8 @@
       "end": "2018-12-13T09:30:00.000Z",
       "location": "Salle 202 24/34\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "DB2465D2-0256-4926-9CC8-963FCCA485DD\r",
@@ -576,7 +1129,8 @@
       "end": "2018-12-13T11:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "CD02603C-0FD2-4D81-BFB0-63F6481B7454\r",
@@ -585,7 +1139,8 @@
       "end": "2018-12-17T09:30:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "26D11060-0B80-4E08-84D7-35EF2C4D07D9\r",
@@ -594,7 +1149,8 @@
       "end": "2018-12-17T11:45:00.000Z",
       "location": "Salle 302 24/25\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "3EF96597-6A94-4B41-88E4-42592D58865A\r",
@@ -603,7 +1159,8 @@
       "end": "2018-12-17T14:45:00.000Z",
       "location": "Salle 112 14/24\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "742E7D7F-948C-4088-8259-05764435C2B7\r",
@@ -612,7 +1169,8 @@
       "end": "2018-12-17T17:00:00.000Z",
       "location": "Salle 302 14/15\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "AE8AB1F2-8662-469F-8D2F-BBED1E4C95E1\r",
@@ -621,7 +1179,8 @@
       "end": "2018-12-20T09:30:00.000Z",
       "location": "Salle 202 24/34\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "8E6E6320-4A0F-4BE9-B862-0286DD0FBA2A\r",
@@ -630,7 +1189,58 @@
       "end": "2018-12-20T11:45:00.000Z",
       "location": "Salle 406 14/15\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "8331D166-1807-479A-89F8-E30DDBDB5738\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2019-09-17T11:45:00.000Z",
+      "end": "2019-09-17T13:45:00.000Z",
+      "location": "Salle 14.24 108\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "33E8694A-1874-4DE3-B9B6-EBBABE133329\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2019-09-17T14:00:00.000Z",
+      "end": "2019-09-17T16:00:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "F41B9452-6237-43E9-9969-221D20E5AEDD\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2019-09-18T11:45:00.000Z",
+      "end": "2019-09-18T13:45:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "F41B9452-6237-43E9-9969-221D20E5AEDD\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2019-09-18T11:45:00.000Z",
+      "end": "2019-09-18T13:45:00.000Z",
+      "location": "AMPHI 15 - Cours finalement bien maintenu. \r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "C0A6D752-4C86-4D17-963C-EBF9FA9C0356\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2019-09-18T14:00:00.000Z",
+      "end": "2019-09-18T16:00:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "22D567B7-FDF8-4EBF-BA19-32B9D94ED31A\r",
@@ -639,7 +1249,8 @@
       "end": "2019-09-23T08:30:00.000Z",
       "location": "Salle 14.24 108\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "EB4A8948-4E74-4A7A-B1FD-F231B55EDC85\r",
@@ -648,7 +1259,8 @@
       "end": "2019-09-23T10:45:00.000Z",
       "location": "Salle 24.25 304\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "F075DCAA-2E90-4095-AB75-CCADDBE4ED7E\r",
@@ -657,7 +1269,8 @@
       "end": "2019-09-23T13:45:00.000Z",
       "location": "Salle 14.24 105\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "C78A76A2-1D8E-4001-A458-B69A05B67D54\r",
@@ -666,7 +1279,18 @@
       "end": "2019-09-23T16:00:00.000Z",
       "location": "Salle 24.25 304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "FBF02013-F014-43A0-A270-C24AF626EA78\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2019-09-24T11:45:00.000Z",
+      "end": "2019-09-24T13:45:00.000Z",
+      "location": "Salle 13.14 101\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "C779DEFE-51D5-45FB-A37E-84AF4BAD0D7F\r",
@@ -675,7 +1299,8 @@
       "end": "2019-09-26T08:30:00.000Z",
       "location": "Salle 14.24 110\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "0AAAE25F-89C2-4E73-A3E4-720F7D8181F9\r",
@@ -684,7 +1309,18 @@
       "end": "2019-09-26T10:45:00.000Z",
       "location": "Salle 24.25 303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "9D61BA31-74B5-4978-8663-D76183B09F1D\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2019-10-22T11:45:00.000Z",
+      "end": "2019-10-22T13:45:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "63F94D72-1655-4EA3-B974-F3468177BCCA\r",
@@ -693,7 +1329,28 @@
       "end": "2019-11-18T14:45:00.000Z",
       "location": "Salle 14.24 108\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "215DEE87-0AF5-4BEE-A2B4-582EB42BD8EE\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2019-11-19T12:45:00.000Z",
+      "end": "2019-11-19T14:45:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "356D7B97-C092-4EEF-98F4-C74276FD8D7F\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2019-11-19T15:00:00.000Z",
+      "end": "2019-11-19T17:00:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "029DA590-1D8D-4327-9B68-8A04C6822565\r",
@@ -702,7 +1359,8 @@
       "end": "2019-11-21T09:30:00.000Z",
       "location": "Salle 24.25 103\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "6546B99A-B14F-422A-B465-6EC72E68C036\r",
@@ -711,7 +1369,18 @@
       "end": "2019-12-02T11:45:00.000Z",
       "location": "Salle en attente\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "356D7B97-C092-4EEF-98F4-C74276FD8D7F\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2019-12-03T15:00:00.000Z",
+      "end": "2019-12-03T17:00:00.000Z",
+      "location": "AMPHI 24\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "3CD27D29-CD7F-4799-A450-11EDB895A4A2\r",
@@ -720,7 +1389,8 @@
       "end": "2019-12-05T11:45:00.000Z",
       "location": "Salle 14.15 307\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "63F94D72-1655-4EA3-B974-F3468177BCCA\r",
@@ -729,7 +1399,8 @@
       "end": "2019-12-09T14:45:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "C78A76A2-1D8E-4001-A458-B69A05B67D54\r",
@@ -738,7 +1409,18 @@
       "end": "2019-12-09T17:00:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "356D7B97-C092-4EEF-98F4-C74276FD8D7F\r",
+      "title": "MU4IN601-MAPSI-Cours (annulé)\r",
+      "start": "2019-12-10T17:00:00.000Z",
+      "end": "2019-12-10T19:00:00.000Z",
+      "location": "Cours annulé (grève)\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "3D56B875-DC27-45FB-BAC4-E3C732D23314\r",
@@ -747,7 +1429,18 @@
       "end": "2019-12-12T11:45:00.000Z",
       "location": "Salle 24.25 303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "01F60637-D4EA-4A81-97A9-12F8DD6E50C4\r",
+      "title": "MU4IN600-BIMA-TME2 (rattrapage du 1er cours)\r",
+      "start": "2019-12-17T15:00:00.000Z",
+      "end": "2019-12-17T17:00:00.000Z",
+      "location": "Séance annulée\\n\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "FDE7C9A9-6B92-4742-8A28-E9642CBE2469\r",
@@ -756,7 +1449,8 @@
       "end": "2020-01-06T09:30:00.000Z",
       "location": "Salle 24.25.103\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "9E7ED058-917C-4E50-A7D8-9B452D9F1239\r",
@@ -765,7 +1459,58 @@
       "end": "2020-01-06T11:45:00.000Z",
       "location": "Salle 14.15 503\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "758B8AAD-F277-431B-BF7A-8403C482DDDC\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-09-28T06:30:00.000Z",
+      "end": "2020-09-28T08:30:00.000Z",
+      "location": "Salle 55.56.102\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "4F50BD59-E759-466D-8407-C05C3808BB65\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-09-29T11:45:00.000Z",
+      "end": "2020-09-29T13:45:00.000Z",
+      "location": "Salle 56.66.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E2C7700F-7786-4C65-8438-4BC658E50FB3\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-09-29T14:00:00.000Z",
+      "end": "2020-09-29T16:00:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "39F4346B-BB2E-40BB-81C6-7B760BB9AF94\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-09-30T11:45:00.000Z",
+      "end": "2020-09-30T13:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "B29FC582-B49B-4862-8835-2F8BAC04E219\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-09-30T14:00:00.000Z",
+      "end": "2020-09-30T16:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "7FEA672A-F6B1-43BD-8C37-7F1474009EB3\r",
@@ -774,7 +1519,18 @@
       "end": "2020-10-05T08:30:00.000Z",
       "location": "Salle 55.56.100\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "F2D56669-2F5C-4EF7-8C49-F645405B3F40\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-10-05T06:30:00.000Z",
+      "end": "2020-10-05T08:30:00.000Z",
+      "location": "Salle 55.56.102\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "2E3FFECF-A229-4871-B9DB-8A146696E3C0\r",
@@ -783,7 +1539,8 @@
       "end": "2020-10-05T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "1DC71A67-EB75-480F-811E-1C134246EC38\r",
@@ -792,7 +1549,48 @@
       "end": "2020-10-05T16:00:00.000Z",
       "location": "Infos via Moodle\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "58AE5305-9075-4735-B060-4DD683F57DB0\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-10-06T11:45:00.000Z",
+      "end": "2020-10-06T13:45:00.000Z",
+      "location": "Salle 56.66.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "47C7975D-3B7F-4365-9110-D32BFF16CD0B\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-10-06T14:00:00.000Z",
+      "end": "2020-10-06T16:00:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "97D890A7-0FF0-4259-BB96-4F37E903C4CB\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-10-07T11:45:00.000Z",
+      "end": "2020-10-07T13:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "860C35FF-1E7F-4B34-8F2A-58620FBC77BF\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-10-07T14:00:00.000Z",
+      "end": "2020-10-07T16:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "518AA9BF-91CE-4B0E-8085-9274DE450EEC\r",
@@ -801,7 +1599,8 @@
       "end": "2020-10-08T08:30:00.000Z",
       "location": "Salle 14.24.110\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "3D7577F2-557D-4E64-A0D1-A9C5B7110849\r",
@@ -810,7 +1609,8 @@
       "end": "2020-10-08T10:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "937A76C7-C658-4398-94BF-0D6F75E77932\r",
@@ -819,7 +1619,18 @@
       "end": "2020-10-12T08:30:00.000Z",
       "location": "Salle 55.56.100\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "8C032FD2-9F3E-4EF9-8193-0AEAA109EBCB\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-10-12T06:30:00.000Z",
+      "end": "2020-10-12T08:30:00.000Z",
+      "location": "Salle 55.56.102\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "DF111B1F-5846-41FB-A850-D669DAEA9451\r",
@@ -828,7 +1639,8 @@
       "end": "2020-10-12T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "0BEFEC02-C28D-4DEF-A5BA-367A11AA1FAB\r",
@@ -837,7 +1649,8 @@
       "end": "2020-10-12T13:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "C7A277B6-405B-4C03-B277-82AC79EBD481\r",
@@ -846,7 +1659,48 @@
       "end": "2020-10-12T16:00:00.000Z",
       "location": "Salle 54.55.202\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "DD4255B4-7EFF-4696-84C4-778CD0B72990\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-10-13T11:45:00.000Z",
+      "end": "2020-10-13T13:45:00.000Z",
+      "location": "Salle 56.66.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "384440DA-6249-4225-9DC6-93C1642D2280\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-10-13T14:00:00.000Z",
+      "end": "2020-10-13T16:00:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "3EF21656-61E3-48D1-AD8A-89844D59D9E3\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-10-14T11:45:00.000Z",
+      "end": "2020-10-14T13:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "24D755D4-9F99-43DB-A854-99F9816C9786\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-10-14T14:00:00.000Z",
+      "end": "2020-10-14T16:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "53193678-1A20-4BD5-8C43-8882CC3F9BB1\r",
@@ -855,7 +1709,8 @@
       "end": "2020-10-15T08:30:00.000Z",
       "location": "Salle 14.24.110\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "7BC10E1F-4B7A-4BEE-8599-710ED56D97AC\r",
@@ -864,7 +1719,8 @@
       "end": "2020-10-15T10:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "EDC35913-9062-4B55-A5A3-CF4F4E3A04EC\r",
@@ -873,7 +1729,18 @@
       "end": "2020-10-19T08:30:00.000Z",
       "location": "Salle 55.56.100\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "C2CECD3B-7B22-47E7-87BA-B01444164EB8\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-10-19T06:30:00.000Z",
+      "end": "2020-10-19T08:30:00.000Z",
+      "location": "Salle 55.56.102\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "2AA47466-F13D-46D0-84E9-62525E50FA5D\r",
@@ -882,7 +1749,8 @@
       "end": "2020-10-19T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "9FD60712-E7F7-4E2F-AD10-A9D956AF6CFF\r",
@@ -891,7 +1759,8 @@
       "end": "2020-10-19T13:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "18BBE5D8-6637-440E-A704-19032741C59C\r",
@@ -900,7 +1769,48 @@
       "end": "2020-10-19T16:00:00.000Z",
       "location": "Salle 56.66.207\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "972F6476-532A-4F88-81C1-6E6FA470844C\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-10-20T11:45:00.000Z",
+      "end": "2020-10-20T13:45:00.000Z",
+      "location": "Salle 56.66.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "654DE945-26DF-4DC7-9669-8E9BA520254D\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-10-20T14:00:00.000Z",
+      "end": "2020-10-20T16:00:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "859E135E-F782-4829-BB10-DF8BE5B31880\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-10-21T11:45:00.000Z",
+      "end": "2020-10-21T13:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "25207665-5B2C-405B-8AE2-F5B4DCC0E5BA\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-10-21T14:00:00.000Z",
+      "end": "2020-10-21T16:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "77FDB7DB-3234-43AA-8D28-89B3637480A7\r",
@@ -909,7 +1819,8 @@
       "end": "2020-10-22T08:30:00.000Z",
       "location": "Salle 14.24.110\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "32EBBF4C-8118-4BAC-8C42-C5DCE3E165B0\r",
@@ -918,7 +1829,8 @@
       "end": "2020-10-22T10:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "08FC0E72-1A13-4DD4-895E-24F04095FE84\r",
@@ -927,7 +1839,18 @@
       "end": "2020-10-26T09:30:00.000Z",
       "location": "Salle 55.56.100\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "7EF84E48-F10F-482B-AB97-1A39B4179443\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-10-26T07:30:00.000Z",
+      "end": "2020-10-26T09:30:00.000Z",
+      "location": "Salle 55.56.102\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "FDC9E96B-62EC-49BF-9793-E3F6EA22EB85\r",
@@ -936,7 +1859,8 @@
       "end": "2020-10-26T11:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "55BB723D-622A-4BF5-90B6-D4771A36DDB2\r",
@@ -945,7 +1869,8 @@
       "end": "2020-10-26T14:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "BE9F2351-1358-47FA-B380-773D15500654\r",
@@ -954,7 +1879,48 @@
       "end": "2020-10-26T17:00:00.000Z",
       "location": "Salle en attente\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "329018BE-2AAD-4CE9-A34C-B8BF0881BDFB\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-10-27T12:45:00.000Z",
+      "end": "2020-10-27T14:45:00.000Z",
+      "location": "Salle 56.66.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "0721EF6D-C68C-4494-A0D5-D305BB262993\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-10-27T15:00:00.000Z",
+      "end": "2020-10-27T17:00:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "5BA82E05-8E86-40E8-81C9-4BB5CF570F1C\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-10-28T12:45:00.000Z",
+      "end": "2020-10-28T14:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6216B279-466D-4267-A0D2-9B8430177190\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-10-28T15:00:00.000Z",
+      "end": "2020-10-28T17:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "A227C7C0-56E8-423F-BF87-98DD944498B3\r",
@@ -963,7 +1929,8 @@
       "end": "2020-10-29T09:30:00.000Z",
       "location": "Salle 14.24.110\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "11A0C10C-1917-4782-820C-6E549D503530\r",
@@ -972,7 +1939,8 @@
       "end": "2020-10-29T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "266D02C9-2907-4B35-AA79-C3DBF186810D\r",
@@ -981,7 +1949,18 @@
       "end": "2020-11-02T09:30:00.000Z",
       "location": "Salle 55.56.100\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "C8FEC28B-CEF0-4A90-A200-E329C4E61D31\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-11-02T07:30:00.000Z",
+      "end": "2020-11-02T09:30:00.000Z",
+      "location": "Salle 55.56.102\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "87558DAE-2E14-4501-BE30-002DAE235B62\r",
@@ -990,7 +1969,8 @@
       "end": "2020-11-02T11:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "3F415610-DB68-4786-91AC-EC5F922FCC23\r",
@@ -999,7 +1979,8 @@
       "end": "2020-11-02T14:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "FF492665-717E-4DC4-A91A-01D43CEE01DE\r",
@@ -1008,7 +1989,48 @@
       "end": "2020-11-02T17:00:00.000Z",
       "location": "Salle en attente\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "31077329-3619-4813-9EB6-AE2582BD7256\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-11-03T12:45:00.000Z",
+      "end": "2020-11-03T14:45:00.000Z",
+      "location": "Salle 56.66.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "97239D4F-5B23-4FE7-9A07-8D4D10690CF0\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-11-03T15:00:00.000Z",
+      "end": "2020-11-03T17:00:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "8DE12FCF-F99A-4095-8FA7-B5731ACBF449\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-11-04T12:45:00.000Z",
+      "end": "2020-11-04T14:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "58D8368E-1F6A-472B-BDB3-5713E6391258\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-11-04T15:00:00.000Z",
+      "end": "2020-11-04T17:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "A6C2487E-0269-4974-8C17-10A840F56DAD\r",
@@ -1017,7 +2039,8 @@
       "end": "2020-11-05T09:30:00.000Z",
       "location": "Salle 14.24.110\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "11223F4A-B078-4779-B855-B2441085D742\r",
@@ -1026,7 +2049,18 @@
       "end": "2020-11-05T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "4FAFE8F3-FEA5-44BA-A9B1-EDA0982B2F72\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-11-16T07:30:00.000Z",
+      "end": "2020-11-16T09:30:00.000Z",
+      "location": "En visio\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "9B59B602-4F5D-4029-9764-15EEAE289010\r",
@@ -1035,7 +2069,8 @@
       "end": "2020-11-16T09:30:00.000Z",
       "location": "En visio\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "D06B0116-D5B8-46DA-A626-01C75A90F3BA\r",
@@ -1044,7 +2079,8 @@
       "end": "2020-11-16T11:45:00.000Z",
       "location": "En visio\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "141FC168-3D37-4E92-815C-2FB586392F84\r",
@@ -1053,7 +2089,8 @@
       "end": "2020-11-16T14:45:00.000Z",
       "location": "en visio\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "989FC818-1DAB-4621-B997-BCD60B6CA0D1\r",
@@ -1062,7 +2099,48 @@
       "end": "2020-11-16T17:00:00.000Z",
       "location": "En visio\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "5978CAA7-06C3-42EF-B4FB-BD19F28B51EC\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-11-17T12:45:00.000Z",
+      "end": "2020-11-17T14:45:00.000Z",
+      "location": "En visio\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "078FC1CC-7B3B-49EE-8DC2-A1F5A41D3AB4\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-11-17T15:00:00.000Z",
+      "end": "2020-11-17T17:00:00.000Z",
+      "location": "En visio\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "00BBE540-6B72-4A7E-BBF6-F416D729B0DD\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-11-18T12:45:00.000Z",
+      "end": "2020-11-18T14:45:00.000Z",
+      "location": "En visio\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "9A17F702-CD00-4EAA-83AD-DD2F3A84072A\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-11-18T15:00:00.000Z",
+      "end": "2020-11-18T17:00:00.000Z",
+      "location": "En visio\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "E9DE7188-2D73-4A7B-87E3-EF3B59536BF3\r",
@@ -1071,7 +2149,8 @@
       "end": "2020-11-19T09:30:00.000Z",
       "location": "En visio\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "330E2DFF-7C03-4F3A-AE8C-0F492A34AC1E\r",
@@ -1080,7 +2159,18 @@
       "end": "2020-11-19T11:45:00.000Z",
       "location": "En visio\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "D7EC5AA4-A8B8-459E-AFD6-3AFACCC097F9\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-11-23T07:30:00.000Z",
+      "end": "2020-11-23T09:30:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "2471280C-AE89-4B83-A8D6-5A1E6FFC3374\r",
@@ -1089,7 +2179,8 @@
       "end": "2020-11-23T09:30:00.000Z",
       "location": "",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "F4FF3785-AB71-4F82-A8D7-91F3FEECC9E8\r",
@@ -1098,7 +2189,8 @@
       "end": "2020-11-23T11:45:00.000Z",
       "location": "",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "4ABFF3A2-2CF8-480A-A856-0F0D04BCD73B\r",
@@ -1107,7 +2199,8 @@
       "end": "2020-11-23T14:45:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "604E6DD4-1A4D-49A6-9F92-CBA3FEBF1180\r",
@@ -1116,7 +2209,48 @@
       "end": "2020-11-23T17:00:00.000Z",
       "location": "Salle en attente\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "398530B7-AAB1-4FFD-B068-1C1FEAFCF482\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-11-24T12:45:00.000Z",
+      "end": "2020-11-24T14:45:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "511388AB-1239-49DE-910A-7901DAFA5160\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-11-24T15:00:00.000Z",
+      "end": "2020-11-24T17:00:00.000Z",
+      "location": "",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "5769D998-BE59-46AF-971B-9C53A33254A3\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-11-25T12:45:00.000Z",
+      "end": "2020-11-25T14:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "32994248-31F7-4204-8981-E1D87E116182\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-11-25T15:00:00.000Z",
+      "end": "2020-11-25T17:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "3ACCC4CF-2316-4663-AB1C-B4943FF699A1\r",
@@ -1125,7 +2259,8 @@
       "end": "2020-11-26T09:30:00.000Z",
       "location": "Salle en attente\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "1A61E2FA-2A94-4AB4-BDA1-2084F0AE0F56\r",
@@ -1134,7 +2269,18 @@
       "end": "2020-11-26T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6FECAD48-5045-419C-87B2-736FDBD22BB8\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-11-30T07:30:00.000Z",
+      "end": "2020-11-30T09:30:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "8823B43C-F80D-47E4-9DF7-3E82A6BD600D\r",
@@ -1143,7 +2289,8 @@
       "end": "2020-11-30T09:30:00.000Z",
       "location": "",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "9F4B4FD9-F4B7-4B94-A9F6-981FF0101DE7\r",
@@ -1152,7 +2299,8 @@
       "end": "2020-11-30T11:45:00.000Z",
       "location": "",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "6B7CCC1E-AF8E-49BD-A8DB-67CBE325B3FF\r",
@@ -1161,7 +2309,8 @@
       "end": "2020-11-30T14:45:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "9CB264E9-1D20-4DEC-890B-FDEDB29D0780\r",
@@ -1170,7 +2319,48 @@
       "end": "2020-11-30T17:00:00.000Z",
       "location": "Salle en attente\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "C1592E4D-AD35-4818-A149-BA03273F22B3\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-12-01T12:45:00.000Z",
+      "end": "2020-12-01T14:45:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E46D6A07-CD23-4B3A-AF4F-1FB3E96F4920\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-12-01T15:00:00.000Z",
+      "end": "2020-12-01T17:00:00.000Z",
+      "location": "",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "5E25EEF6-2D75-460A-A299-E18D46D92226\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-12-02T12:45:00.000Z",
+      "end": "2020-12-02T14:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "82BAA03C-EA0C-4616-9D69-CEB866AE2C44\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-12-02T15:00:00.000Z",
+      "end": "2020-12-02T17:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "C2D49F68-DC04-49C3-867C-057CF45FC2E5\r",
@@ -1179,7 +2369,8 @@
       "end": "2020-12-03T09:30:00.000Z",
       "location": "Salle en attente\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "126EE345-997C-4946-AE56-3D7A7E7CC675\r",
@@ -1188,7 +2379,18 @@
       "end": "2020-12-03T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "2F752CC2-7AFC-4171-8526-0D8CB78FF934\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2020-12-14T07:30:00.000Z",
+      "end": "2020-12-14T09:30:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "333E5B32-43A3-4676-9A5A-F2D924B59CA5\r",
@@ -1197,7 +2399,8 @@
       "end": "2020-12-14T09:30:00.000Z",
       "location": "",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "D84A7274-1FE8-4E6F-B99A-97C05832711B\r",
@@ -1206,7 +2409,8 @@
       "end": "2020-12-14T11:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "5FA16C0D-9336-45F0-B669-2A82F0C466FE\r",
@@ -1215,7 +2419,8 @@
       "end": "2020-12-14T14:45:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "6CDC557A-DB1B-4A1B-AD45-94A3E25ADB76\r",
@@ -1224,7 +2429,48 @@
       "end": "2020-12-14T17:00:00.000Z",
       "location": "Salle en attente\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "5BDB2CCE-C46C-4109-9FCE-746E7A94AA21\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2020-12-15T12:45:00.000Z",
+      "end": "2020-12-15T14:45:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "B16F83A1-0421-42E8-810A-7BCD3EC2995F\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2020-12-15T15:00:00.000Z",
+      "end": "2020-12-15T17:00:00.000Z",
+      "location": "Salle 54.55.202\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "D2413DCA-6E65-49A1-A1D0-A49E80EA6361\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2020-12-16T12:45:00.000Z",
+      "end": "2020-12-16T14:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "EB764A94-9F28-4140-BCB5-725D9E073532\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2020-12-16T15:00:00.000Z",
+      "end": "2020-12-16T17:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "BAEE3EA8-2813-4661-AB63-5B535BC826C7\r",
@@ -1233,7 +2479,8 @@
       "end": "2020-12-17T09:30:00.000Z",
       "location": "Salle en attente\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "C916D56B-0090-448D-A53B-8721AA8F5946\r",
@@ -1242,7 +2489,8 @@
       "end": "2020-12-17T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "EBB60F16-566D-44A7-9F1E-B5BFE1413362\r",
@@ -1251,7 +2499,8 @@
       "end": "2021-01-04T09:30:00.000Z",
       "location": "",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "8FD603C8-9BD0-41E0-99CC-162A7269F2D9\r",
@@ -1260,7 +2509,8 @@
       "end": "2021-01-04T11:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "A39A48A7-3721-4FEA-9A87-0402907C2B65\r",
@@ -1269,7 +2519,8 @@
       "end": "2021-01-04T14:45:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "EB5D3375-CCC6-4193-92FD-708612D168E6\r",
@@ -1278,7 +2529,8 @@
       "end": "2021-01-04T17:00:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "A31597D5-8AD6-4956-81AD-98C88CB6A8BE\r",
@@ -1287,7 +2539,8 @@
       "end": "2021-01-07T09:30:00.000Z",
       "location": "",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "C30F91A1-9E9B-49F2-B23F-C8F80765FDEB\r",
@@ -1296,7 +2549,58 @@
       "end": "2021-01-07T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "4EA57872-B6AE-40B7-88A7-64288DD203F0\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2021-09-13T06:30:00.000Z",
+      "end": "2021-09-13T08:30:00.000Z",
+      "location": "Salle 55.65.103\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "AD39C1FE-5397-4860-9125-DCFFC295F78C\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2021-09-14T11:45:00.000Z",
+      "end": "2021-09-14T13:45:00.000Z",
+      "location": "Salle 54.55.204\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "C5515A22-248F-42BB-8E10-91EBA4D9CCD3\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2021-09-14T14:00:00.000Z",
+      "end": "2021-09-14T16:00:00.000Z",
+      "location": "AMPHI A2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "4E377818-D79B-4D03-81BA-9C4FEE4E7075\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2021-09-15T11:45:00.000Z",
+      "end": "2021-09-15T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "422E373B-A1CF-4BA7-A6A4-D30E80A2B2DC\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2021-09-15T14:00:00.000Z",
+      "end": "2021-09-15T16:00:00.000Z",
+      "location": "AMPHI 45B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "9D05FE51-3352-46A9-8D41-62F8E9687BAB\r",
@@ -1305,7 +2609,8 @@
       "end": "2021-09-20T08:30:00.000Z",
       "location": "Salle 56.66.205\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "B1AF0F19-D33D-4E85-A7ED-15582A3F12E0\r",
@@ -1314,7 +2619,8 @@
       "end": "2021-09-20T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "FB556A7B-0254-4482-A6CE-841A50AFB04C\r",
@@ -1323,7 +2629,8 @@
       "end": "2021-09-20T13:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "30871230-1DA3-43B1-8829-CE48682D1ED0\r",
@@ -1332,7 +2639,28 @@
       "end": "2021-09-20T16:00:00.000Z",
       "location": "Salle 24.34.210\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "0D941809-B226-4004-9525-115065BFBFB2\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2021-09-22T11:45:00.000Z",
+      "end": "2021-09-22T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "8C0F3E4D-5626-4E5F-B2AD-47B9299D60F9\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2021-09-22T14:00:00.000Z",
+      "end": "2021-09-22T16:00:00.000Z",
+      "location": "AMPHI 45B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "B6FDF895-9BD7-4CAD-962B-B4F434101982\r",
@@ -1341,7 +2669,8 @@
       "end": "2021-09-23T08:30:00.000Z",
       "location": "Salle 56.66.205\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "00B362E4-7DEB-4BAB-AFAD-6CF41EF7C208\r",
@@ -1350,7 +2679,8 @@
       "end": "2021-09-23T10:45:00.000Z",
       "location": "Salle 14.15.403\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "ED173730-9DD4-4C89-A1BA-311BA7718DFE\r",
@@ -1359,7 +2689,48 @@
       "end": "2021-09-27T08:30:00.000Z",
       "location": "Salle B301\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "CA497781-08D2-4D8E-A513-EC736F85B104\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2021-10-04T16:15:00.000Z",
+      "end": "2021-10-04T18:15:00.000Z",
+      "location": "Rattrapage du 06/10 - AMPHI  DURAND\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "0D941809-B226-4004-9525-115065BFBFB2\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2021-10-06T11:45:00.000Z",
+      "end": "2021-10-06T13:45:00.000Z",
+      "location": "Séance annulée et remplacée le lundi 04/10\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "8C0F3E4D-5626-4E5F-B2AD-47B9299D60F9\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2021-10-27T14:00:00.000Z",
+      "end": "2021-10-27T16:00:00.000Z",
+      "location": "AMPHI DURAND\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "D7B4FA7F-14A9-4BF9-B185-E56372C7B55E\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2021-11-22T07:30:00.000Z",
+      "end": "2021-11-22T09:30:00.000Z",
+      "location": "Salle 55.65.105\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "3B61A8D3-C1E2-49E7-B848-15CCA502F407\r",
@@ -1368,7 +2739,8 @@
       "end": "2021-11-22T09:30:00.000Z",
       "location": "ATRIUM 521\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "A3AF7780-63F2-4F10-81FD-A729B26FEB35\r",
@@ -1377,7 +2749,8 @@
       "end": "2021-11-22T11:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "2CA0D32F-CB3A-4533-8335-6FC69EB0B7F6\r",
@@ -1386,7 +2759,48 @@
       "end": "2021-11-22T17:00:00.000Z",
       "location": "Salle 24.25.108\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "551039C1-3258-4E30-963F-41D9EE5376E9\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2021-11-23T12:45:00.000Z",
+      "end": "2021-11-23T14:45:00.000Z",
+      "location": "Salle 56.66.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "8777EB5A-43A9-4351-93AA-E8EF798BC4FC\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2021-11-23T15:00:00.000Z",
+      "end": "2021-11-23T17:00:00.000Z",
+      "location": "AMPHI A2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6DF801F8-FE4B-4BD8-BEB5-A0C040105D7A\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2021-11-24T12:45:00.000Z",
+      "end": "2021-11-24T14:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "9DE944C0-2850-4709-B3C2-F9506E62E710\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2021-11-24T15:00:00.000Z",
+      "end": "2021-11-24T17:00:00.000Z",
+      "location": "AMPHI 45B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "6B2AB827-925F-4999-AF15-53A80897ECEF\r",
@@ -1395,7 +2809,8 @@
       "end": "2021-11-25T09:30:00.000Z",
       "location": "Salle 56.66.205\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "F36F1022-A2EF-4E7E-82B8-87C667F1ECAF\r",
@@ -1404,7 +2819,8 @@
       "end": "2021-11-25T11:45:00.000Z",
       "location": "Salle 14.15.403\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "BD82F224-4FE0-4952-85C5-79D62CD8ED3C\r",
@@ -1413,7 +2829,8 @@
       "end": "2021-11-29T17:00:00.000Z",
       "location": "Salle 24.25.108\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "2A6CB6D8-56C6-4784-8755-7BB11153C771\r",
@@ -1422,7 +2839,8 @@
       "end": "2021-12-06T17:00:00.000Z",
       "location": "Salle 24.25.108\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "A0353A67-8608-4A1A-BDEA-DB443FCA280C\r",
@@ -1431,7 +2849,88 @@
       "end": "2021-12-13T17:00:00.000Z",
       "location": "Salle 24.25.108\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "C01050D1-8CC9-452B-A318-940B27050B98\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2022-09-12T11:45:00.000Z",
+      "end": "2022-09-12T13:45:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "C01050D1-8CC9-452B-A318-940B27050B98\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2022-09-12T11:45:00.000Z",
+      "end": "2022-09-12T13:45:00.000Z",
+      "location": "Salle 24.34.204\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "3930EFD0-E32B-458A-B074-A2AE58CC8CEA\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2022-09-13T11:45:00.000Z",
+      "end": "2022-09-13T13:45:00.000Z",
+      "location": "",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "3930EFD0-E32B-458A-B074-A2AE58CC8CEA\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2022-09-13T11:45:00.000Z",
+      "end": "2022-09-13T13:45:00.000Z",
+      "location": "Salle 56.66.201BIS\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "D8032F92-C3E7-4CD0-A49E-B205248FCDEA\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2022-09-13T14:00:00.000Z",
+      "end": "2022-09-13T16:00:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "7818A976-73CB-4FB3-8A25-2FAA0591AB95\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2022-09-14T11:45:00.000Z",
+      "end": "2022-09-14T13:45:00.000Z",
+      "location": "",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "7818A976-73CB-4FB3-8A25-2FAA0591AB95\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2022-09-14T11:45:00.000Z",
+      "end": "2022-09-14T13:45:00.000Z",
+      "location": "AMPHI  55B \r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "A77B59B1-000D-406F-A890-03F9EF9D2C5D\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2022-09-14T14:00:00.000Z",
+      "end": "2022-09-14T16:00:00.000Z",
+      "location": "AMPHI 45A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "E32EA245-0F27-4CA9-879D-BE3458925C18\r",
@@ -1440,7 +2939,8 @@
       "end": "2022-09-19T08:30:00.000Z",
       "location": "Salle 55.65.101\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "13AE8352-81AC-4719-9FF0-516A845153F0\r",
@@ -1449,7 +2949,8 @@
       "end": "2022-09-19T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "ACFB8F14-1DEC-4EB0-BAAF-12F3D4C5A90A\r",
@@ -1458,7 +2959,18 @@
       "end": "2022-09-19T13:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "C01050D1-8CC9-452B-A318-940B27050B98\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2022-09-19T11:45:00.000Z",
+      "end": "2022-09-19T13:45:00.000Z",
+      "location": "ATRIUM 317\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "2A9A5A51-1C46-41C4-8BB9-B63D327A9D9E\r",
@@ -1467,7 +2979,28 @@
       "end": "2022-09-19T16:00:00.000Z",
       "location": "Salle 55.65.101\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "4417277B-1832-42BA-BCF9-71B95C7644AB\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2022-09-20T11:45:00.000Z",
+      "end": "2022-09-20T13:45:00.000Z",
+      "location": "Salle 56.66.201BIS\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "58F970AC-1CE5-4E79-A12D-34D16A26FB3B\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2022-09-21T11:45:00.000Z",
+      "end": "2022-09-21T13:45:00.000Z",
+      "location": "AMPHI 34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "E8EE6C66-0F28-4C06-A8D2-AA79077717F9\r",
@@ -1476,7 +3009,8 @@
       "end": "2022-09-22T08:30:00.000Z",
       "location": "Salle 56.66.201BIS\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "5592EAA6-69C8-4459-89C8-9F7C793C5060\r",
@@ -1485,7 +3019,18 @@
       "end": "2022-09-22T10:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "DEFEA3B6-95D5-44FF-B888-A11013EA4C97\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2022-09-26T11:45:00.000Z",
+      "end": "2022-09-26T13:45:00.000Z",
+      "location": "Salle 14.15.108\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "137FFA1D-8614-449F-9A3D-7C6A63F70A3A\r",
@@ -1494,7 +3039,8 @@
       "end": "2022-11-21T09:30:00.000Z",
       "location": "Salle B301\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "1B0240F2-9F1B-4CE0-A1EE-B700EC6F626A\r",
@@ -1503,7 +3049,28 @@
       "end": "2022-11-21T14:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "1A3A9E58-F753-4FA2-BD9B-DCAC01ACD122\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2022-11-21T12:45:00.000Z",
+      "end": "2022-11-21T14:45:00.000Z",
+      "location": "Salle 55.65.103\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "1A3A9E58-F753-4FA2-BD9B-DCAC01ACD122\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2022-11-21T12:45:00.000Z",
+      "end": "2022-11-21T14:45:00.000Z",
+      "location": "Salle 23.24.112\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "346133A2-34CE-452E-9460-91169029F4AF\r",
@@ -1512,7 +3079,48 @@
       "end": "2022-11-21T17:00:00.000Z",
       "location": "Salle 56.66.107\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "3083D42E-050E-4CF4-8CAA-0BF58B8C326D\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2022-11-22T12:45:00.000Z",
+      "end": "2022-11-22T14:45:00.000Z",
+      "location": "Salle B301\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "B4D20BE9-A478-4FE4-B560-BFDE607EDABC\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2022-11-22T15:00:00.000Z",
+      "end": "2022-11-22T17:00:00.000Z",
+      "location": "AMPHI 44\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "06884D3F-CC8E-46B1-84C4-E245C6BC94EF\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2022-11-23T12:45:00.000Z",
+      "end": "2022-11-23T14:45:00.000Z",
+      "location": "AMPHI A2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "D2F8411C-D180-48F0-BFCB-4D1C88A2D82B\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2022-11-23T15:00:00.000Z",
+      "end": "2022-11-23T17:00:00.000Z",
+      "location": "AMPHI 55B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "0CB8F34A-021A-45C2-BCBD-9E83E28A5963\r",
@@ -1521,7 +3129,8 @@
       "end": "2022-11-24T09:30:00.000Z",
       "location": "Salle 56.66.201BIS\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "FD8CC9D1-0407-4C35-ACB3-8769ECF32F44\r",
@@ -1530,7 +3139,8 @@
       "end": "2022-11-24T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "9966B406-29C3-4C56-A2E8-B10421FDBBB8\r",
@@ -1539,7 +3149,8 @@
       "end": "2022-11-28T14:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "1B494869-FBE8-4554-A111-F6861E4C4D86\r",
@@ -1548,7 +3159,8 @@
       "end": "2022-12-01T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "577C4E94-DAB5-4128-8887-C7FC1E32416E\r",
@@ -1557,7 +3169,28 @@
       "end": "2022-12-05T14:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "50125D34-711C-456B-A2B6-7AAB5D9BD297\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2022-12-05T12:45:00.000Z",
+      "end": "2022-12-05T14:45:00.000Z",
+      "location": "Salle 24.34.203\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "06884D3F-CC8E-46B1-84C4-E245C6BC94EF\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2022-12-07T12:45:00.000Z",
+      "end": "2022-12-07T14:45:00.000Z",
+      "location": "Séance annumée et reportée au 14/12\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "50D354F0-E43F-4FC5-96A4-951FB7FE1B4B\r",
@@ -1566,7 +3199,8 @@
       "end": "2022-12-08T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "44CA0313-9E46-488B-A6C3-2A4CD595C288\r",
@@ -1575,7 +3209,18 @@
       "end": "2022-12-12T14:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "53AF0F23-BEA5-4D08-BD9B-7F974E879E0E\r",
+      "title": "MU4IN800-LRC-Cours (rattrapage du 07/12) \r",
+      "start": "2022-12-14T12:45:00.000Z",
+      "end": "2022-12-14T14:45:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "FDD2E006-E636-4F47-8219-11DB9D739FF4\r",
@@ -1584,7 +3229,58 @@
       "end": "2022-12-15T11:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "B2BBDBC4-0261-4891-9A23-7111FD0A67AE\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2023-09-11T11:45:00.000Z",
+      "end": "2023-09-11T13:45:00.000Z",
+      "location": "Salle 14.24.212\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "9ACC3B64-5D67-4813-9B79-BE541C197EE7\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2023-09-12T11:45:00.000Z",
+      "end": "2023-09-12T13:45:00.000Z",
+      "location": "Salle 23.24.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "16E8165A-4771-4000-B6E9-C3D0CE192653\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2023-09-12T14:00:00.000Z",
+      "end": "2023-09-12T16:00:00.000Z",
+      "location": "AMPHI 56B\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "9A99A643-38E5-45AF-BE64-BEEE0B90AA7E\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2023-09-13T11:45:00.000Z",
+      "end": "2023-09-13T13:45:00.000Z",
+      "location": "AMPHI.55A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "16E6FDE0-20DE-4B0F-BC78-752162D1BC6F\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2023-09-13T14:00:00.000Z",
+      "end": "2023-09-13T16:00:00.000Z",
+      "location": "AMPHI.56B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "94DFBD56-9D76-4E0C-8A98-2EF931932822\r",
@@ -1593,7 +3289,8 @@
       "end": "2023-09-18T08:30:00.000Z",
       "location": "Salle 23.24.202\\n\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "D0EE4EAE-C45B-4822-A4C1-9FF43B00DA5C\r",
@@ -1602,7 +3299,8 @@
       "end": "2023-09-18T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "C7F2FB91-676F-4B00-A5DD-F054F87FB97F\r",
@@ -1611,7 +3309,8 @@
       "end": "2023-09-18T13:45:00.000Z",
       "location": "",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "C7F2FB91-676F-4B00-A5DD-F054F87FB97F\r",
@@ -1620,7 +3319,8 @@
       "end": "2023-09-18T13:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "88026C18-257E-464A-A279-83392A47E54B\r",
@@ -1629,7 +3329,8 @@
       "end": "2023-09-18T16:00:00.000Z",
       "location": "Salle 23.24.112\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "009E637D-2E7B-447A-A481-47434389CFA0\r",
@@ -1638,7 +3339,8 @@
       "end": "2023-09-21T08:30:00.000Z",
       "location": "Salle 14.24.210\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "8D9A3E00-6504-48B1-90D6-23E98D801306\r",
@@ -1647,7 +3349,8 @@
       "end": "2023-09-21T10:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "B29F368F-304B-46A2-A653-4F3ACBC47B77\r",
@@ -1656,7 +3359,8 @@
       "end": "2023-09-25T13:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "4C3977FF-8080-447A-A096-FA207C3CE83D\r",
@@ -1665,7 +3369,68 @@
       "end": "2023-11-13T09:30:00.000Z",
       "location": "Salle 14.15.103\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "507055A2-4695-48AB-9128-497045ACC78F\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2023-11-13T12:45:00.000Z",
+      "end": "2023-11-13T14:45:00.000Z",
+      "location": "Salle 23.24.112\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "AA3F9EEE-5BA5-4C80-B07F-CEADD8C07079\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2023-11-14T12:45:00.000Z",
+      "end": "2023-11-14T14:45:00.000Z",
+      "location": "Salle 23.24.103\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6E0B14D6-3351-4343-AB9F-1FE108AB4892\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2023-11-14T15:00:00.000Z",
+      "end": "2023-11-14T17:00:00.000Z",
+      "location": "AMPHI.34A\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E3A7A59D-BEA2-4314-8A76-AC274BF3D9A3\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2023-11-15T12:45:00.000Z",
+      "end": "2023-11-15T14:45:00.000Z",
+      "location": "résa n° 607710\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E3A7A59D-BEA2-4314-8A76-AC274BF3D9A3\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2023-11-15T12:45:00.000Z",
+      "end": "2023-11-15T14:45:00.000Z",
+      "location": "AMPHI 44\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "A60505C4-27D1-408A-BAD3-B76D50BBAE65\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2023-11-15T15:00:00.000Z",
+      "end": "2023-11-15T17:00:00.000Z",
+      "location": "AMPHI 56B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "D0A769DF-27E9-437F-A556-94E94BDCCBE2\r",
@@ -1674,7 +3439,8 @@
       "end": "2023-11-16T09:30:00.000Z",
       "location": "Salle 24.34.204\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "7790F2CD-EB75-40A8-A909-5FA9D2A6B481\r",
@@ -1683,7 +3449,18 @@
       "end": "2023-11-20T17:00:00.000Z",
       "location": "Salle 33.34.112\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "E3A7A59D-BEA2-4314-8A76-AC274BF3D9A3\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2023-11-22T12:45:00.000Z",
+      "end": "2023-11-22T14:45:00.000Z",
+      "location": "AMPHI 15 \r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "8202B952-BE19-4CB5-A619-37150E8AE962\r",
@@ -1692,7 +3469,68 @@
       "end": "2023-12-04T09:30:00.000Z",
       "location": "Salle 14.24.203\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "507055A2-4695-48AB-9128-497045ACC78F\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2023-12-04T12:45:00.000Z",
+      "end": "2023-12-04T14:45:00.000Z",
+      "location": "Salle 23.24.112\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6E0B14D6-3351-4343-AB9F-1FE108AB4892\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2023-12-05T15:00:00.000Z",
+      "end": "2023-12-05T17:00:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "27DE5A5F-B293-4092-8949-1ABD2616166A\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2023-12-06T12:45:00.000Z",
+      "end": "2023-12-06T14:45:00.000Z",
+      "location": "résa n° 607711\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "27DE5A5F-B293-4092-8949-1ABD2616166A\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2023-12-06T12:45:00.000Z",
+      "end": "2023-12-06T14:45:00.000Z",
+      "location": "AMPHI 44\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "66028D36-AF61-4449-8EE3-A6743D1BB496\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2023-12-06T15:00:00.000Z",
+      "end": "2023-12-06T17:00:00.000Z",
+      "location": "résa n°607718\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "66028D36-AF61-4449-8EE3-A6743D1BB496\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2023-12-06T15:00:00.000Z",
+      "end": "2023-12-06T17:00:00.000Z",
+      "location": "AMPHI 56B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "61BFA551-1AEE-484C-9BD1-8B538353677E\r",
@@ -1701,7 +3539,58 @@
       "end": "2023-12-07T09:30:00.000Z",
       "location": "Salle 24.34.102\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
+    },
+    {
+      "id": "B1AF66C0-FFC8-4971-A49C-89AFF1ECB521\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2024-09-09T11:45:00.000Z",
+      "end": "2024-09-09T13:45:00.000Z",
+      "location": "14.15.108\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "DF900EAF-A548-4ABC-BBB4-C44A9A0D6BCD\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2024-09-10T11:45:00.000Z",
+      "end": "2024-09-10T13:45:00.000Z",
+      "location": "24.34.207\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "9217A0DD-40B6-4265-980D-7D3221C61B90\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2024-09-10T14:00:00.000Z",
+      "end": "2024-09-10T16:00:00.000Z",
+      "location": "AMPHI.15\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "9C240586-4217-4970-81EC-3E2824C6B7CF\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2024-09-11T11:45:00.000Z",
+      "end": "2024-09-11T13:45:00.000Z",
+      "location": "AMPHI B1\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "221FFCAD-4B89-43A5-BC56-8B253CE8AB0E\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2024-09-11T14:00:00.000Z",
+      "end": "2024-09-11T16:00:00.000Z",
+      "location": "AMPHI HERPIN\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "644F23C3-A665-4712-9040-A6CC1E4C1A73\r",
@@ -1710,7 +3599,8 @@
       "end": "2024-09-16T08:30:00.000Z",
       "location": "46.56.102\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "8AA20277-00F6-417F-826A-92E092669F3B\r",
@@ -1719,7 +3609,8 @@
       "end": "2024-09-16T10:45:00.000Z",
       "location": "14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "7FD55990-9F80-4515-B759-81DBFEF37D6E\r",
@@ -1728,7 +3619,8 @@
       "end": "2024-09-16T13:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "17C1648B-8C0C-44A3-9843-970F0B5B9C47\r",
@@ -1737,7 +3629,8 @@
       "end": "2024-09-16T16:00:00.000Z",
       "location": "Salle 14.24.212\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "3F9F8CA8-2469-4F18-94ED-E5D638E45A84\r",
@@ -1746,7 +3639,8 @@
       "end": "2024-09-19T08:30:00.000Z",
       "location": "Salle 23.24.103\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "B37EC534-1AD8-47EA-8F81-957B4D32FB66\r",
@@ -1755,7 +3649,8 @@
       "end": "2024-09-19T10:45:00.000Z",
       "location": "Salle 24.25.303\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "1CA69D8C-A748-4024-AD11-7273EC458F48\r",
@@ -1764,7 +3659,8 @@
       "end": "2024-09-19T13:45:00.000Z",
       "location": "24.34.112\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "E4AD99DC-48E8-4B57-8211-4BB37D43B2E9\r",
@@ -1773,7 +3669,8 @@
       "end": "2024-09-19T16:00:00.000Z",
       "location": "24.25.306\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "8AA20277-00F6-417F-826A-92E092669F3B\r",
@@ -1782,7 +3679,18 @@
       "end": "2024-10-14T10:45:00.000Z",
       "location": "24.25.308\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "221FFCAD-4B89-43A5-BC56-8B253CE8AB0E\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2024-10-23T14:00:00.000Z",
+      "end": "2024-10-23T16:00:00.000Z",
+      "location": "Séance annulée et reportée au 27/11\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "81A1FAB0-4CBE-40C1-8132-0D3188C0629E\r",
@@ -1791,7 +3699,48 @@
       "end": "2024-11-05T14:45:00.000Z",
       "location": "Amphi 24\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6F02F732-D037-480E-B3CF-CF345D4A40EB\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2024-11-12T12:45:00.000Z",
+      "end": "2024-11-12T14:45:00.000Z",
+      "location": "54.55.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "52F733BA-59A9-45E6-9DC4-64AB981D7EB0\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2024-11-12T15:00:00.000Z",
+      "end": "2024-11-12T17:00:00.000Z",
+      "location": "Amphi A2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "B8070D19-FBAF-4A2F-A767-6A17BB42DD53\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2024-11-13T12:30:00.000Z",
+      "end": "2024-11-13T14:30:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "D6FBD1FA-BC34-4F34-8F72-42C5848C5D53\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2024-11-13T14:45:00.000Z",
+      "end": "2024-11-13T16:45:00.000Z",
+      "location": "AMPHI 56A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "B11FF644-ECD2-4D69-B313-5395FB33F551\r",
@@ -1800,7 +3749,8 @@
       "end": "2024-11-14T09:30:00.000Z",
       "location": "Salle 23.24.202\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "76D03529-7A28-4EAE-BDB5-492FFE7D288A\r",
@@ -1809,7 +3759,8 @@
       "end": "2024-11-14T14:45:00.000Z",
       "location": "54.55.108\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "1FB661E4-9E25-40F2-8768-3EAB0823FD57\r",
@@ -1818,7 +3769,18 @@
       "end": "2024-11-18T09:30:00.000Z",
       "location": "14.24.206\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
+    },
+    {
+      "id": "B1AF66C0-FFC8-4971-A49C-89AFF1ECB521\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais rattrapage du 11/11)\r",
+      "start": "2024-11-18T12:45:00.000Z",
+      "end": "2024-11-18T14:45:00.000Z",
+      "location": "14.24.208\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "7E433240-1D8A-40FB-9CCE-04544803DCE1\r",
@@ -1827,7 +3789,118 @@
       "end": "2024-11-18T17:00:00.000Z",
       "location": "Salle 14.24.205\\n\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "90C29452-E974-4B32-AD15-F5853A78B51C\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2024-11-19T12:45:00.000Z",
+      "end": "2024-11-19T14:45:00.000Z",
+      "location": "54.55.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "8DF304F1-939B-454F-8383-F612E566B886\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2024-11-19T15:00:00.000Z",
+      "end": "2024-11-19T17:00:00.000Z",
+      "location": "Amphi A2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "31FC372C-2835-4780-B060-C264F1DC9572\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2024-11-20T12:30:00.000Z",
+      "end": "2024-11-20T14:30:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "32FA7E62-E594-4BD7-A7AA-284E464D7D67\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2024-11-20T14:45:00.000Z",
+      "end": "2024-11-20T16:45:00.000Z",
+      "location": "Salle en attente \r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "1A254D6A-6099-43BE-99B2-9CFB1D8387CA\r",
+      "title": "MU4IN600-BIMA-Cours en Anglais\r",
+      "start": "2024-11-25T12:45:00.000Z",
+      "end": "2024-11-25T14:45:00.000Z",
+      "location": "14.24.208\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "423532A9-1CF5-4161-81AE-69577C5BFA17\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2024-11-27T12:45:00.000Z",
+      "end": "2024-11-27T14:45:00.000Z",
+      "location": "AMPHI.34A\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "7AA6144E-D49A-46E7-9358-73DFB61E7158\r",
+      "title": "MU4IN801-MLBDA-Cours (report du 23/10)\r",
+      "start": "2024-11-27T15:00:00.000Z",
+      "end": "2024-11-27T17:00:00.000Z",
+      "location": "AMPHI.15\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "C99A60B7-3EDE-4F48-A1FF-95524CDF14D9\r",
+      "title": "MU4IN600-BIMA-Cours\r",
+      "start": "2024-12-03T12:45:00.000Z",
+      "end": "2024-12-03T14:45:00.000Z",
+      "location": "54.55.205\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "4F44A9EA-ABD4-4AFA-8484-B01DF6DA0AA8\r",
+      "title": "MU4IN601-MAPSI-Cours\r",
+      "start": "2024-12-03T15:00:00.000Z",
+      "end": "2024-12-03T17:00:00.000Z",
+      "location": "Amphi A2\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "51B51064-206F-451F-98F5-8B5585C33C54\r",
+      "title": "MU4IN800-LRC-Cours\r",
+      "start": "2024-12-04T12:45:00.000Z",
+      "end": "2024-12-04T14:45:00.000Z",
+      "location": "AMPHI 15\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "80B62713-EAF1-4571-878D-2D097BCAE656\r",
+      "title": "MU4IN801-MLBDA-Cours\r",
+      "start": "2024-12-04T15:00:00.000Z",
+      "end": "2024-12-04T17:00:00.000Z",
+      "location": "AMPHI 56A\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "AB3EF924-82E0-4C3F-AEC4-2536F9168CC2\r",
@@ -1836,7 +3909,8 @@
       "end": "2024-12-05T14:45:00.000Z",
       "location": "33.34.117\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "AB3EF924-82E0-4C3F-AEC4-2536F9168CC2\r",
@@ -1845,7 +3919,8 @@
       "end": "2024-12-12T14:45:00.000Z",
       "location": "33.34.117\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "2A8DD8C0-DAC7-4B27-92C9-010D2B80AF2F\r",
@@ -1854,7 +3929,8 @@
       "end": "2024-12-16T14:45:00.000Z",
       "location": "Salle 24.25.304\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "AE52C517-FAE9-4AC8-8B49-7C808FE2244C\r",
@@ -1863,7 +3939,68 @@
       "end": "2024-12-16T17:00:00.000Z",
       "location": "Salle 56.66.201BIS\\n\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "3CCFE419-BE98-4E1F-8D94-F4F3778887D5\r",
+      "title": "UM4IN600-BIMA-Cours English\r",
+      "start": "2025-09-15T14:00:00.000Z",
+      "end": "2025-09-15T16:00:00.000Z",
+      "location": "14.24.107\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "749EE88E-BE71-44F5-9CA9-C8E8FB906DFD\r",
+      "title": "UM4IN600-BIMA-Cours\r",
+      "start": "2025-09-16T11:45:00.000Z",
+      "end": "2025-09-16T13:45:00.000Z",
+      "location": "AMPHI.24\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "467B0551-3AD4-4DFB-96B6-6B9FAAB3D040\r",
+      "title": "UM4IN601-MAPSI-Cours\r",
+      "start": "2025-09-16T14:00:00.000Z",
+      "end": "2025-09-16T16:00:00.000Z",
+      "location": "AMPHI.15\r",
+      "ue": "MAPSI",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-09-17T11:45:00.000Z",
+      "end": "2025-09-17T13:45:00.000Z",
+      "location": "n°667379\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-09-17T11:45:00.000Z",
+      "end": "2025-09-17T13:45:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC\r",
+      "title": "UM4IN801-MLBDA-Cours\r",
+      "start": "2025-09-17T14:00:00.000Z",
+      "end": "2025-09-17T16:00:00.000Z",
+      "location": "AMPHI 45B\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "3E9D8951-25F3-4D7E-89DA-865059FE5E19\r",
@@ -1872,7 +4009,8 @@
       "end": "2025-09-22T08:30:00.000Z",
       "location": "46.56.116\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "23845D78-EA8B-410E-BC66-A677DF5561EF\r",
@@ -1881,7 +4019,8 @@
       "end": "2025-09-22T10:45:00.000Z",
       "location": "14.15.408\r",
       "ue": "MAPSI",
-      "group": "1"
+      "group": "1",
+      "type": "AUTRE"
     },
     {
       "id": "156414DE-6C78-4E60-8331-A83D1FF711D7\r",
@@ -1890,7 +4029,8 @@
       "end": "2025-09-23T08:30:00.000Z",
       "location": "Salle 14.15.406\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
     },
     {
       "id": "E24BFD70-EA8E-403C-941D-1D8BDD4DFEC0\r",
@@ -1899,7 +4039,28 @@
       "end": "2025-09-23T10:45:00.000Z",
       "location": "Salle 55.65.105\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "28C4FCD6-1E59-4D3A-B835-E5E24F8E7760\r",
+      "title": "UM4IN600-BIMA-Cours\r",
+      "start": "2025-09-23T11:45:00.000Z",
+      "end": "2025-09-23T13:45:00.000Z",
+      "location": "AMPHI.56B\r",
+      "ue": "BIMA",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-09-24T11:45:00.000Z",
+      "end": "2025-09-24T13:45:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "6970867E-47FC-4462-9547-1298E369B4E8\r",
@@ -1908,7 +4069,8 @@
       "end": "2025-09-25T08:30:00.000Z",
       "location": "Salle 23.24.112\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "34332535-C562-42AD-A69F-6B2858694C8B\r",
@@ -1917,7 +4079,8 @@
       "end": "2025-09-25T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "720171C7-DB10-4AC7-8DF0-BB3BC4E52078\r",
@@ -1926,7 +4089,8 @@
       "end": "2025-09-25T13:45:00.000Z",
       "location": "24.34.212\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "C89BF1D8-D35F-4576-A8C5-14E7ACF9A059\r",
@@ -1935,7 +4099,8 @@
       "end": "2025-09-25T16:00:00.000Z",
       "location": "14.15.408\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706\r",
@@ -1944,7 +4109,18 @@
       "end": "2025-09-30T10:45:00.000Z",
       "location": "Salle 23.24.212\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-10-01T11:45:00.000Z",
+      "end": "2025-10-01T13:45:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706\r",
@@ -1953,7 +4129,18 @@
       "end": "2025-10-07T10:45:00.000Z",
       "location": "Salle 55.65.105\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-10-08T11:45:00.000Z",
+      "end": "2025-10-08T13:45:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706\r",
@@ -1962,7 +4149,18 @@
       "end": "2025-10-14T10:45:00.000Z",
       "location": "Salle 24.34.103\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-10-15T11:45:00.000Z",
+      "end": "2025-10-15T13:45:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "D61CBD14-5ECF-4FF6-9D78-D8CB44E30D57\r",
@@ -1971,7 +4169,8 @@
       "end": "2025-10-20T13:45:00.000Z",
       "location": "",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "E9C310DE-CF04-4A46-871F-7C51E4DB50FB\r",
@@ -1980,7 +4179,8 @@
       "end": "2025-10-20T16:00:00.000Z",
       "location": "14.15.408\r",
       "ue": "BIMA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706\r",
@@ -1989,7 +4189,28 @@
       "end": "2025-10-21T10:45:00.000Z",
       "location": "Salle 14.24.207\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-10-22T11:45:00.000Z",
+      "end": "2025-10-22T13:45:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC\r",
+      "title": "UM4IN801-MLBDA-Cours ( cours reporté au 12/11)\r",
+      "start": "2025-10-22T14:00:00.000Z",
+      "end": "2025-10-22T16:00:00.000Z",
+      "location": "",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "6970867E-47FC-4462-9547-1298E369B4E8\r",
@@ -1998,7 +4219,8 @@
       "end": "2025-10-23T08:30:00.000Z",
       "location": "",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "34332535-C562-42AD-A69F-6B2858694C8B\r",
@@ -2007,7 +4229,8 @@
       "end": "2025-10-23T10:45:00.000Z",
       "location": "Salle 14.15.408\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "22418698-BDC5-45EE-94FF-4414B2B34ACD\r",
@@ -2016,7 +4239,28 @@
       "end": "2025-11-04T11:45:00.000Z",
       "location": "Salle 55.65.105\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-11-05T12:45:00.000Z",
+      "end": "2025-11-05T14:45:00.000Z",
+      "location": "AMPHI B2\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "B63CA54E-3356-45D7-A30F-E09BBA4E79CD\r",
+      "title": "UM4IN801-MLBDA-Cours ( report du 22/10\r",
+      "start": "2025-11-12T15:00:00.000Z",
+      "end": "2025-11-12T17:00:00.000Z",
+      "location": "675825\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "BB14D5CE-B056-4E66-B2FF-F435624A6177\r",
@@ -2025,7 +4269,8 @@
       "end": "2025-11-13T09:30:00.000Z",
       "location": "n°675808\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "C016C4EF-1CA1-4FBC-817E-315494378D6E\r",
@@ -2034,7 +4279,8 @@
       "end": "2025-11-13T11:45:00.000Z",
       "location": "Mail envoyé à la PPTI le 03/09\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     },
     {
       "id": "CDF2384C-F079-48A8-A11B-D1EC90A80B4C\r",
@@ -2043,7 +4289,28 @@
       "end": "2025-11-25T11:45:00.000Z",
       "location": "n°667399\r",
       "ue": "LRC",
-      "group": "2"
+      "group": "2",
+      "type": "AUTRE"
+    },
+    {
+      "id": "E92A3D6F-74CE-4AE6-A2DA-DAD64144A4D6\r",
+      "title": "UM4IN800-LRC-Cours\r",
+      "start": "2025-11-26T12:45:00.000Z",
+      "end": "2025-11-26T14:45:00.000Z",
+      "location": "n°667383\r",
+      "ue": "LRC",
+      "group": null,
+      "type": "CM"
+    },
+    {
+      "id": "09A4F47A-3D55-4957-8B30-67D35710A821\r",
+      "title": "UM4IN801-MLBDA-Cours\r",
+      "start": "2025-11-26T15:00:00.000Z",
+      "end": "2025-11-26T17:00:00.000Z",
+      "location": "n°667382\r",
+      "ue": "MLBDA",
+      "group": null,
+      "type": "CM"
     },
     {
       "id": "646B3B82-12E0-44B5-84F2-41E1B88DB3D8\r",
@@ -2052,7 +4319,8 @@
       "end": "2025-11-27T09:30:00.000Z",
       "location": "n°667404\r",
       "ue": "MLBDA",
-      "group": "3"
+      "group": "3",
+      "type": "AUTRE"
     }
   ]
 }

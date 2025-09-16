@@ -45,7 +45,6 @@ function includesAny(text, substrings) {
 
 function extractGroupStrict(text) {
   if (!text) return null;
-  // Examples: "Groupe 3", "GR3", "GR 3", "TD3", "TME5", "G3"
   const patterns = [
     /\b(?:groupe|grp|gr|g)\s*([0-9])\b/i,
     /\bTD\s*([0-9])\b/i,
@@ -58,14 +57,25 @@ function extractGroupStrict(text) {
   return null;
 }
 
+function detectType(text) {
+  if (!text) return 'AUTRE';
+  if (/\bCM\b/i.test(text) || /-Cours\b/i.test(text) || /\bCours\b/i.test(text) || /\bLecture\b/i.test(text)) return 'CM';
+  if (/\bTD\b/i.test(text)) return 'TD';
+  if (/\bTME\b/i.test(text) || /\bTP\b/i.test(text)) return 'TME';
+  return 'AUTRE';
+}
+
 function matchEventToFilters(summary, description, location) {
   const content = `${summary || ''} ${description || ''} ${location || ''}`;
   for (const { code, group } of UE_FILTERS) {
     if (includesAny(content, [code])) {
+      const type = detectType(content);
+      if (type === 'CM') {
+        return { code, group: null, type };
+      }
       const grp = extractGroupStrict(content);
-      // Strict: require a detected group and it must match the configured one
       if (grp && grp === group) {
-        return { code, group };
+        return { code, group, type };
       }
     }
   }
@@ -136,7 +146,8 @@ function parseIcsAndFilter(icsText) {
       end,
       location,
       ue: filter.code,
-      group: filter.group
+      group: filter.group,
+      type: filter.type
     });
   }
   return events;
