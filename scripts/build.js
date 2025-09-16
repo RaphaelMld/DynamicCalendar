@@ -59,21 +59,31 @@ function detectGroup(text) {
   return null;
 }
 
+function isTDorTME(text) {
+  return /\b(TD|TME|TP)\b/i.test(text);
+}
+
 function matchUEAndGroup(summary, description, location) {
   const content = `${summary || ''} ${description || ''} ${location || ''}`;
+  
   for (const { code, group, aliases } of UE_FILTERS) {
     if (!includesAny(content, aliases || [code])) continue;
     // Exclude BIMA English
     if (code === 'BIMA' && /english/i.test(content)) continue;
 
     const grp = detectGroup(content);
-    // If a group is explicitly present, require it to match
-    if (grp) {
-      if (grp === group) return { code, group };
-      continue;
+    const isTD = isTDorTME(content);
+    
+    // For TD/TME: require group match
+    if (isTD) {
+      if (grp && grp === group) {
+        return { code, group };
+      }
+      continue; // Skip if TD/TME but wrong group
     }
-    // No group markers => include (typically CM)
-    return { code, group: null };
+    
+    // For CM and other types: include regardless of group
+    return { code, group: grp || null };
   }
   return null;
 }
@@ -98,7 +108,7 @@ function toJsDate(icalTime) {
   try { return icalTime && icalTime.toJSDate ? icalTime.toJSDate() : null; } catch { return null; }
 }
 
-function expandEvents(icsText, windowStart, windowEnd) {
+function expandEvents(icsText) {
   const events = [];
   let jcal;
   try { jcal = ICAL.parse(icsText); } catch { return events; }
@@ -107,50 +117,48 @@ function expandEvents(icsText, windowStart, windowEnd) {
 
   for (const v of vevents) {
     const ev = new ICAL.Event(v);
-    // Skip overridden instances; iterate from master only
-    if (v.hasProperty('recurrence-id')) continue;
-
     const summary = String(ev.summary || '');
     const description = String(v.getFirstPropertyValue('description') || '');
     const location = String(v.getFirstPropertyValue('location') || '');
 
-    const duration = ev.endDate && ev.startDate ? ev.endDate.subtractDate(ev.startDate) : null;
+    const match = matchUEAndGroup(summary, description, location);
+    if (!match) continue;
 
+    // Handle recurring events
     if (ev.isRecurring()) {
-      const it = ev.iterator(windowStart);
-      for (let next = it.next(); next; next = it.next()) {
-        const occStart = toJsDate(next);
-        if (!occStart) continue;
-        if (occStart > windowEnd.toJSDate()) break;
-        if (occStart < windowStart.toJSDate()) continue;
-
-        const occEnd = duration ? next.clone().addDuration(duration) : null;
-        const endJs = occEnd ? toJsDate(occEnd) : null;
-
-        const match = matchUEAndGroup(summary, description, location);
-        if (!match) continue;
+      const iterator = new ICAL.RecurExpansion({
+        component: v,
+        dtstart: ev.startDate
+      });
+      
+      let next;
+      let count = 0;
+      while ((next = iterator.next()) && count < 100) { // Limit to prevent infinite loops
+        count++;
+        const start = next.toJSDate();
+        const end = ev.endDate ? ev.endDate.toJSDate() : new Date(start.getTime() + 2 * 60 * 60 * 1000); // Default 2h duration
+        
         events.push({
-          id: `${v.getFirstPropertyValue('uid') || Math.random().toString(36).slice(2)}-${+occStart}`,
+          id: `${v.getFirstPropertyValue('uid') || Math.random().toString(36).slice(2)}-${+start}`,
           title: summary,
-          start: occStart.toISOString(),
-          end: endJs ? endJs.toISOString() : null,
+          start: start.toISOString(),
+          end: end.toISOString(),
           location,
           ue: match.code,
           group: match.group
         });
       }
     } else {
-      const startJs = toJsDate(ev.startDate);
-      const endJs = toJsDate(ev.endDate);
-      if (!startJs) continue;
-      if (startJs < windowStart.toJSDate() || startJs > windowEnd.toJSDate()) continue;
-      const match = matchUEAndGroup(summary, description, location);
-      if (!match) continue;
+      // Single event
+      const start = toJsDate(ev.startDate);
+      const end = toJsDate(ev.endDate);
+      if (!start) continue;
+      
       events.push({
         id: String(v.getFirstPropertyValue('uid') || Math.random().toString(36).slice(2)),
         title: summary,
-        start: startJs.toISOString(),
-        end: endJs ? endJs.toISOString() : null,
+        start: start.toISOString(),
+        end: end ? end.toISOString() : new Date(start.getTime() + 2 * 60 * 60 * 1000).toISOString(),
         location,
         ue: match.code,
         group: match.group
@@ -164,16 +172,11 @@ async function build() {
   const outDir = path.resolve(__dirname, '../public/data');
   await mkdir(outDir, { recursive: true });
 
-  // Expand for a wide academic window (past 3 months to next 9 months)
-  const now = ICAL.Time.fromJSDate(new Date());
-  const windowStart = now.clone(); windowStart.year -= 0; windowStart.month -= 3; // approx 3 months back
-  const windowEnd = now.clone(); windowEnd.year += 1; windowEnd.month -= 3; // approx +9 months
-
   const all = [];
   for (const src of CAL_SOURCES) {
     try {
       const ics = await fetchIcs(src);
-      const evs = expandEvents(ics, windowStart, windowEnd);
+      const evs = expandEvents(ics);
       all.push(...evs);
     } catch (e) {
       console.error('Fetch failed', src, e.message);
