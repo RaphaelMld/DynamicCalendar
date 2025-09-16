@@ -3,6 +3,7 @@ import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
+import ICAL from 'ical.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -45,10 +46,12 @@ function includesAny(text, substrings) {
 
 function extractGroupStrict(text) {
   if (!text) return null;
+  // Accept explicit group markers only; do NOT treat TME numbers as group
   const patterns = [
     /\b(?:groupe|grp|gr|g)\s*([0-9])\b/i,
+    /\(\s*G\s*([0-9])\s*\)/i,
+    /\bG\s*([0-9])\b/i,
     /\bTD\s*([0-9])\b/i,
-    /\bTME\s*([0-9])\b/i,
   ];
   for (const re of patterns) {
     const m = text.match(re);
@@ -110,37 +113,29 @@ async function fetchIcsFromCalDavCollection(collectionUrl) {
   throw new Error(`Failed to retrieve ICS from ${collectionUrl}`);
 }
 
+function safeStr(v) {
+  return (v ?? '').toString().replace(/\\,/g, ',');
+}
+
 function parseIcsAndFilter(icsText) {
   const events = [];
-  const veventBlocks = icsText.split(/BEGIN:VEVENT/).slice(1);
-  for (const block of veventBlocks) {
-    const segment = 'BEGIN:VEVENT' + block;
-    const endIndex = segment.indexOf('END:VEVENT');
-    const vevent = endIndex >= 0 ? segment.slice(0, endIndex) : segment;
+  let jcal;
+  try {
+    jcal = ICAL.parse(icsText);
+  } catch {
+    return events;
+  }
+  const comp = new ICAL.Component(jcal);
+  const vevents = comp.getAllSubcomponents('vevent');
+  for (const v of vevents) {
+    const ev = new ICAL.Event(v);
+    const summary = safeStr(ev.summary);
+    const description = safeStr(v.getFirstPropertyValue('description'));
+    const location = safeStr(v.getFirstPropertyValue('location'));
+    const uid = safeStr(v.getFirstPropertyValue('uid')) || `${Math.random().toString(36).slice(2)}`;
 
-    const get = (prop) => {
-      const re = new RegExp(`\\n${prop}(?:;[^:]+)?:([^\\n]+)`, 'i');
-      const m = vevent.match(re);
-      return m ? m[1].replace(/\\,/g, ',') : '';
-    };
-
-    const summary = get('SUMMARY');
-    const description = get('DESCRIPTION');
-    const location = get('LOCATION');
-    const uid = get('UID') || `${Math.random().toString(36).slice(2)}`;
-
-    const dtstartMatch = vevent.match(/\nDTSTART(?:;[^:]+)?:([^\n]+)/i);
-    const dtendMatch = vevent.match(/\nDTEND(?:;[^:]+)?:([^\n]+)/i);
-    const dtstamp = (raw) => {
-      if (!raw) return null;
-      const z = raw.endsWith('Z');
-      const datePart = `${raw.slice(0,4)}-${raw.slice(4,6)}-${raw.slice(6,8)}`;
-      const timePart = raw.includes('T') && raw.length >= 15 ? `${raw.slice(9,11)}:${raw.slice(11,13)}:${raw.slice(13,15)}` : '00:00:00';
-      const iso = `${datePart}T${timePart}${z ? 'Z' : ''}`;
-      return new Date(iso).toISOString();
-    };
-    const start = dtstamp(dtstartMatch?.[1]);
-    const end = dtstamp(dtendMatch?.[1]);
+    const start = ev.startDate && ev.startDate.toJSDate ? ev.startDate.toJSDate().toISOString() : null;
+    const end = ev.endDate && ev.endDate.toJSDate ? ev.endDate.toJSDate().toISOString() : null;
 
     const filter = matchEventToFilters(summary, description, location);
     if (!filter) continue;
