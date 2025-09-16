@@ -43,18 +43,28 @@ function includesAny(text, substrings) {
   return substrings.some(s => lower.includes(s.toLowerCase()));
 }
 
-function extractGroup(text) {
+function extractGroupStrict(text) {
   if (!text) return null;
-  const match = text.match(/\b(?:groupe|grp|gr)\s*([0-9])\b/i);
-  return match ? match[1] : null;
+  // Examples: "Groupe 3", "GR3", "GR 3", "TD3", "TME5", "G3"
+  const patterns = [
+    /\b(?:groupe|grp|gr|g)\s*([0-9])\b/i,
+    /\bTD\s*([0-9])\b/i,
+    /\bTME\s*([0-9])\b/i,
+  ];
+  for (const re of patterns) {
+    const m = text.match(re);
+    if (m) return m[1];
+  }
+  return null;
 }
 
-function matchEventToFilters(summary, description) {
-  const content = `${summary || ''} ${description || ''}`;
+function matchEventToFilters(summary, description, location) {
+  const content = `${summary || ''} ${description || ''} ${location || ''}`;
   for (const { code, group } of UE_FILTERS) {
     if (includesAny(content, [code])) {
-      const grp = extractGroup(content);
-      if (!grp || grp === group) {
+      const grp = extractGroupStrict(content);
+      // Strict: require a detected group and it must match the configured one
+      if (grp && grp === group) {
         return { code, group };
       }
     }
@@ -116,7 +126,7 @@ function parseIcsAndFilter(icsText) {
     const start = dtstamp(dtstartMatch?.[1]);
     const end = dtstamp(dtendMatch?.[1]);
 
-    const filter = matchEventToFilters(summary, description);
+    const filter = matchEventToFilters(summary, description, location);
     if (!filter) continue;
 
     events.push({

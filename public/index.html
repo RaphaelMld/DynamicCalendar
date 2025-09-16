@@ -9,30 +9,18 @@
 <body>
   <header>
     <h1>Emploi du temps — M1</h1>
-    <div class="filters">
-      <label>UE:
-        <select id="ueFilter">
-          <option value="">Toutes</option>
-          <option>DALAS_EN</option>
-          <option>MLBDA</option>
-          <option>LRC</option>
-          <option>MAPSI</option>
-          <option>BIMA</option>
-        </select>
-      </label>
-      <label>Groupe:
-        <select id="groupFilter">
-          <option value="">Tous</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-      </label>
+    <div class="controls">
+      <button id="prevWeek">◀ Semaine précédente</button>
+      <button id="today">Aujourd'hui</button>
+      <button id="nextWeek">Semaine suivante ▶</button>
+      <span id="weekLabel"></span>
     </div>
   </header>
   <main>
     <section id="status">Chargement…</section>
-    <section id="events"></section>
+    <section id="calendar" class="calendar">
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </section>
   </main>
   <script type="module" src="./main.js"></script>
 </body>
