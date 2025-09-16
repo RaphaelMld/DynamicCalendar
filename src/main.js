@@ -108,10 +108,8 @@ function buildGridShell(weekStart, hoursRange) {
     h.className = 'day-header';
     h.textContent = formatDay(day);
     h.dataset.dayIndex = String(i);
-    h.style.cursor = isMobile ? 'pointer' : 'default';
-    if (isMobile) {
-      h.addEventListener('click', () => switchToDay(i, weekStart));
-    }
+    h.style.cursor = 'pointer';
+    h.addEventListener('click', () => switchToDay(i, weekStart));
     headEl.appendChild(h);
   }
 
@@ -245,15 +243,17 @@ function renderMobileDayView(events, weekStart, dayIndex) {
 }
 
 function switchToDay(dayIndex, weekStart) {
-  if (!isMobile) return;
   currentDayIndex = dayIndex;
-  renderMobileDayView(window.myEvents || [], weekStart, dayIndex);
   
   // Mettre à jour l'état visuel des jours
   document.querySelectorAll('.day-header').forEach((header, index) => {
-    header.style.background = index === dayIndex ? '#0b5fff' : '#f1f5f9';
-    header.style.color = index === dayIndex ? 'white' : '#0b1221';
+    if (index === 0) return; // Skip corner
+    header.classList.toggle('active', index - 1 === dayIndex);
   });
+  
+  if (isMobile) {
+    renderMobileDayView(window.myEvents || [], weekStart, dayIndex);
+  }
 }
 
 function setWeekLabel(weekStart) {
