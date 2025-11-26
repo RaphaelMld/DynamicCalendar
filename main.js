@@ -241,7 +241,7 @@ function renderDayView(events, day) {
     </div>
     <div class="day-view-events">
       ${dayEvents.length === 0 ? 
-        '<div style="text-align: center; color: #64748b; padding: 20px;">Aucun événement ce jour</div>' :
+        '<div class="day-view-empty">🎉 Aucun cours ce jour !</div>' :
         dayEvents.map(ev => {
           const start = new Date(ev.start);
           const end = new Date(ev.end || ev.start);
