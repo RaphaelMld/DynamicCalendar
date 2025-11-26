@@ -22,11 +22,38 @@ let currentView = 'week'; // 'week' ou 'day'
 let currentDay = new Date();
 let myEvents = [];
 
+let lastGeneratedAt = null;
+
 async function loadEvents() {
-  const res = await fetch('./data/events.json');
+  const res = await fetch('./data/events.json?t=' + Date.now()); // Cache bust
   if (!res.ok) throw new Error(`${res.status}`);
   const data = await res.json();
+  lastGeneratedAt = data.generatedAt;
+  updateLastUpdateDisplay();
   return data.events || [];
+}
+
+function updateLastUpdateDisplay() {
+  const el = document.getElementById('lastUpdate');
+  if (el && lastGeneratedAt) {
+    const d = new Date(lastGeneratedAt);
+    el.textContent = `Màj: ${d.toLocaleDateString('fr-FR')} ${d.toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'})}`;
+  }
+}
+
+async function refreshData() {
+  const btn = document.getElementById('refreshBtn');
+  if (btn) btn.disabled = true;
+  statusEl.textContent = 'Rechargement...';
+  try {
+    const allEvents = await loadEvents();
+    myEvents = filterMyEvents(allEvents);
+    rerender();
+    statusEl.textContent = `${myEvents.length} événements`;
+  } catch (e) {
+    statusEl.textContent = 'Erreur: ' + e.message;
+  }
+  if (btn) btn.disabled = false;
 }
 
 // Fonction pour filtrer les événements selon les cours et groupes
@@ -420,4 +447,7 @@ function switchToView(view) {
   });
 
   rerender();
+  
+  // Expose refresh function globally
+  window.refreshData = refreshData;
 })();

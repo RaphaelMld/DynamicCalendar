@@ -18,6 +18,10 @@
   </header>
   <main>
     <section id="status">Chargement…</section>
+    <div class="refresh-bar">
+      <span id="lastUpdate"></span>
+      <button id="refreshBtn" onclick="window.refreshData && window.refreshData()">🔄 Recharger</button>
+    </div>
     <section id="calendar" class="calendar">
       <div class="calendar-head" id="calendarHead"></div>
       <div class="calendar-body" id="calendarBody"></div>

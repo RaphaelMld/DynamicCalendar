@@ -18,6 +18,36 @@ h1 {
   font-size: 20px; 
 }
 
+.refresh-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: #e8f0fe;
+  font-size: 13px;
+  color: #555;
+}
+
+.refresh-bar button {
+  padding: 4px 10px;
+  border: 1px solid #0b5fff;
+  background: white;
+  color: #0b5fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.refresh-bar button:hover {
+  background: #0b5fff;
+  color: white;
+}
+
+.refresh-bar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .controls { 
   display: flex; 
   gap: 8px; 
