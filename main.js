@@ -176,7 +176,8 @@ function renderEvents(events, weekStart, hoursRange) {
 
     const dayIndex = (start.getDay() + 6) % 7; // Monday=0
     const hourTop = start.getHours() + start.getMinutes() / 60;
-    const durationH = Math.max(1.0, hoursBetween(start, end));
+    const actualDuration = (end - start) / (1000 * 60 * 60); // Durée en heures
+    const durationH = Math.max(1.0, actualDuration);
 
     const col = bodyEl.querySelector(`.day-col[data-day-index="${dayIndex}"]`);
     if (!col) continue;
