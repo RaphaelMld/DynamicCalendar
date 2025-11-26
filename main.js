@@ -18,7 +18,8 @@ const MY_COURSES = {
 // Variables pour la navigation
 let currentWeekStart = startOfWeek(new Date());
 let currentDayIndex = 0;
-let currentView = 'week'; // 'week' ou 'day'
+// Sur mobile, afficher par défaut en vue jour
+let currentView = window.innerWidth <= 640 ? 'day' : 'week';
 let currentDay = new Date();
 let myEvents = [];
 

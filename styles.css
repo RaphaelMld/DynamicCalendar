@@ -372,4 +372,19 @@ section#status {
     padding: 6px 2px;
     font-size: 10px;
   }
+  
+  /* Sur mobile, la vue semaine est très compressée - suggérer la vue jour */
+  .calendar {
+    font-size: 9px;
+  }
+  
+  .event .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .event .meta {
+    display: none; /* Cacher les détails sur mobile en vue semaine */
+  }
 }
