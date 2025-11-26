@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2025-09-16T21:11:42.469Z",
-  "count": 3368,
+  "generatedAt": "2025-11-26T18:27:07.485Z",
+  "count": 3272,
   "events": [
     {
       "id": "BC410D30-72B4-4AC4-85F3-FDF0D014AC37",
@@ -891,15 +891,6 @@
       "end": "2017-09-27T13:45:00.000Z",
       "location": "AMPHI B1",
       "ue": "LRC",
-      "group": null
-    },
-    {
-      "id": "6D60D77C-B8DB-4454-8337-81D58AF7B402-1507730400000",
-      "title": "4I801-Cours-MLBDA",
-      "start": "2017-10-11T14:00:00.000Z",
-      "end": "2017-09-20T16:00:00.000Z",
-      "location": "AMPHI 34A",
-      "ue": "MLBDA",
       "group": null
     },
     {
@@ -1812,15 +1803,6 @@
       "group": "4"
     },
     {
-      "id": "B4B6936E-E3AD-47D0-8A93-D657390FCD3F-1511422200000",
-      "title": "4I801-TD3-MLBDA",
-      "start": "2017-11-23T07:30:00.000Z",
-      "end": "2017-11-23T09:30:00.000Z",
-      "location": "Salle en attente",
-      "ue": "MLBDA",
-      "group": "3"
-    },
-    {
       "id": "B4B6936E-E3AD-47D0-8A93-D657390FCD3F",
       "title": "4I801-TD3-MLBDA",
       "start": "2017-11-23T07:30:00.000Z",
@@ -1846,15 +1828,6 @@
       "location": "Salle 409 14/15",
       "ue": "LRC",
       "group": "4"
-    },
-    {
-      "id": "F924CC10-7D09-4FD7-B791-733D967E524E-1511449200000",
-      "title": "4I601-TD5-MAPSI",
-      "start": "2017-11-23T15:00:00.000Z",
-      "end": "2017-11-23T17:00:00.000Z",
-      "location": "Salle en attente",
-      "ue": "MAPSI",
-      "group": "5"
     },
     {
       "id": "F924CC10-7D09-4FD7-B791-733D967E524E",
@@ -2523,15 +2496,6 @@
       "group": "1"
     },
     {
-      "id": "7FC03538-A757-4183-9ECF-EED60DA5952E-1513004400000",
-      "title": "4I800-TME1-LRC",
-      "start": "2017-12-11T15:00:00.000Z",
-      "end": "2017-11-20T17:00:00.000Z",
-      "location": "Salle 303 14/15",
-      "ue": "LRC",
-      "group": "1"
-    },
-    {
       "id": "7FC03538-A757-4183-9ECF-EED60DA5952E",
       "title": "4I800-TME1-LRC",
       "start": "2017-12-11T15:00:00.000Z",
@@ -2816,15 +2780,6 @@
       "start": "2017-12-18T12:45:00.000Z",
       "end": "2017-11-20T14:45:00.000Z",
       "location": "Salle 110 14/24",
-      "ue": "LRC",
-      "group": "1"
-    },
-    {
-      "id": "7FC03538-A757-4183-9ECF-EED60DA5952E-1513609200000",
-      "title": "4I800-TME1-LRC",
-      "start": "2017-12-18T15:00:00.000Z",
-      "end": "2017-11-20T17:00:00.000Z",
-      "location": "Salle 303 14/15",
       "ue": "LRC",
       "group": "1"
     },
@@ -6141,15 +6096,6 @@
       "group": null
     },
     {
-      "id": "F41B9452-6237-43E9-9969-221D20E5AEDD-1568807100000",
-      "title": "MU4IN800-LRC-Cours",
-      "start": "2019-09-18T11:45:00.000Z",
-      "end": "2019-09-18T13:45:00.000Z",
-      "location": "AMPHI 15",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "F41B9452-6237-43E9-9969-221D20E5AEDD",
       "title": "MU4IN800-LRC-Cours",
       "start": "2019-09-18T11:45:00.000Z",
@@ -8265,15 +8211,6 @@
       "group": "3"
     },
     {
-      "id": "356D7B97-C092-4EEF-98F4-C74276FD8D7F-1575385200000",
-      "title": "MU4IN601-MAPSI-Cours",
-      "start": "2019-12-03T15:00:00.000Z",
-      "end": "2019-11-19T17:00:00.000Z",
-      "location": "AMPHI 15",
-      "ue": "MAPSI",
-      "group": null
-    },
-    {
       "id": "356D7B97-C092-4EEF-98F4-C74276FD8D7F",
       "title": "MU4IN601-MAPSI-Cours",
       "start": "2019-12-03T15:00:00.000Z",
@@ -8328,29 +8265,11 @@
       "group": "3"
     },
     {
-      "id": "DDA964AB-29A7-4F1D-A011-F639A04B06B7-1575531000000",
-      "title": "MU4IN800-LRC-TD4",
-      "start": "2019-12-05T07:30:00.000Z",
-      "end": "2019-11-21T09:30:00.000Z",
-      "location": "Salle 14.24 110",
-      "ue": "LRC",
-      "group": "4"
-    },
-    {
       "id": "DDA964AB-29A7-4F1D-A011-F639A04B06B7",
       "title": "MU4IN800-LRC-TD4",
       "start": "2019-12-05T07:30:00.000Z",
       "end": "2019-12-05T09:30:00.000Z",
       "location": "Reporté au 18/12",
-      "ue": "LRC",
-      "group": "4"
-    },
-    {
-      "id": "B6F231DC-73FB-4255-98E2-E35C2F9E3335-1575539100000",
-      "title": "MU4IN800-LRC-TME4",
-      "start": "2019-12-05T09:45:00.000Z",
-      "end": "2019-09-26T10:45:00.000Z",
-      "location": "Salle14.15 401",
       "ue": "LRC",
       "group": "4"
     },
@@ -8715,15 +8634,6 @@
       "group": "3"
     },
     {
-      "id": "D17D31F5-F368-4DA0-A151-CDC97DB5D0F2-1576154700000",
-      "title": "MU4IN600-BIMA-TME2",
-      "start": "2019-12-12T12:45:00.000Z",
-      "end": "2019-09-26T13:45:00.000Z",
-      "location": "Salle 24.25 302",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
       "id": "D17D31F5-F368-4DA0-A151-CDC97DB5D0F2",
       "title": "MU4IN600-BIMA-TME2",
       "start": "2019-12-12T12:45:00.000Z",
@@ -8992,15 +8902,6 @@
       "location": "Salle14.15 401",
       "ue": "LRC",
       "group": "4"
-    },
-    {
-      "id": "D17D31F5-F368-4DA0-A151-CDC97DB5D0F2-1576759500000",
-      "title": "MU4IN600-BIMA-TME2",
-      "start": "2019-12-19T12:45:00.000Z",
-      "end": "2019-09-26T13:45:00.000Z",
-      "location": "Salle 24.25 302",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "D17D31F5-F368-4DA0-A151-CDC97DB5D0F2",
@@ -12585,15 +12486,6 @@
       "group": "3"
     },
     {
-      "id": "59063242-9C05-47B6-B2FB-52118E0F052C-1632205800000",
-      "title": "MU4IN600-BIMA-TD2 (en anglais)",
-      "start": "2021-09-21T06:30:00.000Z",
-      "end": "2021-09-21T08:30:00.000Z",
-      "location": "",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
       "id": "59063242-9C05-47B6-B2FB-52118E0F052C",
       "title": "MU4IN600-BIMA-TD2 (en anglais)",
       "start": "2021-09-21T06:30:00.000Z",
@@ -13312,15 +13204,6 @@
       "location": "Salle 14.15.408",
       "ue": "MLBDA",
       "group": "2"
-    },
-    {
-      "id": "0D941809-B226-4004-9525-115065BFBFB2-1633520700000",
-      "title": "MU4IN800-LRC-Cours",
-      "start": "2021-10-06T11:45:00.000Z",
-      "end": "2021-09-22T13:45:00.000Z",
-      "location": "AMPHI 34A",
-      "ue": "LRC",
-      "group": null
     },
     {
       "id": "0D941809-B226-4004-9525-115065BFBFB2",
@@ -14247,15 +14130,6 @@
       "end": "2021-09-22T13:45:00.000Z",
       "location": "AMPHI 34A",
       "ue": "LRC",
-      "group": null
-    },
-    {
-      "id": "8C0F3E4D-5626-4E5F-B2AD-47B9299D60F9-1635343200000",
-      "title": "MU4IN801-MLBDA-Cours",
-      "start": "2021-10-27T14:00:00.000Z",
-      "end": "2021-09-22T16:00:00.000Z",
-      "location": "AMPHI 45B",
-      "ue": "MLBDA",
       "group": null
     },
     {
@@ -15726,29 +15600,11 @@
       "group": null
     },
     {
-      "id": "C01050D1-8CC9-452B-A318-940B27050B98-1662983100000",
-      "title": "MU4IN600-BIMA-Cours en Anglais",
-      "start": "2022-09-12T11:45:00.000Z",
-      "end": "2022-09-12T13:45:00.000Z",
-      "location": "",
-      "ue": "BIMA",
-      "group": null
-    },
-    {
       "id": "C01050D1-8CC9-452B-A318-940B27050B98",
       "title": "MU4IN600-BIMA-Cours en Anglais",
       "start": "2022-09-12T11:45:00.000Z",
       "end": "2022-09-12T13:45:00.000Z",
       "location": "Salle 24.34.204",
-      "ue": "BIMA",
-      "group": null
-    },
-    {
-      "id": "3930EFD0-E32B-458A-B074-A2AE58CC8CEA-1663069500000",
-      "title": "MU4IN600-BIMA-Cours",
-      "start": "2022-09-13T11:45:00.000Z",
-      "end": "2022-09-13T13:45:00.000Z",
-      "location": "",
       "ue": "BIMA",
       "group": null
     },
@@ -15768,15 +15624,6 @@
       "end": "2022-09-13T16:00:00.000Z",
       "location": "AMPHI 15",
       "ue": "MAPSI",
-      "group": null
-    },
-    {
-      "id": "7818A976-73CB-4FB3-8A25-2FAA0591AB95-1663155900000",
-      "title": "MU4IN800-LRC-Cours",
-      "start": "2022-09-14T11:45:00.000Z",
-      "end": "2022-09-14T13:45:00.000Z",
-      "location": "",
-      "ue": "LRC",
       "group": null
     },
     {
@@ -15859,15 +15706,6 @@
       "location": "Salle 55.65.101",
       "ue": "MAPSI",
       "group": "2"
-    },
-    {
-      "id": "C01050D1-8CC9-452B-A318-940B27050B98-1663587900000",
-      "title": "MU4IN600-BIMA-Cours en Anglais",
-      "start": "2022-09-19T11:45:00.000Z",
-      "end": "2022-09-12T13:45:00.000Z",
-      "location": "",
-      "ue": "BIMA",
-      "group": null
     },
     {
       "id": "C01050D1-8CC9-452B-A318-940B27050B98",
@@ -16068,15 +15906,6 @@
       "group": "3"
     },
     {
-      "id": "26E906EF-070A-4698-8FCA-2AB675F45EE2-1663836300000",
-      "title": "MU4IN800-LRC-TD4",
-      "start": "2022-09-22T08:45:00.000Z",
-      "end": "2022-09-22T10:45:00.000Z",
-      "location": "",
-      "ue": "LRC",
-      "group": "4"
-    },
-    {
       "id": "26E906EF-070A-4698-8FCA-2AB675F45EE2",
       "title": "MU4IN800-LRC-TD4",
       "start": "2022-09-22T08:45:00.000Z",
@@ -16086,15 +15915,6 @@
       "group": "4"
     },
     {
-      "id": "D5155D56-6F2B-49D6-8238-AACD915DD31C-1663836300000",
-      "title": "MU4IN800-LRC-TD5",
-      "start": "2022-09-22T08:45:00.000Z",
-      "end": "2022-09-22T10:45:00.000Z",
-      "location": "",
-      "ue": "LRC",
-      "group": "5"
-    },
-    {
       "id": "D5155D56-6F2B-49D6-8238-AACD915DD31C",
       "title": "MU4IN800-LRC-TD5",
       "start": "2022-09-22T08:45:00.000Z",
@@ -16102,15 +15922,6 @@
       "location": "ATRIUM 261",
       "ue": "LRC",
       "group": "5"
-    },
-    {
-      "id": "B2420A31-32B8-4361-A8F2-C6745CF306E4-1663847100000",
-      "title": "MU4IN600-BIMA-TD1",
-      "start": "2022-09-22T11:45:00.000Z",
-      "end": "2022-09-22T13:45:00.000Z",
-      "location": "",
-      "ue": "BIMA",
-      "group": "1"
     },
     {
       "id": "B2420A31-32B8-4361-A8F2-C6745CF306E4",
@@ -17706,15 +17517,6 @@
       "group": "2"
     },
     {
-      "id": "1A3A9E58-F753-4FA2-BD9B-DCAC01ACD122-1669034700000",
-      "title": "MU4IN600-BIMA-Cours en Anglais",
-      "start": "2022-11-21T12:45:00.000Z",
-      "end": "2022-11-21T14:45:00.000Z",
-      "location": "Salle 55.65.103",
-      "ue": "BIMA",
-      "group": null
-    },
-    {
       "id": "1A3A9E58-F753-4FA2-BD9B-DCAC01ACD122",
       "title": "MU4IN600-BIMA-Cours en Anglais",
       "start": "2022-11-21T12:45:00.000Z",
@@ -18460,15 +18262,6 @@
       "location": "Salle 14.15.408",
       "ue": "MLBDA",
       "group": "2"
-    },
-    {
-      "id": "06884D3F-CC8E-46B1-84C4-E245C6BC94EF-1670417100000",
-      "title": "MU4IN800-LRC-Cours",
-      "start": "2022-12-07T12:45:00.000Z",
-      "end": "2022-11-23T14:45:00.000Z",
-      "location": "AMPHI A2",
-      "ue": "LRC",
-      "group": null
     },
     {
       "id": "06884D3F-CC8E-46B1-84C4-E245C6BC94EF",
@@ -20919,15 +20712,6 @@
       "group": null
     },
     {
-      "id": "437A6D87-B710-4018-ABDA-8324B60BFCA4-1699879500000",
-      "title": "MU4IN601-MAPSI-TD2",
-      "start": "2023-11-13T12:45:00.000Z",
-      "end": "2023-11-13T14:45:00.000Z",
-      "location": "résa n°607680",
-      "ue": "MAPSI",
-      "group": "2"
-    },
-    {
       "id": "437A6D87-B710-4018-ABDA-8324B60BFCA4",
       "title": "MU4IN601-MAPSI-TD2",
       "start": "2023-11-13T12:45:00.000Z",
@@ -21072,15 +20856,6 @@
       "group": "2"
     },
     {
-      "id": "E3A7A59D-BEA2-4314-8A76-AC274BF3D9A3-1700052300000",
-      "title": "MU4IN800-LRC-Cours",
-      "start": "2023-11-15T12:45:00.000Z",
-      "end": "2023-11-15T14:45:00.000Z",
-      "location": "résa n° 607710",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "E3A7A59D-BEA2-4314-8A76-AC274BF3D9A3",
       "title": "MU4IN800-LRC-Cours",
       "start": "2023-11-15T12:45:00.000Z",
@@ -21151,15 +20926,6 @@
       "location": "Salle 23.24.103",
       "ue": "LRC",
       "group": "3"
-    },
-    {
-      "id": "87A9F9D9-C957-403B-BD0D-80E9ED4F40FE-1700138700000",
-      "title": "MU4IN600-BIMA-TD1",
-      "start": "2023-11-16T12:45:00.000Z",
-      "end": "2023-11-16T14:45:00.000Z",
-      "location": "résa 607704",
-      "ue": "BIMA",
-      "group": "1"
     },
     {
       "id": "87A9F9D9-C957-403B-BD0D-80E9ED4F40FE",
@@ -21241,15 +21007,6 @@
       "location": "Salle 23.24.112",
       "ue": "BIMA",
       "group": null
-    },
-    {
-      "id": "437A6D87-B710-4018-ABDA-8324B60BFCA4-1700484300000",
-      "title": "MU4IN601-MAPSI-TD2",
-      "start": "2023-11-20T12:45:00.000Z",
-      "end": "2023-11-13T14:45:00.000Z",
-      "location": "résa n°607680",
-      "ue": "MAPSI",
-      "group": "2"
     },
     {
       "id": "437A6D87-B710-4018-ABDA-8324B60BFCA4",
@@ -21396,15 +21153,6 @@
       "group": "2"
     },
     {
-      "id": "E3A7A59D-BEA2-4314-8A76-AC274BF3D9A3-1700657100000",
-      "title": "MU4IN800-LRC-Cours",
-      "start": "2023-11-22T12:45:00.000Z",
-      "end": "2023-11-15T14:45:00.000Z",
-      "location": "résa n° 607710",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "E3A7A59D-BEA2-4314-8A76-AC274BF3D9A3",
       "title": "MU4IN800-LRC-Cours",
       "start": "2023-11-22T12:45:00.000Z",
@@ -21468,15 +21216,6 @@
       "group": "4"
     },
     {
-      "id": "516399B8-BA77-4173-A141-75F32D294F6C-1700732700000",
-      "title": "MU4IN800-LRC-TD3",
-      "start": "2023-11-23T09:45:00.000Z",
-      "end": "2023-11-16T11:45:00.000Z",
-      "location": "Salle 23.24.103",
-      "ue": "LRC",
-      "group": "3"
-    },
-    {
       "id": "516399B8-BA77-4173-A141-75F32D294F6C",
       "title": "MU4IN800-LRC-TD3",
       "start": "2023-11-23T09:45:00.000Z",
@@ -21484,15 +21223,6 @@
       "location": "Séance reportée au mercredi 29/11",
       "ue": "LRC",
       "group": "3"
-    },
-    {
-      "id": "87A9F9D9-C957-403B-BD0D-80E9ED4F40FE-1700743500000",
-      "title": "MU4IN600-BIMA-TD1",
-      "start": "2023-11-23T12:45:00.000Z",
-      "end": "2023-11-16T14:45:00.000Z",
-      "location": "résa 607704",
-      "ue": "BIMA",
-      "group": "1"
     },
     {
       "id": "87A9F9D9-C957-403B-BD0D-80E9ED4F40FE",
@@ -21585,15 +21315,6 @@
       "group": "2"
     },
     {
-      "id": "507055A2-4695-48AB-9128-497045ACC78F-1701693900000",
-      "title": "MU4IN600-BIMA-Cours en Anglais",
-      "start": "2023-12-04T12:45:00.000Z",
-      "end": "2023-11-13T14:45:00.000Z",
-      "location": "Salle 23.24.112",
-      "ue": "BIMA",
-      "group": null
-    },
-    {
       "id": "507055A2-4695-48AB-9128-497045ACC78F",
       "title": "MU4IN600-BIMA-Cours en Anglais",
       "start": "2023-12-04T12:45:00.000Z",
@@ -21601,15 +21322,6 @@
       "location": "Salle 23.24.112",
       "ue": "BIMA",
       "group": null
-    },
-    {
-      "id": "437A6D87-B710-4018-ABDA-8324B60BFCA4-1701693900000",
-      "title": "MU4IN601-MAPSI-TD2",
-      "start": "2023-12-04T12:45:00.000Z",
-      "end": "2023-11-13T14:45:00.000Z",
-      "location": "résa n°607680",
-      "ue": "MAPSI",
-      "group": "2"
     },
     {
       "id": "437A6D87-B710-4018-ABDA-8324B60BFCA4",
@@ -21729,15 +21441,6 @@
       "group": "4"
     },
     {
-      "id": "6E0B14D6-3351-4343-AB9F-1FE108AB4892-1701788400000",
-      "title": "MU4IN601-MAPSI-Cours",
-      "start": "2023-12-05T15:00:00.000Z",
-      "end": "2023-11-14T17:00:00.000Z",
-      "location": "AMPHI.34A",
-      "ue": "MAPSI",
-      "group": null
-    },
-    {
       "id": "6E0B14D6-3351-4343-AB9F-1FE108AB4892",
       "title": "MU4IN601-MAPSI-Cours",
       "start": "2023-12-05T15:00:00.000Z",
@@ -21765,30 +21468,12 @@
       "group": "2"
     },
     {
-      "id": "27DE5A5F-B293-4092-8949-1ABD2616166A-1701866700000",
-      "title": "MU4IN800-LRC-Cours",
-      "start": "2023-12-06T12:45:00.000Z",
-      "end": "2023-12-06T14:45:00.000Z",
-      "location": "résa n° 607711",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "27DE5A5F-B293-4092-8949-1ABD2616166A",
       "title": "MU4IN800-LRC-Cours",
       "start": "2023-12-06T12:45:00.000Z",
       "end": "2023-12-06T14:45:00.000Z",
       "location": "AMPHI 44",
       "ue": "LRC",
-      "group": null
-    },
-    {
-      "id": "66028D36-AF61-4449-8EE3-A6743D1BB496-1701874800000",
-      "title": "MU4IN801-MLBDA-Cours",
-      "start": "2023-12-06T15:00:00.000Z",
-      "end": "2023-12-06T17:00:00.000Z",
-      "location": "résa n°607718",
-      "ue": "MLBDA",
       "group": null
     },
     {
@@ -21924,15 +21609,6 @@
       "end": "2023-09-25T13:45:00.000Z",
       "location": "Salle 24.25.304",
       "ue": "LRC",
-      "group": "2"
-    },
-    {
-      "id": "437A6D87-B710-4018-ABDA-8324B60BFCA4-1702298700000",
-      "title": "MU4IN601-MAPSI-TD2",
-      "start": "2023-12-11T12:45:00.000Z",
-      "end": "2023-11-13T14:45:00.000Z",
-      "location": "résa n°607680",
-      "ue": "MAPSI",
       "group": "2"
     },
     {
@@ -22170,15 +21846,6 @@
       "group": null
     },
     {
-      "id": "639ED287-6CB6-4C6C-B6A3-A375DB5AA57E-1705322700000",
-      "title": "MU4IN814-DALAS-Cours",
-      "start": "2024-01-15T12:45:00.000Z",
-      "end": "2024-01-15T14:30:00.000Z",
-      "location": "",
-      "ue": "DALAS",
-      "group": null
-    },
-    {
       "id": "639ED287-6CB6-4C6C-B6A3-A375DB5AA57E",
       "title": "MU4IN814-DALAS-Cours",
       "start": "2024-01-15T12:45:00.000Z",
@@ -22251,29 +21918,11 @@
       "group": null
     },
     {
-      "id": "773E9D0E-E583-4E54-B290-78CFA48282A6-1708951500000",
-      "title": "MU4IN814-DALAS-Cours",
-      "start": "2024-02-26T12:45:00.000Z",
-      "end": "2024-01-22T14:45:00.000Z",
-      "location": "Salle 14.24.105\n",
-      "ue": "DALAS",
-      "group": null
-    },
-    {
       "id": "773E9D0E-E583-4E54-B290-78CFA48282A6",
       "title": "MU4IN814-DALAS-Cours",
       "start": "2024-02-26T12:45:00.000Z",
       "end": "2024-02-26T14:45:00.000Z",
       "location": "Séance annulée ",
-      "ue": "DALAS",
-      "group": null
-    },
-    {
-      "id": "193FDBA0-B778-40E5-BFEF-C2007953D3A4-1710161100000",
-      "title": "MU4IN814-DALAS-Cours",
-      "start": "2024-03-11T12:45:00.000Z",
-      "end": "2024-03-11T14:30:00.000Z",
-      "location": "n°621832",
       "ue": "DALAS",
       "group": null
     },
@@ -22654,15 +22303,6 @@
       "location": "AMPHI HERPIN",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "38BEB369-4135-42C8-8137-EAD5F7A59455-1726727400000",
-      "title": "MU4IN800-LRC-TME3",
-      "start": "2024-09-19T06:30:00.000Z",
-      "end": "2024-09-19T08:30:00.000Z",
-      "location": "",
-      "ue": "LRC",
-      "group": "3"
     },
     {
       "id": "38BEB369-4135-42C8-8137-EAD5F7A59455",
@@ -23727,15 +23367,6 @@
       "group": "1"
     },
     {
-      "id": "8AA20277-00F6-417F-826A-92E092669F3B-1728895500000",
-      "title": "MU4IN601-MAPSI-TME1",
-      "start": "2024-10-14T08:45:00.000Z",
-      "end": "2024-09-16T10:45:00.000Z",
-      "location": "14.15.408",
-      "ue": "MAPSI",
-      "group": "1"
-    },
-    {
       "id": "8AA20277-00F6-417F-826A-92E092669F3B",
       "title": "MU4IN601-MAPSI-TME1",
       "start": "2024-10-14T08:45:00.000Z",
@@ -23796,15 +23427,6 @@
       "end": "2024-09-16T16:00:00.000Z",
       "location": "Salle 14.24.212",
       "ue": "LRC",
-      "group": "2"
-    },
-    {
-      "id": "A3E482B8-918E-484D-A549-5E7897BD4A12-1728914400000",
-      "title": "MU4IN601-MAPSI-TME2",
-      "start": "2024-10-14T14:00:00.000Z",
-      "end": "2024-09-16T16:00:00.000Z",
-      "location": "14.15.408",
-      "ue": "MAPSI",
       "group": "2"
     },
     {
@@ -24202,15 +23824,6 @@
       "location": "Salle 14.15.408",
       "ue": "MLBDA",
       "group": "2"
-    },
-    {
-      "id": "221FFCAD-4B89-43A5-BC56-8B253CE8AB0E-1729692000000",
-      "title": "MU4IN801-MLBDA-Cours",
-      "start": "2024-10-23T14:00:00.000Z",
-      "end": "2024-09-11T16:00:00.000Z",
-      "location": "AMPHI HERPIN",
-      "ue": "MLBDA",
-      "group": null
     },
     {
       "id": "221FFCAD-4B89-43A5-BC56-8B253CE8AB0E",
@@ -24807,15 +24420,6 @@
       "group": "3"
     },
     {
-      "id": "45215D3F-B202-4590-8132-7AF187EC3364-1732182300000",
-      "title": "MU4IN800-LRC-TD4",
-      "start": "2024-11-21T09:45:00.000Z",
-      "end": "2024-11-14T11:45:00.000Z",
-      "location": "N°636748",
-      "ue": "LRC",
-      "group": "4"
-    },
-    {
       "id": "45215D3F-B202-4590-8132-7AF187EC3364",
       "title": "MU4IN800-LRC-TD4",
       "start": "2024-11-21T09:45:00.000Z",
@@ -24823,15 +24427,6 @@
       "location": "Salle 23.24.212\n",
       "ue": "LRC",
       "group": "4"
-    },
-    {
-      "id": "088CC17C-5341-4A21-959C-6DB6BF7A4A93-1732193100000",
-      "title": "MU4IN600-BIMA-TD1",
-      "start": "2024-11-21T12:45:00.000Z",
-      "end": "2024-11-14T14:45:00.000Z",
-      "location": "ATRIUM 245",
-      "ue": "BIMA",
-      "group": "1"
     },
     {
       "id": "088CC17C-5341-4A21-959C-6DB6BF7A4A93",
@@ -25590,15 +25185,6 @@
       "group": "1"
     },
     {
-      "id": "AB3EF924-82E0-4C3F-AEC4-2536F9168CC2-1734007500000",
-      "title": "MU4IN600-BIMA-TD3",
-      "start": "2024-12-12T12:45:00.000Z",
-      "end": "2024-12-05T14:45:00.000Z",
-      "location": "33.34.117",
-      "ue": "BIMA",
-      "group": "3"
-    },
-    {
       "id": "AB3EF924-82E0-4C3F-AEC4-2536F9168CC2",
       "title": "MU4IN600-BIMA-TD3",
       "start": "2024-12-12T12:45:00.000Z",
@@ -25721,15 +25307,6 @@
       "start": "2025-01-13T12:45:00.000Z",
       "end": "2025-01-13T14:45:00.000Z",
       "location": "Salle 23.24.102\n",
-      "ue": "DALAS",
-      "group": null
-    },
-    {
-      "id": "0C1507D9-EBB5-4C9E-8DBB-B36A8D2A7429-1736780460000",
-      "title": "MU4IN814-DALAS-Cours",
-      "start": "2025-01-13T15:01:00.000Z",
-      "end": "2025-01-13T17:01:00.000Z",
-      "location": "Salle 24.34.103\n",
       "ue": "DALAS",
       "group": null
     },
@@ -26130,15 +25707,6 @@
       "group": null
     },
     {
-      "id": "A0E87994-9052-4B06-8F44-8B76635F2907-1757936700000",
-      "title": "UM4IN814-DALAS-Cours",
-      "start": "2025-09-15T11:45:00.000Z",
-      "end": "2025-09-15T13:45:00.000Z",
-      "location": "n°667377",
-      "ue": "DALAS",
-      "group": null
-    },
-    {
       "id": "A0E87994-9052-4B06-8F44-8B76635F2907",
       "title": "UM4IN814-DALAS-Cours",
       "start": "2025-09-15T11:45:00.000Z",
@@ -26163,15 +25731,6 @@
       "end": "2025-09-16T16:00:00.000Z",
       "location": "AMPHI.15",
       "ue": "MAPSI",
-      "group": null
-    },
-    {
-      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1-1758109500000",
-      "title": "UM4IN800-LRC-Cours",
-      "start": "2025-09-17T11:45:00.000Z",
-      "end": "2025-09-17T13:45:00.000Z",
-      "location": "n°667379",
-      "ue": "LRC",
       "group": null
     },
     {
@@ -26292,15 +25851,6 @@
       "group": "2"
     },
     {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1758609000000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-09-23T06:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
       "id": "156414DE-6C78-4E60-8331-A83D1FF711D7-1758609000000",
       "title": "UM4IN800-LRC-TME2",
       "start": "2025-09-23T06:30:00.000Z",
@@ -26335,15 +25885,6 @@
       "location": "14.24.208",
       "ue": "MAPSI",
       "group": "5"
-    },
-    {
-      "id": "602C54DA-9890-4515-AA83-101F56789A9D-1758617100000",
-      "title": "UM4IN814-DALAS-TME2",
-      "start": "2025-09-23T08:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "Salle 14.15.507",
-      "ue": "DALAS",
-      "group": "2"
     },
     {
       "id": "E24BFD70-EA8E-403C-941D-1D8BDD4DFEC0-1758617100000",
@@ -26436,15 +25977,6 @@
       "group": "3"
     },
     {
-      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1-1758714300000",
-      "title": "UM4IN800-LRC-Cours",
-      "start": "2025-09-24T11:45:00.000Z",
-      "end": "2025-09-17T13:45:00.000Z",
-      "location": "n°667379",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1",
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-09-24T11:45:00.000Z",
@@ -26454,15 +25986,6 @@
       "group": null
     },
     {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1758714300000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-09-24T11:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
       "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC-1758722400000",
       "title": "UM4IN801-MLBDA-Cours",
       "start": "2025-09-24T14:00:00.000Z",
@@ -26470,15 +25993,6 @@
       "location": "AMPHI 45B",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1758722400000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-09-24T14:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "6970867E-47FC-4462-9547-1298E369B4E8-1758781800000",
@@ -26530,7 +26044,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-09-25T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667394",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "3"
     },
@@ -26539,7 +26053,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-09-25T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667393",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "4"
     },
@@ -26647,7 +26161,7 @@
       "title": "UM4IN814-DALAS-Cours",
       "start": "2025-09-29T11:45:00.000Z",
       "end": "2025-09-29T13:45:00.000Z",
-      "location": "n°667377",
+      "location": "AMPHI 44",
       "ue": "DALAS",
       "group": null
     },
@@ -26685,15 +26199,6 @@
       "end": "2025-09-22T16:00:00.000Z",
       "location": "14.15.408",
       "ue": "MAPSI",
-      "group": "2"
-    },
-    {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1759213800000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-09-30T06:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
       "group": "2"
     },
     {
@@ -26739,15 +26244,6 @@
       "end": "2025-09-30T10:45:00.000Z",
       "location": "Salle 23.24.212",
       "ue": "LRC",
-      "group": "2"
-    },
-    {
-      "id": "602C54DA-9890-4515-AA83-101F56789A9D-1759221900000",
-      "title": "UM4IN814-DALAS-TME2",
-      "start": "2025-09-30T08:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "Salle 14.15.507",
-      "ue": "DALAS",
       "group": "2"
     },
     {
@@ -26832,15 +26328,6 @@
       "group": "3"
     },
     {
-      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1-1759319100000",
-      "title": "UM4IN800-LRC-Cours",
-      "start": "2025-10-01T11:45:00.000Z",
-      "end": "2025-09-17T13:45:00.000Z",
-      "location": "n°667379",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1",
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-10-01T11:45:00.000Z",
@@ -26850,15 +26337,6 @@
       "group": null
     },
     {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1759319100000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-10-01T11:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
       "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC-1759327200000",
       "title": "UM4IN801-MLBDA-Cours",
       "start": "2025-10-01T14:00:00.000Z",
@@ -26866,15 +26344,6 @@
       "location": "AMPHI 45B",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1759327200000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-10-01T14:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "6970867E-47FC-4462-9547-1298E369B4E8-1759386600000",
@@ -26926,7 +26395,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-10-02T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667394",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "3"
     },
@@ -26935,7 +26404,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-10-02T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667393",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "4"
     },
@@ -27043,7 +26512,7 @@
       "title": "UM4IN814-DALAS-Cours",
       "start": "2025-10-06T11:45:00.000Z",
       "end": "2025-09-29T13:45:00.000Z",
-      "location": "n°667377",
+      "location": "AMPHI 44",
       "ue": "DALAS",
       "group": null
     },
@@ -27084,15 +26553,6 @@
       "group": "2"
     },
     {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1759818600000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-10-07T06:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
       "id": "156414DE-6C78-4E60-8331-A83D1FF711D7-1759818600000",
       "title": "UM4IN800-LRC-TME2",
       "start": "2025-10-07T06:30:00.000Z",
@@ -27129,30 +26589,12 @@
       "group": "5"
     },
     {
-      "id": "A4B4227A-541C-494D-84F9-6E773CA4F706-1759826700000",
-      "title": "UM4IN800-LRC-TD2",
-      "start": "2025-10-07T08:45:00.000Z",
-      "end": "2025-09-30T10:45:00.000Z",
-      "location": "Salle 23.24.212",
-      "ue": "LRC",
-      "group": "2"
-    },
-    {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706",
       "title": "UM4IN800-LRC-TD2",
       "start": "2025-10-07T08:45:00.000Z",
       "end": "2025-10-07T10:45:00.000Z",
       "location": "Salle 55.65.105",
       "ue": "LRC",
-      "group": "2"
-    },
-    {
-      "id": "602C54DA-9890-4515-AA83-101F56789A9D-1759826700000",
-      "title": "UM4IN814-DALAS-TME2",
-      "start": "2025-10-07T08:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "Salle 14.15.507",
-      "ue": "DALAS",
       "group": "2"
     },
     {
@@ -27237,15 +26679,6 @@
       "group": "3"
     },
     {
-      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1-1759923900000",
-      "title": "UM4IN800-LRC-Cours",
-      "start": "2025-10-08T11:45:00.000Z",
-      "end": "2025-09-17T13:45:00.000Z",
-      "location": "n°667379",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1",
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-10-08T11:45:00.000Z",
@@ -27255,15 +26688,6 @@
       "group": null
     },
     {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1759923900000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-10-08T11:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
       "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC-1759932000000",
       "title": "UM4IN801-MLBDA-Cours",
       "start": "2025-10-08T14:00:00.000Z",
@@ -27271,15 +26695,6 @@
       "location": "AMPHI 45B",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1759932000000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-10-08T14:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "6970867E-47FC-4462-9547-1298E369B4E8-1759991400000",
@@ -27331,7 +26746,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-10-09T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667394",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "3"
     },
@@ -27340,7 +26755,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-10-09T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667393",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "4"
     },
@@ -27372,20 +26787,11 @@
       "group": "3"
     },
     {
-      "id": "EAE96650-7C18-4E65-BA53-B0A4E0C89206-1760018400000",
-      "title": "UM4IN814-DALAS-TME5",
-      "start": "2025-10-09T14:00:00.000Z",
-      "end": "2025-09-25T16:00:00.000Z",
-      "location": "Salle 24.25.303",
-      "ue": "DALAS",
-      "group": "5"
-    },
-    {
       "id": "EAE96650-7C18-4E65-BA53-B0A4E0C89206",
       "title": "UM4IN814-DALAS-TME5",
       "start": "2025-10-09T14:00:00.000Z",
       "end": "2025-10-09T16:00:00.000Z",
-      "location": "Salle en attente ",
+      "location": "Salle 24.25.303",
       "ue": "DALAS",
       "group": "5"
     },
@@ -27457,7 +26863,7 @@
       "title": "UM4IN814-DALAS-Cours",
       "start": "2025-10-13T11:45:00.000Z",
       "end": "2025-09-29T13:45:00.000Z",
-      "location": "n°667377",
+      "location": "AMPHI 44",
       "ue": "DALAS",
       "group": null
     },
@@ -27498,15 +26904,6 @@
       "group": "2"
     },
     {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1760423400000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-10-14T06:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
       "id": "156414DE-6C78-4E60-8331-A83D1FF711D7-1760423400000",
       "title": "UM4IN800-LRC-TME2",
       "start": "2025-10-14T06:30:00.000Z",
@@ -27543,30 +26940,12 @@
       "group": "5"
     },
     {
-      "id": "A4B4227A-541C-494D-84F9-6E773CA4F706-1760431500000",
-      "title": "UM4IN800-LRC-TD2",
-      "start": "2025-10-14T08:45:00.000Z",
-      "end": "2025-09-30T10:45:00.000Z",
-      "location": "Salle 23.24.212",
-      "ue": "LRC",
-      "group": "2"
-    },
-    {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706",
       "title": "UM4IN800-LRC-TD2",
       "start": "2025-10-14T08:45:00.000Z",
       "end": "2025-10-14T10:45:00.000Z",
       "location": "Salle 24.34.103",
       "ue": "LRC",
-      "group": "2"
-    },
-    {
-      "id": "602C54DA-9890-4515-AA83-101F56789A9D-1760431500000",
-      "title": "UM4IN814-DALAS-TME2",
-      "start": "2025-10-14T08:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "Salle 14.15.507",
-      "ue": "DALAS",
       "group": "2"
     },
     {
@@ -27651,15 +27030,6 @@
       "group": "3"
     },
     {
-      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1-1760528700000",
-      "title": "UM4IN800-LRC-Cours",
-      "start": "2025-10-15T11:45:00.000Z",
-      "end": "2025-09-17T13:45:00.000Z",
-      "location": "n°667379",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1",
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-10-15T11:45:00.000Z",
@@ -27667,15 +27037,6 @@
       "location": "AMPHI B2",
       "ue": "LRC",
       "group": null
-    },
-    {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1760528700000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-10-15T11:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC-1760536800000",
@@ -27687,112 +27048,22 @@
       "group": null
     },
     {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1760536800000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-10-15T14:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
-      "id": "6970867E-47FC-4462-9547-1298E369B4E8-1760596200000",
+      "id": "43E4C6DE-7095-48F6-B465-2B29B54C53B7",
       "title": "UM4IN801-MLBDA-TD3",
-      "start": "2025-10-16T06:30:00.000Z",
-      "end": "2025-09-25T08:30:00.000Z",
+      "start": "2025-10-16T06:31:00.000Z",
+      "end": "2025-10-16T08:31:00.000Z",
       "location": "Salle 23.24.112",
       "ue": "MLBDA",
       "group": "3"
     },
     {
-      "id": "391E73F8-E718-4C21-BA7A-7736E213383E-1760596200000",
-      "title": "UM4IN800-LRC-TME3",
-      "start": "2025-10-16T06:30:00.000Z",
-      "end": "2025-09-25T08:30:00.000Z",
-      "location": "Salle 14.15.401",
-      "ue": "LRC",
-      "group": "3"
-    },
-    {
-      "id": "68ACD67A-D88B-4E0E-8472-3411F8344591-1760596200000",
-      "title": "UM4IN800-LRC-TME4",
-      "start": "2025-10-16T06:30:00.000Z",
-      "end": "2025-09-25T08:30:00.000Z",
-      "location": "Salle 14.15.406",
-      "ue": "LRC",
-      "group": "4"
-    },
-    {
-      "id": "DE1748FE-6E44-45FD-8E36-488BBD2CDB51-1760596200000",
-      "title": "UM4IN814-DALAS-TD4",
-      "start": "2025-10-16T06:30:00.000Z",
-      "end": "2025-09-25T08:30:00.000Z",
-      "location": "Salle 23.24.102",
-      "ue": "DALAS",
-      "group": "4"
-    },
-    {
-      "id": "34332535-C562-42AD-A69F-6B2858694C8B-1760604300000",
+      "id": "3C514588-E104-4E2D-84DC-3172F49B3E1B",
       "title": "UM4IN801-MLBDA-TME3",
-      "start": "2025-10-16T08:45:00.000Z",
-      "end": "2025-09-25T10:45:00.000Z",
+      "start": "2025-10-16T08:46:00.000Z",
+      "end": "2025-10-16T10:46:00.000Z",
       "location": "Salle 14.15.408",
       "ue": "MLBDA",
       "group": "3"
-    },
-    {
-      "id": "4ED84201-AAF9-4828-8D2C-8FFC6BDAD2D5-1760604300000",
-      "title": "UM4IN800-LRC-TD3",
-      "start": "2025-10-16T08:45:00.000Z",
-      "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667394",
-      "ue": "LRC",
-      "group": "3"
-    },
-    {
-      "id": "46BEE0C4-C3FE-4A31-8AA5-5B6AADFAB89C-1760604300000",
-      "title": "UM4IN800-LRC-TD4",
-      "start": "2025-10-16T08:45:00.000Z",
-      "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667393",
-      "ue": "LRC",
-      "group": "4"
-    },
-    {
-      "id": "A4E615A4-9D9B-4328-A34B-7F8BE342D224-1760604300000",
-      "title": "UM4IN814-DALAS-TME4",
-      "start": "2025-10-16T08:45:00.000Z",
-      "end": "2025-09-25T10:45:00.000Z",
-      "location": "Salle 14.15.407",
-      "ue": "DALAS",
-      "group": "4"
-    },
-    {
-      "id": "D918591A-056D-4B5D-8F6D-FECD424A32FA-1760615100000",
-      "title": "UM4IN814-DALAS-TD5",
-      "start": "2025-10-16T11:45:00.000Z",
-      "end": "2025-09-25T13:45:00.000Z",
-      "location": "Salle 23.24.112",
-      "ue": "DALAS",
-      "group": "5"
-    },
-    {
-      "id": "EAE96650-7C18-4E65-BA53-B0A4E0C89206-1760623200000",
-      "title": "UM4IN814-DALAS-TME5",
-      "start": "2025-10-16T14:00:00.000Z",
-      "end": "2025-09-25T16:00:00.000Z",
-      "location": "Salle 24.25.303",
-      "ue": "DALAS",
-      "group": "5"
-    },
-    {
-      "id": "21049A65-63A7-46E9-BDE5-0839EA7518FB-1760941800000",
-      "title": "UM4IN801-MLBDA-TD1",
-      "start": "2025-10-20T06:30:00.000Z",
-      "end": "2025-09-22T08:30:00.000Z",
-      "location": "Salle 55.65.105",
-      "ue": "MLBDA",
-      "group": "1"
     },
     {
       "id": "EDE6F216-499F-4ED0-B4E1-A1F28CA33861-1760941800000",
@@ -27804,13 +27075,31 @@
       "group": "1"
     },
     {
-      "id": "1AF0C8B4-9018-410D-8AF2-1195CB16083B-1760949900000",
-      "title": "UM4IN801-MLBDA-TME1",
-      "start": "2025-10-20T08:45:00.000Z",
-      "end": "2025-09-22T10:45:00.000Z",
-      "location": "Salle 14.15.406",
-      "ue": "MLBDA",
-      "group": "1"
+      "id": "EDE6F216-499F-4ED0-B4E1-A1F28CA33861",
+      "title": "UM4IN814-DALAS-TD4 (rattrapage du 16/10)",
+      "start": "2025-10-20T06:30:00.000Z",
+      "end": "2025-10-20T08:30:00.000Z",
+      "location": "Salle 56.66.209",
+      "ue": "DALAS",
+      "group": "4"
+    },
+    {
+      "id": "9949FE54-6389-4590-A2C3-9CC89B80206B",
+      "title": "UM4IN800-LRC-TME4(rattrapage du 16/10)",
+      "start": "2025-10-20T06:30:00.000Z",
+      "end": "2025-10-20T08:30:00.000Z",
+      "location": "Salle 24.25.302",
+      "ue": "LRC",
+      "group": "4"
+    },
+    {
+      "id": "FCCE4CA9-3BD7-40D7-B436-64F307A5D2DA",
+      "title": "UM4IN800-LRC-TME3 (rattrapage du 16/10)",
+      "start": "2025-10-20T06:30:00.000Z",
+      "end": "2025-10-20T08:30:00.000Z",
+      "location": "Salle 24.25.304",
+      "ue": "LRC",
+      "group": "3"
     },
     {
       "id": "7449AC11-8CD0-48F8-ADC4-FD4F42E79FCB-1760949900000",
@@ -27822,13 +27111,31 @@
       "group": "1"
     },
     {
-      "id": "C590FE73-DA0C-49B5-89DC-3D70B78FD724-1760960700000",
-      "title": "UM4IN814-DALAS-Cours",
-      "start": "2025-10-20T11:45:00.000Z",
-      "end": "2025-09-29T13:45:00.000Z",
-      "location": "n°667377",
+      "id": "7449AC11-8CD0-48F8-ADC4-FD4F42E79FCB",
+      "title": "UM4IN814-DALAS-TME4 (Rattrapage du 16/10)",
+      "start": "2025-10-20T08:45:00.000Z",
+      "end": "2025-10-20T10:45:00.000Z",
+      "location": "Salle 14.15.508",
       "ue": "DALAS",
-      "group": null
+      "group": "4"
+    },
+    {
+      "id": "E78185CF-CFD9-4C88-BA93-1F676A416B8D",
+      "title": "UM4IN800-LRC-TD3",
+      "start": "2025-10-20T08:45:00.000Z",
+      "end": "2025-10-20T10:45:00.000Z",
+      "location": "Salle 13.14.102",
+      "ue": "LRC",
+      "group": "3"
+    },
+    {
+      "id": "0065A51E-9621-4ABB-B72B-56017C20C68C",
+      "title": "UM4IN800-LRC-TD4",
+      "start": "2025-10-20T08:45:00.000Z",
+      "end": "2025-10-20T10:45:00.000Z",
+      "location": "Salle 13.14.108",
+      "ue": "LRC",
+      "group": "4"
     },
     {
       "id": "1B527D83-B916-4580-B468-57ADA185857D-1760960700000",
@@ -27840,11 +27147,20 @@
       "group": "1"
     },
     {
+      "id": "1B527D83-B916-4580-B468-57ADA185857D",
+      "title": "UM4IN814-DALAS-TME5(rattrapage du 16/10)",
+      "start": "2025-10-20T11:45:00.000Z",
+      "end": "2025-10-20T13:45:00.000Z",
+      "location": "Salle 24.25.304",
+      "ue": "DALAS",
+      "group": "5"
+    },
+    {
       "id": "D61CBD14-5ECF-4FF6-9D78-D8CB44E30D57",
       "title": "UM4IN600-BIMA-TD3",
       "start": "2025-10-20T11:45:00.000Z",
       "end": "2025-10-20T13:45:00.000Z",
-      "location": "",
+      "location": "14.24.105",
       "ue": "BIMA",
       "group": "3"
     },
@@ -27858,6 +27174,15 @@
       "group": "1"
     },
     {
+      "id": "C8C33406-FE00-47FC-9B52-6A31A3BA101F",
+      "title": "UM4IN814-DALAS-TD5(rattrapage du 16/10)",
+      "start": "2025-10-20T14:00:00.000Z",
+      "end": "2025-10-20T16:00:00.000Z",
+      "location": "Salle 55.65.105",
+      "ue": "DALAS",
+      "group": "5"
+    },
+    {
       "id": "E9C310DE-CF04-4A46-871F-7C51E4DB50FB",
       "title": "UM4IN600-BIMA-TME3",
       "start": "2025-10-20T14:00:00.000Z",
@@ -27865,15 +27190,6 @@
       "location": "14.15.408",
       "ue": "BIMA",
       "group": "3"
-    },
-    {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1761028200000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-10-21T06:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
     },
     {
       "id": "156414DE-6C78-4E60-8331-A83D1FF711D7-1761028200000",
@@ -27912,30 +27228,12 @@
       "group": "5"
     },
     {
-      "id": "A4B4227A-541C-494D-84F9-6E773CA4F706-1761036300000",
-      "title": "UM4IN800-LRC-TD2",
-      "start": "2025-10-21T08:45:00.000Z",
-      "end": "2025-09-30T10:45:00.000Z",
-      "location": "Salle 23.24.212",
-      "ue": "LRC",
-      "group": "2"
-    },
-    {
       "id": "A4B4227A-541C-494D-84F9-6E773CA4F706",
       "title": "UM4IN800-LRC-TD2",
       "start": "2025-10-21T08:45:00.000Z",
       "end": "2025-10-21T10:45:00.000Z",
       "location": "Salle 14.24.207",
       "ue": "LRC",
-      "group": "2"
-    },
-    {
-      "id": "602C54DA-9890-4515-AA83-101F56789A9D-1761036300000",
-      "title": "UM4IN814-DALAS-TME2",
-      "start": "2025-10-21T08:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "Salle 14.15.507",
-      "ue": "DALAS",
       "group": "2"
     },
     {
@@ -28038,15 +27336,6 @@
       "group": "3"
     },
     {
-      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1-1761133500000",
-      "title": "UM4IN800-LRC-Cours",
-      "start": "2025-10-22T11:45:00.000Z",
-      "end": "2025-09-17T13:45:00.000Z",
-      "location": "n°667379",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1",
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-10-22T11:45:00.000Z",
@@ -28054,15 +27343,6 @@
       "location": "AMPHI B2",
       "ue": "LRC",
       "group": null
-    },
-    {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1761133500000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-10-22T11:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC-1761141600000",
@@ -28081,15 +27361,6 @@
       "location": "",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1761141600000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-10-22T14:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "6970867E-47FC-4462-9547-1298E369B4E8-1761201000000",
@@ -28159,7 +27430,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-10-23T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667394",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "3"
     },
@@ -28168,7 +27439,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-10-23T08:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667393",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "4"
     },
@@ -28200,20 +27471,11 @@
       "group": "3"
     },
     {
-      "id": "EAE96650-7C18-4E65-BA53-B0A4E0C89206-1761228000000",
-      "title": "UM4IN814-DALAS-TME5",
-      "start": "2025-10-23T14:00:00.000Z",
-      "end": "2025-09-25T16:00:00.000Z",
-      "location": "Salle 24.25.303",
-      "ue": "DALAS",
-      "group": "5"
-    },
-    {
-      "id": "EAE96650-7C18-4E65-BA53-B0A4E0C89206",
+      "id": "95418D73-0BC9-4EE1-9650-7DC7FFB5DAD7",
       "title": "UM4IN814-DALAS-TME5",
       "start": "2025-10-23T14:00:00.000Z",
       "end": "2025-10-23T16:00:00.000Z",
-      "location": "Salle en attente ",
+      "location": "Salle 24.25.306",
       "ue": "DALAS",
       "group": "5"
     },
@@ -28225,24 +27487,6 @@
       "location": "14.15.408",
       "ue": "BIMA",
       "group": "3"
-    },
-    {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1761636600000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-10-28T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
-      "id": "602C54DA-9890-4515-AA83-101F56789A9D-1761644700000",
-      "title": "UM4IN814-DALAS-TME2",
-      "start": "2025-10-28T09:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "Salle 14.15.507",
-      "ue": "DALAS",
-      "group": "2"
     },
     {
       "id": "21049A65-63A7-46E9-BDE5-0839EA7518FB-1762155000000",
@@ -28303,7 +27547,7 @@
       "title": "UM4IN814-DALAS-Cours",
       "start": "2025-11-03T12:45:00.000Z",
       "end": "2025-09-29T13:45:00.000Z",
-      "location": "n°667377",
+      "location": "AMPHI 44",
       "ue": "DALAS",
       "group": null
     },
@@ -28344,15 +27588,6 @@
       "group": "2"
     },
     {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1762241400000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-11-04T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
       "id": "156414DE-6C78-4E60-8331-A83D1FF711D7-1762241400000",
       "title": "UM4IN800-LRC-TME2",
       "start": "2025-11-04T07:30:00.000Z",
@@ -28362,10 +27597,10 @@
       "group": "2"
     },
     {
-      "id": "BDB947E2-83C0-40E7-B8CC-88A674A8CD3D-1762241400000",
+      "id": "BDB947E2-83C0-40E7-B8CC-88A674A8CD3D",
       "title": "UM4IN601-MAPSI-TD3",
       "start": "2025-11-04T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
+      "end": "2025-11-04T09:30:00.000Z",
       "location": "24.25.105",
       "ue": "MAPSI",
       "group": "3"
@@ -28398,20 +27633,11 @@
       "group": "2"
     },
     {
-      "id": "602C54DA-9890-4515-AA83-101F56789A9D-1762249500000",
-      "title": "UM4IN814-DALAS-TME2",
-      "start": "2025-11-04T09:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "Salle 14.15.507",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
-      "id": "A0BCF7DA-2A8E-4929-9689-65A115D7BA1E-1762249500000",
+      "id": "A0BCF7DA-2A8E-4929-9689-65A115D7BA1E",
       "title": "UM4IN601-MAPSI-TME3",
       "start": "2025-11-04T09:45:00.000Z",
-      "end": "2025-09-23T10:45:00.000Z",
-      "location": "14.15.408",
+      "end": "2025-11-04T11:45:00.000Z",
+      "location": "24.25.302",
       "ue": "MAPSI",
       "group": "3"
     },
@@ -28434,11 +27660,11 @@
       "group": null
     },
     {
-      "id": "810E530C-6B81-4F0E-A775-418439933267-1762260300000",
+      "id": "810E530C-6B81-4F0E-A775-418439933267",
       "title": "UM4IN601-MAPSI-TME4",
       "start": "2025-11-04T12:45:00.000Z",
-      "end": "2025-09-23T13:45:00.000Z",
-      "location": "14.15.408",
+      "end": "2025-11-04T14:45:00.000Z",
+      "location": "24.25.302",
       "ue": "MAPSI",
       "group": "4"
     },
@@ -28488,15 +27714,6 @@
       "group": "3"
     },
     {
-      "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1-1762346700000",
-      "title": "UM4IN800-LRC-Cours",
-      "start": "2025-11-05T12:45:00.000Z",
-      "end": "2025-09-17T13:45:00.000Z",
-      "location": "n°667379",
-      "ue": "LRC",
-      "group": null
-    },
-    {
       "id": "6833EEA5-506F-4DC9-AAFE-EFF32114F9F1",
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-11-05T12:45:00.000Z",
@@ -28506,15 +27723,6 @@
       "group": null
     },
     {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1762346700000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-11-05T12:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
       "id": "E3F716EC-25D4-4908-8945-3E156CF5C1EC-1762354800000",
       "title": "UM4IN801-MLBDA-Cours",
       "start": "2025-11-05T15:00:00.000Z",
@@ -28522,15 +27730,6 @@
       "location": "AMPHI 45B",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1762354800000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-11-05T15:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "6970867E-47FC-4462-9547-1298E369B4E8-1762414200000",
@@ -28582,7 +27781,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-11-06T09:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667394",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "3"
     },
@@ -28591,7 +27790,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-11-06T09:45:00.000Z",
       "end": "2025-09-25T10:45:00.000Z",
-      "location": "n°667393",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "4"
     },
@@ -28623,20 +27822,11 @@
       "group": "3"
     },
     {
-      "id": "EAE96650-7C18-4E65-BA53-B0A4E0C89206-1762441200000",
-      "title": "UM4IN814-DALAS-TME5",
-      "start": "2025-11-06T15:00:00.000Z",
-      "end": "2025-09-25T16:00:00.000Z",
-      "location": "Salle 24.25.303",
-      "ue": "DALAS",
-      "group": "5"
-    },
-    {
       "id": "EAE96650-7C18-4E65-BA53-B0A4E0C89206",
       "title": "UM4IN814-DALAS-TME5",
       "start": "2025-11-06T15:00:00.000Z",
       "end": "2025-11-06T17:00:00.000Z",
-      "location": "Salle en attente ",
+      "location": "Salle 24.25.306",
       "ue": "DALAS",
       "group": "5"
     },
@@ -28708,7 +27898,7 @@
       "title": "UM4IN814-DALAS-Cours",
       "start": "2025-11-10T12:45:00.000Z",
       "end": "2025-09-29T13:45:00.000Z",
-      "location": "n°667377",
+      "location": "AMPHI 44",
       "ue": "DALAS",
       "group": null
     },
@@ -28749,20 +27939,11 @@
       "group": "2"
     },
     {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1762846200000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-11-11T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
       "id": "FB1E7DF7-973C-4F91-8FD7-B10127725504",
       "title": "UM4IN801-MLBDA-TD2 ( report du 22/10 )",
       "start": "2025-11-12T07:30:00.000Z",
       "end": "2025-11-12T09:30:00.000Z",
-      "location": "n°675807",
+      "location": "Salle 23.24.201",
       "ue": "MLBDA",
       "group": "2"
     },
@@ -28771,7 +27952,7 @@
       "title": "UM4IN801-MLBDA-TME2  ( report du 22/10 )",
       "start": "2025-11-12T09:45:00.000Z",
       "end": "2025-11-12T11:45:00.000Z",
-      "location": "mail envoyé à la PPTI le 03/09",
+      "location": "Salle 14.15.408",
       "ue": "MLBDA",
       "group": "2"
     },
@@ -28780,7 +27961,7 @@
       "title": "UM4IN801-MLBDA-Cours ( report du 22/10",
       "start": "2025-11-12T15:00:00.000Z",
       "end": "2025-11-12T17:00:00.000Z",
-      "location": "675825",
+      "location": "AMPHI 34B",
       "ue": "MLBDA",
       "group": null
     },
@@ -28789,7 +27970,7 @@
       "title": "UM4IN801-MLBDA-TD3 ( report du 23/10 )",
       "start": "2025-11-13T07:30:00.000Z",
       "end": "2025-11-13T09:30:00.000Z",
-      "location": "n°675808",
+      "location": "Salle 23.24.107",
       "ue": "MLBDA",
       "group": "3"
     },
@@ -28798,25 +27979,43 @@
       "title": "UM4IN801-MLBDA-TME3 ( report du 23/10 )",
       "start": "2025-11-13T09:45:00.000Z",
       "end": "2025-11-13T11:45:00.000Z",
-      "location": "Mail envoyé à la PPTI le 03/09",
+      "location": "Salle 14.15.408",
       "ue": "MLBDA",
       "group": "3"
     },
     {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1763451000000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-11-18T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
-      "location": "Salle 23.24.207",
-      "ue": "DALAS",
-      "group": "2"
+      "id": "564CD36F-9008-4FE1-B468-A427E91F0113",
+      "title": "UM4IN601-MAPSI-ExamenR1",
+      "start": "2025-11-18T15:00:00.000Z",
+      "end": "2025-11-18T17:00:00.000Z",
+      "location": "Amphi 34A + Amphi 43",
+      "ue": "MAPSI",
+      "group": null
+    },
+    {
+      "id": "7A24BE34-D3D3-4799-9FD6-919A07C521E2",
+      "title": "UM4IN800-LRC-ER1",
+      "start": "2025-11-19T12:45:00.000Z",
+      "end": "2025-11-19T14:45:00.000Z",
+      "location": "AMPHI 34A et AMPHI 34B",
+      "ue": "LRC",
+      "group": null
+    },
+    {
+      "id": "D5605397-2257-4B77-825F-DD4CC30A87D7",
+      "title": "UM4IN801-MLBDA-ER1",
+      "start": "2025-11-19T15:00:00.000Z",
+      "end": "2025-11-19T17:00:00.000Z",
+      "location": "AMHPHI A1",
+      "ue": "MLBDA",
+      "group": null
     },
     {
       "id": "40FAD7A3-6135-40CE-9DF2-D28A48A86F7B-1763969400000",
       "title": "UM4IN801-MLBDA-TD1",
       "start": "2025-11-24T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667396",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "1"
     },
@@ -28825,7 +28024,7 @@
       "title": "UM4IN814-DALAS-TD1",
       "start": "2025-11-24T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667397",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "1"
     },
@@ -28866,11 +28065,11 @@
       "group": "1"
     },
     {
-      "id": "23C828D3-280C-4966-BCB1-D8F95C9AF7E4-1763988300000",
+      "id": "23C828D3-280C-4966-BCB1-D8F95C9AF7E4",
       "title": "UM4IN814-DALAS-Cours",
       "start": "2025-11-24T12:45:00.000Z",
       "end": "2025-11-24T14:45:00.000Z",
-      "location": "n°667378",
+      "location": "Salle 24.34.103",
       "ue": "DALAS",
       "group": null
     },
@@ -28897,7 +28096,7 @@
       "title": "UM4IN800-LRC-TD1",
       "start": "2025-11-24T15:00:00.000Z",
       "end": "2025-11-24T17:00:00.000Z",
-      "location": "n°667398",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "1"
     },
@@ -28915,15 +28114,6 @@
       "title": "UM4IN814-DALAS-TD2",
       "start": "2025-11-25T07:30:00.000Z",
       "end": "2025-11-25T09:30:00.000Z",
-      "location": "n°667400",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1764055800000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-11-25T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
       "location": "Salle 23.24.207",
       "ue": "DALAS",
       "group": "2"
@@ -28969,7 +28159,7 @@
       "title": "UM4IN800-LRC-TD2",
       "start": "2025-11-25T09:45:00.000Z",
       "end": "2025-11-25T11:45:00.000Z",
-      "location": "n°667399",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "2"
     },
@@ -29023,7 +28213,7 @@
       "title": "UM4IN814-DALAS-TD3",
       "start": "2025-11-26T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "667402",
+      "location": "ATRIUM 431",
       "ue": "DALAS",
       "group": "3"
     },
@@ -29032,7 +28222,7 @@
       "title": "UM4IN801-MLBDA-TD2",
       "start": "2025-11-26T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "n°667401",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "2"
     },
@@ -29059,43 +28249,25 @@
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-11-26T12:45:00.000Z",
       "end": "2025-11-26T14:45:00.000Z",
-      "location": "n°667383",
+      "location": "AMPHI 34A",
       "ue": "LRC",
       "group": null
-    },
-    {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1764161100000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-11-26T12:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "09A4F47A-3D55-4957-8B30-67D35710A821-1764169200000",
       "title": "UM4IN801-MLBDA-Cours",
       "start": "2025-11-26T15:00:00.000Z",
       "end": "2025-11-26T17:00:00.000Z",
-      "location": "n°667382",
+      "location": "AMPHI B3",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1764169200000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-11-26T15:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "646B3B82-12E0-44B5-84F2-41E1B88DB3D8-1764228600000",
       "title": "UM4IN801-MLBDA-TD3",
       "start": "2025-11-27T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n°667404",
+      "location": "Salle 23.24.112",
       "ue": "MLBDA",
       "group": "3"
     },
@@ -29104,7 +28276,7 @@
       "title": "UM4IN814-DALAS-TD4",
       "start": "2025-11-27T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n_667403",
+      "location": "Salle 23.24.102",
       "ue": "DALAS",
       "group": "4"
     },
@@ -29131,7 +28303,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-11-27T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667406",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "4"
     },
@@ -29140,7 +28312,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-11-27T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667405",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "3"
     },
@@ -29167,7 +28339,7 @@
       "title": "UM4IN814-DALAS-TD5",
       "start": "2025-11-27T12:45:00.000Z",
       "end": "2025-11-27T14:45:00.000Z",
-      "location": "n°667407",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "5"
     },
@@ -29203,7 +28375,7 @@
       "title": "UM4IN801-MLBDA-TD1",
       "start": "2025-12-01T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667396",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "1"
     },
@@ -29212,7 +28384,7 @@
       "title": "UM4IN814-DALAS-TD1",
       "start": "2025-12-01T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667397",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "1"
     },
@@ -29253,15 +28425,6 @@
       "group": "1"
     },
     {
-      "id": "23C828D3-280C-4966-BCB1-D8F95C9AF7E4-1764593100000",
-      "title": "UM4IN814-DALAS-Cours",
-      "start": "2025-12-01T12:45:00.000Z",
-      "end": "2025-11-24T14:45:00.000Z",
-      "location": "n°667378",
-      "ue": "DALAS",
-      "group": null
-    },
-    {
       "id": "1B527D83-B916-4580-B468-57ADA185857D-1764593100000",
       "title": "UM4IN800-LRC-TME1",
       "start": "2025-12-01T12:45:00.000Z",
@@ -29269,6 +28432,15 @@
       "location": "Salle 24.25.304",
       "ue": "LRC",
       "group": "1"
+    },
+    {
+      "id": "A0237482-D00F-4B5F-9257-2A03BB792E0D-1764593100000",
+      "title": "UM4IN814-DALAS-Cours",
+      "start": "2025-12-01T12:45:00.000Z",
+      "end": "2025-12-01T14:45:00.000Z",
+      "location": "AMPHI 44",
+      "ue": "DALAS",
+      "group": null
     },
     {
       "id": "311626B0-053B-4ECA-A54F-8D266BAFC002-1764593100000",
@@ -29284,7 +28456,7 @@
       "title": "UM4IN800-LRC-TD1",
       "start": "2025-12-01T15:00:00.000Z",
       "end": "2025-11-24T17:00:00.000Z",
-      "location": "n°667398",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "1"
     },
@@ -29302,15 +28474,6 @@
       "title": "UM4IN814-DALAS-TD2",
       "start": "2025-12-02T07:30:00.000Z",
       "end": "2025-11-25T09:30:00.000Z",
-      "location": "n°667400",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1764660600000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-12-02T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
       "location": "Salle 23.24.207",
       "ue": "DALAS",
       "group": "2"
@@ -29356,7 +28519,7 @@
       "title": "UM4IN800-LRC-TD2",
       "start": "2025-12-02T09:45:00.000Z",
       "end": "2025-11-25T11:45:00.000Z",
-      "location": "n°667399",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "2"
     },
@@ -29410,7 +28573,7 @@
       "title": "UM4IN814-DALAS-TD3",
       "start": "2025-12-03T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "667402",
+      "location": "ATRIUM 431",
       "ue": "DALAS",
       "group": "3"
     },
@@ -29419,7 +28582,7 @@
       "title": "UM4IN801-MLBDA-TD2",
       "start": "2025-12-03T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "n°667401",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "2"
     },
@@ -29446,43 +28609,25 @@
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-12-03T12:45:00.000Z",
       "end": "2025-11-26T14:45:00.000Z",
-      "location": "n°667383",
+      "location": "AMPHI 34A",
       "ue": "LRC",
       "group": null
     },
     {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1764765900000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-12-03T12:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
-      "id": "09A4F47A-3D55-4957-8B30-67D35710A821-1764774000000",
+      "id": "09A4F47A-3D55-4957-8B30-67D35710A821",
       "title": "UM4IN801-MLBDA-Cours",
       "start": "2025-12-03T15:00:00.000Z",
-      "end": "2025-11-26T17:00:00.000Z",
-      "location": "n°667382",
+      "end": "2025-12-03T17:00:00.000Z",
+      "location": "AMPHI A2",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1764774000000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-12-03T15:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "646B3B82-12E0-44B5-84F2-41E1B88DB3D8-1764833400000",
       "title": "UM4IN801-MLBDA-TD3",
       "start": "2025-12-04T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n°667404",
+      "location": "Salle 23.24.112",
       "ue": "MLBDA",
       "group": "3"
     },
@@ -29491,7 +28636,7 @@
       "title": "UM4IN814-DALAS-TD4",
       "start": "2025-12-04T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n_667403",
+      "location": "Salle 23.24.102",
       "ue": "DALAS",
       "group": "4"
     },
@@ -29518,7 +28663,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-12-04T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667406",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "4"
     },
@@ -29527,7 +28672,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-12-04T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667405",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "3"
     },
@@ -29554,7 +28699,7 @@
       "title": "UM4IN814-DALAS-TD5",
       "start": "2025-12-04T12:45:00.000Z",
       "end": "2025-11-27T14:45:00.000Z",
-      "location": "n°667407",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "5"
     },
@@ -29590,7 +28735,7 @@
       "title": "UM4IN801-MLBDA-TD1",
       "start": "2025-12-08T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667396",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "1"
     },
@@ -29599,7 +28744,7 @@
       "title": "UM4IN814-DALAS-TD1",
       "start": "2025-12-08T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667397",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "1"
     },
@@ -29640,15 +28785,6 @@
       "group": "1"
     },
     {
-      "id": "23C828D3-280C-4966-BCB1-D8F95C9AF7E4-1765197900000",
-      "title": "UM4IN814-DALAS-Cours",
-      "start": "2025-12-08T12:45:00.000Z",
-      "end": "2025-11-24T14:45:00.000Z",
-      "location": "n°667378",
-      "ue": "DALAS",
-      "group": null
-    },
-    {
       "id": "1B527D83-B916-4580-B468-57ADA185857D-1765197900000",
       "title": "UM4IN800-LRC-TME1",
       "start": "2025-12-08T12:45:00.000Z",
@@ -29656,6 +28792,15 @@
       "location": "Salle 24.25.304",
       "ue": "LRC",
       "group": "1"
+    },
+    {
+      "id": "A0237482-D00F-4B5F-9257-2A03BB792E0D-1765197900000",
+      "title": "UM4IN814-DALAS-Cours",
+      "start": "2025-12-08T12:45:00.000Z",
+      "end": "2025-12-01T14:45:00.000Z",
+      "location": "AMPHI 44",
+      "ue": "DALAS",
+      "group": null
     },
     {
       "id": "311626B0-053B-4ECA-A54F-8D266BAFC002-1765197900000",
@@ -29671,7 +28816,7 @@
       "title": "UM4IN800-LRC-TD1",
       "start": "2025-12-08T15:00:00.000Z",
       "end": "2025-11-24T17:00:00.000Z",
-      "location": "n°667398",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "1"
     },
@@ -29689,15 +28834,6 @@
       "title": "UM4IN814-DALAS-TD2",
       "start": "2025-12-09T07:30:00.000Z",
       "end": "2025-11-25T09:30:00.000Z",
-      "location": "n°667400",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1765265400000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-12-09T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
       "location": "Salle 23.24.207",
       "ue": "DALAS",
       "group": "2"
@@ -29743,7 +28879,7 @@
       "title": "UM4IN800-LRC-TD2",
       "start": "2025-12-09T09:45:00.000Z",
       "end": "2025-11-25T11:45:00.000Z",
-      "location": "n°667399",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "2"
     },
@@ -29797,7 +28933,7 @@
       "title": "UM4IN814-DALAS-TD3",
       "start": "2025-12-10T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "667402",
+      "location": "ATRIUM 431",
       "ue": "DALAS",
       "group": "3"
     },
@@ -29806,7 +28942,7 @@
       "title": "UM4IN801-MLBDA-TD2",
       "start": "2025-12-10T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "n°667401",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "2"
     },
@@ -29833,43 +28969,25 @@
       "title": "UM4IN800-LRC-Cours",
       "start": "2025-12-10T12:45:00.000Z",
       "end": "2025-11-26T14:45:00.000Z",
-      "location": "n°667383",
+      "location": "AMPHI 34A",
       "ue": "LRC",
       "group": null
     },
     {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1765370700000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-12-10T12:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
-      "id": "09A4F47A-3D55-4957-8B30-67D35710A821-1765378800000",
+      "id": "09A4F47A-3D55-4957-8B30-67D35710A821",
       "title": "UM4IN801-MLBDA-Cours",
       "start": "2025-12-10T15:00:00.000Z",
-      "end": "2025-11-26T17:00:00.000Z",
-      "location": "n°667382",
+      "end": "2025-12-10T17:00:00.000Z",
+      "location": "AMPHI 45A",
       "ue": "MLBDA",
       "group": null
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1765378800000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-12-10T15:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
     },
     {
       "id": "646B3B82-12E0-44B5-84F2-41E1B88DB3D8-1765438200000",
       "title": "UM4IN801-MLBDA-TD3",
       "start": "2025-12-11T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n°667404",
+      "location": "Salle 23.24.112",
       "ue": "MLBDA",
       "group": "3"
     },
@@ -29878,7 +28996,7 @@
       "title": "UM4IN814-DALAS-TD4",
       "start": "2025-12-11T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n_667403",
+      "location": "Salle 23.24.102",
       "ue": "DALAS",
       "group": "4"
     },
@@ -29905,7 +29023,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-12-11T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667406",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "4"
     },
@@ -29914,7 +29032,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-12-11T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667405",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "3"
     },
@@ -29941,7 +29059,7 @@
       "title": "UM4IN814-DALAS-TD5",
       "start": "2025-12-11T12:45:00.000Z",
       "end": "2025-11-27T14:45:00.000Z",
-      "location": "n°667407",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "5"
     },
@@ -29977,7 +29095,7 @@
       "title": "UM4IN801-MLBDA-TD1",
       "start": "2025-12-15T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667396",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "1"
     },
@@ -29986,7 +29104,7 @@
       "title": "UM4IN814-DALAS-TD1",
       "start": "2025-12-15T07:30:00.000Z",
       "end": "2025-11-24T09:30:00.000Z",
-      "location": "n°667397",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "1"
     },
@@ -30049,7 +29167,7 @@
       "title": "UM4IN800-LRC-TD1",
       "start": "2025-12-15T15:00:00.000Z",
       "end": "2025-11-24T17:00:00.000Z",
-      "location": "n°667398",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "1"
     },
@@ -30067,15 +29185,6 @@
       "title": "UM4IN814-DALAS-TD2",
       "start": "2025-12-16T07:30:00.000Z",
       "end": "2025-11-25T09:30:00.000Z",
-      "location": "n°667400",
-      "ue": "DALAS",
-      "group": "2"
-    },
-    {
-      "id": "4000A5EF-FF29-44BB-96AB-C33791549E47-1765870200000",
-      "title": "UM4IN814-DALAS-TD2",
-      "start": "2025-12-16T07:30:00.000Z",
-      "end": "2025-09-23T08:30:00.000Z",
       "location": "Salle 23.24.207",
       "ue": "DALAS",
       "group": "2"
@@ -30121,7 +29230,7 @@
       "title": "UM4IN800-LRC-TD2",
       "start": "2025-12-16T09:45:00.000Z",
       "end": "2025-11-25T11:45:00.000Z",
-      "location": "n°667399",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "2"
     },
@@ -30157,7 +29266,7 @@
       "title": "UM4IN814-DALAS-TD3",
       "start": "2025-12-17T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "667402",
+      "location": "ATRIUM 431",
       "ue": "DALAS",
       "group": "3"
     },
@@ -30166,7 +29275,7 @@
       "title": "UM4IN801-MLBDA-TD2",
       "start": "2025-12-17T07:30:00.000Z",
       "end": "2025-11-26T09:30:00.000Z",
-      "location": "n°667401",
+      "location": "Salle 23.24.102",
       "ue": "MLBDA",
       "group": "2"
     },
@@ -30189,29 +29298,11 @@
       "group": "3"
     },
     {
-      "id": "F2FBEB0F-1814-4D06-9D6E-EB78C7D5B12D-1765975500000",
-      "title": "UM4IN600-BIMA-TD2",
-      "start": "2025-12-17T12:45:00.000Z",
-      "end": "2025-09-24T13:45:00.000Z",
-      "location": "14.24.105",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
-      "id": "591660A0-BDE1-4FA9-A736-C67F8DC5FDE7-1765983600000",
-      "title": "UM4IN600-BIMA-TME2",
-      "start": "2025-12-17T15:00:00.000Z",
-      "end": "2025-09-24T16:00:00.000Z",
-      "location": "24.25.304",
-      "ue": "BIMA",
-      "group": "2"
-    },
-    {
       "id": "646B3B82-12E0-44B5-84F2-41E1B88DB3D8-1766043000000",
       "title": "UM4IN801-MLBDA-TD3",
       "start": "2025-12-18T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n°667404",
+      "location": "Salle 23.24.112",
       "ue": "MLBDA",
       "group": "3"
     },
@@ -30220,7 +29311,7 @@
       "title": "UM4IN814-DALAS-TD4",
       "start": "2025-12-18T07:30:00.000Z",
       "end": "2025-11-27T09:30:00.000Z",
-      "location": "n_667403",
+      "location": "Salle 23.24.102",
       "ue": "DALAS",
       "group": "4"
     },
@@ -30247,7 +29338,7 @@
       "title": "UM4IN800-LRC-TD4",
       "start": "2025-12-18T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667406",
+      "location": "Salle 23.24.112",
       "ue": "LRC",
       "group": "4"
     },
@@ -30256,7 +29347,7 @@
       "title": "UM4IN800-LRC-TD3",
       "start": "2025-12-18T09:45:00.000Z",
       "end": "2025-11-27T11:45:00.000Z",
-      "location": "n°667405",
+      "location": "Salle 23.24.102",
       "ue": "LRC",
       "group": "3"
     },
@@ -30283,7 +29374,7 @@
       "title": "UM4IN814-DALAS-TD5",
       "start": "2025-12-18T12:45:00.000Z",
       "end": "2025-11-27T14:45:00.000Z",
-      "location": "n°667407",
+      "location": "Salle 23.24.112",
       "ue": "DALAS",
       "group": "5"
     },
@@ -30313,6 +29404,51 @@
       "location": "14.15.408",
       "ue": "BIMA",
       "group": "3"
+    },
+    {
+      "id": "41AC7946-8EAE-4CEF-A9C5-D317216B97DE",
+      "title": "UM4IN814-DALAS-ER2",
+      "start": "2026-01-05T12:45:00.000Z",
+      "end": "2026-01-05T14:45:00.000Z",
+      "location": "n°679884 n°679885",
+      "ue": "DALAS",
+      "group": null
+    },
+    {
+      "id": "8CF6F4B6-ED93-4ADC-91F4-6A055BD41206",
+      "title": "UM4IN600-BIMA-ExamenR2",
+      "start": "2026-01-06T13:00:00.000Z",
+      "end": "2026-01-06T15:00:00.000Z",
+      "location": "Résa n° 677891",
+      "ue": "BIMA",
+      "group": null
+    },
+    {
+      "id": "79202372-F855-4737-80B4-B31D6C89B410",
+      "title": "UM4IN601-MAPSI-ExamenR2",
+      "start": "2026-01-06T15:30:00.000Z",
+      "end": "2026-01-06T17:30:00.000Z",
+      "location": "Résa n° 677892 + 677893",
+      "ue": "MAPSI",
+      "group": null
+    },
+    {
+      "id": "DBF43240-B7A5-4C47-992C-6B8A36E13103",
+      "title": "UM4IN800-LRC-ER2",
+      "start": "2026-01-07T13:00:00.000Z",
+      "end": "2026-01-07T15:00:00.000Z",
+      "location": "n°679889 et 679890",
+      "ue": "LRC",
+      "group": null
+    },
+    {
+      "id": "F5D1315B-58CA-40C1-8140-73000BFAD83C",
+      "title": "UM4IN801-MLBDA-ER2",
+      "start": "2026-01-07T15:30:00.000Z",
+      "end": "2026-01-07T17:30:00.000Z",
+      "location": "n°679891",
+      "ue": "MLBDA",
+      "group": null
     }
   ]
 }

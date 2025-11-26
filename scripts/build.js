@@ -171,7 +171,9 @@ function expandEvents(icsText) {
 
 async function build() {
   const outDir = path.resolve(__dirname, '../public/data');
+  const outDirRoot = path.resolve(__dirname, '../data');
   await mkdir(outDir, { recursive: true });
+  await mkdir(outDirRoot, { recursive: true });
 
   const all = [];
   for (const src of CAL_SOURCES) {
@@ -184,9 +186,22 @@ async function build() {
     }
   }
 
-  all.sort((a, b) => (a.start || '').localeCompare(b.start || ''));
-  await writeFile(path.join(outDir, 'events.json'), JSON.stringify({ generatedAt: new Date().toISOString(), count: all.length, events: all }, null, 2));
-  console.log('Wrote ' + all.length + ' events');
+  // Deduplicate events by unique key (title + start time)
+  // Keep the latest version (last one wins)
+  const eventMap = new Map();
+  for (const ev of all) {
+    const key = `${ev.title}|${ev.start}`;
+    eventMap.set(key, ev); // Overwrites any previous version
+  }
+  const deduplicated = Array.from(eventMap.values());
+
+  deduplicated.sort((a, b) => (a.start || '').localeCompare(b.start || ''));
+  const output = JSON.stringify({ generatedAt: new Date().toISOString(), count: deduplicated.length, events: deduplicated }, null, 2);
+  
+  // Write to both locations
+  await writeFile(path.join(outDir, 'events.json'), output);
+  await writeFile(path.join(outDirRoot, 'events.json'), output);
+  console.log('Wrote ' + deduplicated.length + ' events (deduplicated from ' + all.length + ')');
 }
 
 build().catch(e => { console.error(e); process.exit(1); });
