@@ -11,3 +11,7 @@ A static website that displays your personalized M1 timetable by fetching and fi
   - LRC (Groupe 2)
   - MAPSI (Groupe 1)
   - BIMA (Groupe 3)
+
+
+
+- Thank you cursor
